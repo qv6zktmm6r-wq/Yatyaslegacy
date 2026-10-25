@@ -46,11 +46,15 @@ The disinterested directors must determine that the transaction is fair, reasona
 
 ## 7. Major Expenditures
 
-A major-expenditure threshold requiring two-person or enhanced approval will be adopted by separate board resolution.
+Routine budgeted expenditures below $1,000 may be approved by an authorized officer acting within the officer's delegated budget authority.
 
-Current threshold: OPEN — DO NOT INVENT A DOLLAR AMOUNT.
+Expenditures from $1,000 through $5,000 require approval by two authorized persons. The approvers should be independent of the payee or beneficiary of the transaction whenever practicable.
 
-Until adopted, any unusual, non-budgeted, or material expenditure should be brought to the board for approval.
+Expenditures over $5,000 require approval of the full board in accordance with the bylaws and applicable quorum and voting requirements.
+
+Any major unbudgeted commitment requires full board approval regardless of amount.
+
+These thresholds are the approved working governance decision and become operative when formally adopted by the board at the organizational meeting or by other valid board action.
 
 ## 8. Budget
 
