@@ -36,6 +36,10 @@ Maintain a durable formation record for YAT-YAS Association, Inc. and prepare th
 - Founder designation remains permanent as a historical designation
 - Compensation: only for bona fide services or documented reimbursements; reasonable, documented, and approved by disinterested directors
 - Interested directors must remain below 49% of the board
+- Routine budgeted expenditures below $1,000 may be approved by an authorized officer within delegated authority
+- Expenditures from $1,000 through $5,000 require two-person approval
+- Expenditures over $5,000 require full board approval
+- Any major unbudgeted commitment requires full board approval
 
 ## Membership and dues
 
@@ -52,7 +56,6 @@ Maintain a durable formation record for YAT-YAS Association, Inc. and prepare th
 
 Do not invent these values. Leave them visibly open until adopted:
 
-- Dollar threshold that triggers two-person approval for a major expenditure
 - Secretary
 - Second Events Director
 - Exact timing of the first member election for board seats 4 and 5, beyond the working target of the first annual cycle / roughly 12 months after formation
