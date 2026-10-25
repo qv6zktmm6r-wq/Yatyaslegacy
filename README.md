@@ -1,6 +1,6 @@
 # YAT-YAS Association, Inc.
 
-Formation and governance repository for YAT-YAS Association, Inc., a planned California nonprofit public benefit corporation seeking federal recognition under IRC Section 501(c)(19).
+Formation and governance repository for YAT-YAS Association, Inc., a California nonprofit public benefit corporation seeking federal recognition under IRC Section 501(c)(19).
 
 ## Current status
 
@@ -13,11 +13,11 @@ Formation and governance repository for YAT-YAS Association, Inc., a planned Cal
 - Planned board size: five directors
 - Two additional board seats: to be elected by voting members
 - Fiscal year: October 1 through September 30
-- Formation filing: not yet submitted as of October 25, 2026
+- **Articles filed** via bizfile Online on **October 25, 2026** (Public Benefit form): Receipt **15225284**, Document **B20260476255**, Auth **741170**, paid **$35.00**, status **Pending Review** — entity number not yet issued. See `docs/formation/filing-record.md`.
 
 ## Formation documents
 
-See docs/formation/ for the filing draft, bylaws working draft, organizational action template, membership policy, financial controls, compliance checklist, and source notes.
+See docs/formation/ for the Articles (as filed), filing record, bylaws working draft, organizational action template, membership policy, financial controls, compliance checklist, and source notes.
 
 ## Important
 

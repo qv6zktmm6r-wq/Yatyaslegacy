@@ -10,11 +10,12 @@ Status as of October 25, 2026.
 - [x] Initial agent selected: Jorge A. Mejia Lozoya
 - [x] Incorporator selected: Jorge A. Mejia Lozoya
 - [x] 501(c)(19) / R&TC 23701w article language drafted
-- [ ] Submit Articles of Incorporation through California bizfile
-- [ ] Pay current state formation filing fee
-- [ ] Save filed/stamped Articles
-- [ ] Record California entity number
-- [ ] Record official filing date
+- [x] Submit Articles of Incorporation through California bizfile (filed 2026-10-25; Doc **B20260476255**; Receipt **15225284**; Auth **741170**; status **Pending Review**)
+- [x] Pay formation filing fee ($30.00) + certified copy ($5.00) = **$35.00** total
+- [x] Save filing receipt (Desktop: `Business Files/YAT-YAS Association/YATYAS-Articles-Filing-Receipt-15225284-B20260476255.pdf`; see `filing-record.md`)
+- [ ] Save filed/stamped Articles (and certified copy) after SOS acceptance
+- [ ] Record California entity number (*not issued yet — Pending Review*)
+- [ ] Record official acceptance / filing date after SOS acceptance
 
 ## Phase 2 — Organizational Action
 

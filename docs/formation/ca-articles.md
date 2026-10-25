@@ -1,6 +1,8 @@
-# YAT-YAS Association, Inc. — Draft Articles of Incorporation
+# YAT-YAS Association, Inc. — Articles of Incorporation (as filed)
 
-Status: Filing draft. Not yet submitted.
+Status: **Submitted to California Secretary of State via bizfile Online on October 25, 2026.**  
+Work Queue / Document No. **B20260476255** · Receipt No. **15225284** · Auth. No. **741170** · Status **Pending Review** (entity number not yet issued).  
+Full filing/receipt record: [`filing-record.md`](./filing-record.md).
 
 ## Article I — Corporate Name
 
@@ -58,8 +60,8 @@ Incorporator
 
 ## Filing notes
 
-- Entity type: California Nonprofit Public Benefit Corporation
-- California formation filing fee currently listed by the Secretary of State: $30
+- Entity type: California Nonprofit Public Benefit Corporation (Public Benefit form on bizfile)
+- Fees paid 2026-10-25: $30.00 Articles + $5.00 Certified Copy - BE = **$35.00**
+- Article V tax-exemption statement PDF attached on filing (`docs/formation/attachments/YATYAS-Article-V-Tax-Exemption-Statement.pdf`)
 - California FTB identifies Sample H as the article language for corporations seeking exemption under R&TC Section 23701w.
-- Review all public-record fields before submission.
-- Save the stamped/accepted Articles, filing receipt, entity number, and filing date after acceptance.
+- After SOS acceptance: save stamped Articles + certified copy; record entity number and official filing date in `filing-record.md` and `compliance-checklist.md`.

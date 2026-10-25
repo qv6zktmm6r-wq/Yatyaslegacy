@@ -67,9 +67,24 @@ Current IRS public guidance says a Section 501(c)(19) veterans organization gene
 
 Do not weaken the membership-composition safeguards without documenting the legal basis.
 
+## California Articles filing (submitted)
+
+Filed **October 25, 2026** via California Secretary of State **bizfile Online**:
+
+- Form: Articles of Incorporation - CA Nonprofit Corporation - Public Benefit
+- Receipt No.: **15225284**
+- Document / Work Queue No.: **B20260476255**
+- Authorization No.: **741170**
+- Total paid: **$35.00** ($30.00 filing + $5.00 certified copy)
+- Status as of 10/25/2026: **Pending Review** (no entity number yet)
+- Agent: Jorge A. Mejia Lozoya · Address: 1253 Sunset Avenue, Perris, CA 92571
+- Purpose: public benefit; 501(c)(19) tax-exemption statement attached
+- Receipt PDF (Desktop, outside Git): `Business Files/YAT-YAS Association/YATYAS-Articles-Filing-Receipt-15225284-B20260476255.pdf`
+- Repo record: `docs/formation/filing-record.md`
+
 ## Cursor tasks after California accepts the Articles
 
-1. Insert the California entity number and filing date into the compliance checklist.
+1. Insert the California entity number and official acceptance/filing date into `filing-record.md` and the compliance checklist; save stamped Articles / certified copy.
 2. Finalize the organizational action/minutes for signature.
 3. Finalize the bylaws for board adoption.
 4. Finalize the membership application fields and compliance counters without storing sensitive military documents in Git.
@@ -82,7 +97,9 @@ Do not weaken the membership-composition safeguards without documenting the lega
 
 ## Files
 
+- docs/formation/filing-record.md
 - docs/formation/ca-articles.md
+- docs/formation/attachments/YATYAS-Article-V-Tax-Exemption-Statement.pdf
 - docs/formation/bylaws-draft.md
 - docs/formation/organizational-action.md
 - docs/formation/membership-policy.md
