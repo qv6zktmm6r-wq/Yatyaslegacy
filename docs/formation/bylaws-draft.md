@@ -8,7 +8,7 @@ The name of the corporation is YAT-YAS Association, Inc.
 
 The corporation is organized as a California nonprofit public benefit corporation and intends to operate consistently with Internal Revenue Code Section 501(c)(19) and California Revenue and Taxation Code Section 23701w.
 
-Its purpose is to preserve and perpetuate the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community, and to conduct veterans-support, historical, educational, patriotic, memorial, mentorship, scholarship, family-support, fellowship, social, recreational, museum, restoration, oral-history, reunion, and related programs.
+Its purpose is to preserve and perpetuate the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community, including the LVT, LVTP, AAV, and ACV communities, and to conduct veterans-support, historical, educational, patriotic, memorial, mentorship, scholarship, family-support, fellowship, social, recreational, museum, restoration, oral-history, reunion, and related programs consistent with war veteran purposes within the meaning of Internal Revenue Code Section 501(c)(19).
 
 ## Article II — Principal Office
 
@@ -26,6 +26,8 @@ The board may change the principal office by resolution.
 Voting Service/Veteran Members are qualifying past or present members of the U.S. Armed Forces who satisfy the membership criteria adopted by the board and the applicable Section 501(c)(19) membership-composition requirements.
 
 Each Voting Service/Veteran Member in good standing has one vote.
+
+Current Regular Voting Service/Veteran Members dues policy: $10 per month or $100 per year, subject to amendment under the dues policy.
 
 ### Section 3.2 — Founding Charter Members
 
@@ -127,7 +129,7 @@ Directors and officers may receive reasonable compensation for bona fide service
 
 A director with a material financial interest in a proposed transaction must disclose the interest and abstain from deliberation and voting to the extent required by law and policy.
 
-The corporation shall keep the number of interested persons below the level prohibited for a California nonprofit public benefit corporation.
+The corporation shall keep the number of interested persons below 49% of the board, as required for a California nonprofit public benefit corporation.
 
 ## Article VIII — Financial Administration
 

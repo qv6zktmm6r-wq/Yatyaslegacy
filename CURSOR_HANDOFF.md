@@ -35,7 +35,7 @@ Maintain a durable formation record for YAT-YAS Association, Inc. and prepare th
 - No founder veto over ordinary board governance
 - Founder designation remains permanent as a historical designation
 - Compensation: only for bona fide services or documented reimbursements; reasonable, documented, and approved by disinterested directors
-- Interested directors must remain below 49% of the board
+- Interested persons must remain below 49% of the board
 - Routine budgeted expenditures below $1,000 may be approved by an authorized officer within delegated authority
 - Expenditures from $1,000 through $5,000 require two-person approval
 - Expenditures over $5,000 require full board approval
@@ -47,10 +47,10 @@ Maintain a durable formation record for YAT-YAS Association, Inc. and prepare th
 - Active-duty members may qualify using current service verification; a DD-214 is not required for a currently serving member
 - Founding Charter 001–100: permanent, non-transferable designation for the first 100 qualifying members
 - Current Founding Charter dues: $5/month or $50/year
-- Current regular voting-member dues: $10/month or $100/year
+- Current Regular Voting Service/Veteran Members dues: $10/month or $100/year
 - Dues changes require at least 30 days notice
 - Legacy Members: qualifying family members, initially nonvoting
-- Supporters: nonmembers; no governance vote
+- Supporters: not corporate voting members unless separately admitted into a voting membership class; no governance vote
 
 ## Open decisions
 

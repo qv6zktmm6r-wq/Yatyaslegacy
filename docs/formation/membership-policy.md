@@ -33,7 +33,7 @@ The designation:
 
 Initial dues: $5/month or $50/year.
 
-## 4. Regular Voting Members
+## 4. Regular Voting Service/Veteran Members
 
 Initial dues: $10/month or $100/year.
 
@@ -45,7 +45,7 @@ Initial status: nonvoting.
 
 ## 6. Supporters
 
-Supporters may donate, volunteer, attend eligible events, or otherwise support the mission but are not corporate members and have no governance vote unless separately admitted to a voting membership class.
+Supporters may donate, volunteer, attend eligible events, or otherwise support the mission but are not corporate voting members unless separately admitted into a voting membership class.
 
 ## 7. Dues Changes
 
