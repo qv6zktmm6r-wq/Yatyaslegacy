@@ -31,7 +31,7 @@ Status as of October 25, 2026.
 - [ ] Approve membership policy
 - [ ] Approve initial dues
 - [ ] Approve conflict/compensation controls
-- [ ] Adopt major-expenditure threshold
+- [ ] Formally adopt spending controls: two-person approval at $1,000–$5,000; full board approval over $5,000 and for major unbudgeted commitments
 - [ ] Approve bank resolution
 
 ## Phase 3 — Federal and State IDs / Filings
