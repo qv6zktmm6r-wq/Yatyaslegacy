@@ -92,7 +92,7 @@ RESOLVED, that compensation may be paid only for bona fide services or documente
 
 ## 13. Major Expenditure Threshold
 
-RESOLVED, that the specific dollar threshold requiring enhanced or two-person approval is not yet adopted and remains OPEN for a later board resolution.
+RESOLVED, that routine budgeted expenditures below $1,000 may be approved by an authorized officer within delegated authority; expenditures from $1,000 through $5,000 require two-person approval; expenditures over $5,000 require full board approval; and any major unbudgeted commitment requires full board approval regardless of amount.
 
 ## 14. Tax-Exemption Filings
 
