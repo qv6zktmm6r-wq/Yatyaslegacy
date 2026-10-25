@@ -142,7 +142,7 @@ The board shall adopt financial controls covering:
 - record retention
 - periodic financial reporting
 
-The dollar threshold requiring two-person or enhanced approval for major expenditures remains OPEN and must be adopted by board resolution.
+Routine budgeted expenditures below $1,000 may be approved by an authorized officer acting within delegated authority. Expenditures from $1,000 through $5,000 require approval by two authorized persons. Expenditures over $5,000 require full board approval. Any major unbudgeted commitment requires full board approval regardless of amount. These thresholds become effective when the bylaws and related financial controls are formally adopted by the board.
 
 ## Article IX — Fiscal Year
 
