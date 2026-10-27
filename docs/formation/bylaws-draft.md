@@ -154,7 +154,15 @@ The corporation shall maintain complete and accurate books, accounting records, 
 
 Sensitive military and identity documents should be stored securely and should not be committed to the public GitHub repository.
 
-## Article XI — Amendments
+## Article XI — Programs and Initiatives
+
+The Board may establish, modify, combine, suspend, or discontinue programs and initiatives consistent with the corporation's exempt purposes, including historical preservation, memorial, fellowship, mentorship, education, family support, museum and restoration support, member services, digital archives, events, chapters, and other mission-aligned activities.
+
+Program names, branding, operating procedures, eligibility standards, budgets, and technology features may be established by Board resolution or Board-approved policy and need not be embedded in these bylaws unless otherwise required by law.
+
+No program may be operated in a manner that causes the corporation to violate its intended Section 501(c)(19) qualification, nonprofit public benefit status, membership-composition requirements, or restrictions on private inurement.
+
+## Article XII — Amendments
 
 These bylaws may be amended by the board and, where required by law or by rights reserved to voting members, by the voting members.
 
