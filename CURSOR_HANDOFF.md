@@ -67,6 +67,26 @@ Current IRS public guidance says a Section 501(c)(19) veterans organization gene
 
 Do not weaken the membership-composition safeguards without documenting the legal basis.
 
+## Post-formation product and program direction
+
+Do not treat this repository as only a formation binder. After legal formation, YATYASLegacy.com should become the Association's digital headquarters and institutional memory.
+
+Four pillars:
+
+1. Brotherhood
+2. Legacy
+3. Next Mission
+4. Family
+
+Priority programs and product concepts are documented in:
+
+- `docs/strategy/association-blueprint.md`
+- `docs/programs/flagship-programs.md`
+- `docs/strategy/digital-platform.md`
+- `docs/strategy/launch-roadmap.md`
+
+Important implementation rule: legal formation, governance, banking, membership-composition controls, and tax filings take priority. Do not delay formation waiting for the full member portal.
+
 ## Cursor tasks after California accepts the Articles
 
 1. Insert the California entity number and filing date into the compliance checklist.
@@ -89,3 +109,7 @@ Do not weaken the membership-composition safeguards without documenting the lega
 - docs/formation/financial-controls.md
 - docs/formation/compliance-checklist.md
 - docs/formation/source-notes.md
+- docs/strategy/association-blueprint.md
+- docs/strategy/digital-platform.md
+- docs/strategy/launch-roadmap.md
+- docs/programs/flagship-programs.md
