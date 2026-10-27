@@ -17,7 +17,31 @@ Formation and governance repository for YAT-YAS Association, Inc., a planned Cal
 
 ## Formation documents
 
-See docs/formation/ for the filing draft, bylaws working draft, organizational action template, membership policy, financial controls, compliance checklist, and source notes.
+See `docs/formation/` for the filing draft, bylaws working draft, organizational action template, membership policy, financial controls, compliance checklist, and source notes.
+
+## Strategic direction
+
+YAT-YAS is being designed as a living professional, historical, family, and fellowship network for the full amphibious-vehicle lineage:
+
+**LVT → LVTP → AAV → ACV**
+
+Core operating pillars:
+
+- **Brotherhood** — membership, Crew Finder, events, chapters, Muster, Breakfast Clubs
+- **Legacy** — Legacy Registry, oral histories, Final Splash, Heritage Map, museum/restoration support
+- **Next Mission** — mentorship, transition, careers, education, trades, entrepreneurship
+- **Family** — spouse and descendant participation, family events, scholarships, emergency support
+
+Working public identity:
+
+**One Brotherhood. Every Generation.**
+
+See:
+
+- `docs/strategy/association-blueprint.md`
+- `docs/programs/flagship-programs.md`
+- `docs/strategy/digital-platform.md`
+- `docs/strategy/launch-roadmap.md`
 
 ## Important
 
