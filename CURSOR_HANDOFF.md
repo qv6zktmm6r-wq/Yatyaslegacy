@@ -113,3 +113,7 @@ Important implementation rule: legal formation, governance, banking, membership-
 - docs/strategy/digital-platform.md
 - docs/strategy/launch-roadmap.md
 - docs/programs/flagship-programs.md
+
+## Website update guardrail
+
+The current website design is approved by the user and must not be redesigned. Before modifying the site, read `WEBSITE_EXPANSION_TASK.md`. Preserve the existing logo, visual system, hero, layout language, and working functionality; integrate the new strategy and programs where they fit naturally.
