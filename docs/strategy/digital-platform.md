@@ -1,10 +1,10 @@
-# YATYASLegacy.com — Digital Platform Blueprint
+# YATYASAssociation.com — Digital Platform Blueprint
 
 Status: Product and information-architecture working draft. Build in phases; do not delay legal formation waiting for the full platform.
 
 ## Product principle
 
-YATYASLegacy.com should evolve from a public Association website into the digital headquarters and institutional memory of the Amtracker community.
+YATYASAssociation.com should evolve from a public Association website into the digital headquarters and institutional memory of the Amtracker community.
 
 The site should not be just a marketing page. Over time it should support membership, history, mentorship, events, chapters, memorials, and governance.
 
