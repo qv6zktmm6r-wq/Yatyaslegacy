@@ -19,23 +19,25 @@ Each voting member has one vote.
 
 Active-duty members may qualify through current service verification; a DD-214 is not required for a member who is still serving.
 
-## 3. Founding Charter 001–100
+## 3. The First Wave
 
-The first 100 qualifying members may receive a permanent charter number from 001 through 100.
+The first 100 approved qualifying members may receive a permanent First Wave number from FW-001 through FW-100.
 
 The designation:
 
 - is permanent
 - is non-transferable
+- may be reflected on a numbered coin, membership card, digital profile, First Wave Roll, and Association records
 - carries no ownership interest
 - does not create a superior governance vote
+- does not make the holder a Founder, director, or officer
 - does not entitle the holder to corporate assets
 
-Initial dues: $5/month or $50/year.
+First Wave entrance pricing and welcome-kit pricing are pending final Board approval.
 
 ## 4. Regular Voting Members
 
-Initial dues: $10/month or $100/year.
+Regular member dues are pending final Board approval before collection.
 
 ## 5. Legacy Members
 
