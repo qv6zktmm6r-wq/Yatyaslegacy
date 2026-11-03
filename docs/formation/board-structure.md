@@ -10,7 +10,7 @@ YAT-YAS Association, Inc. will operate with a **seven-member Board of Directors*
 
 | Seat | Director | Leadership Role | Status |
 | --- | --- | --- | --- |
-| 1 | Jorge A. Mejia Lozoya | Founder, President | Confirmed / consent to be retained in corporate records |
+| 1 | Jorge A. Mejia Lozoya | Founder, Founding President, Founder-Director | **Protected Founder Seat — no regular electoral term** |
 | 2 | Jose Guerra | Co-Founder, Vice President | Invitation/acceptance and director consent to be retained |
 | 3 | Fausto Cabrera | Director | Director consent to be retained |
 | 4 | Open | Director | To be appointed after incorporation |
@@ -38,10 +38,12 @@ These roles are separate from Board seats unless the person is separately appoin
 - Remote meetings: permitted when statutory participation requirements are satisfied
 - Action without a meeting: written/electronic consent as permitted by California law
 - Minimum meeting cadence: quarterly
-- Director term after organizational period: 2 years
+- Protected Founder-Director Seat: Jorge A. Mejia Lozoya serves for life while willing and legally qualified; the seat is not part of the regular election cycle
+- Other director terms after organizational period: 2 years
 - Initial terms may be staggered
 - No more than 49% of directors may be interested persons under California law; with seven directors, no more than 3 may be interested persons
-- Founder and Co-Founder designations do not create ownership, veto rights, superior votes, or lifetime Board seats
+- The Founder-Director seat is the one protected lifetime Board seat; the Co-Founder title does not automatically create a lifetime Board seat
+- Founder status does not create ownership, a superior vote, or a unilateral veto over ordinary Board action
 
 ## How the four open seats are filled
 
@@ -49,7 +51,7 @@ During the organizational period, the directors then in office may fill the four
 
 Before any person is recorded as a director, the Association should retain a signed consent/acceptance to serve.
 
-After the member-election system is established, expiring director seats will be elected by Voting Service/Veteran Members in good standing under a Board-approved election policy.
+After the member-election system is established, expiring director seats **other than the Protected Founder-Director Seat** will be elected by Voting Service/Veteran Members in good standing under a Board-approved election policy.
 
 ## Recommended mix for Seats 4–7
 
