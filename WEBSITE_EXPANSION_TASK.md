@@ -35,7 +35,7 @@ Legal/public organization:
 
 Official domain:
 
-**YATYASLegacy.com**
+**YATYASAssociation.com**
 
 Primary working positioning:
 
@@ -218,7 +218,7 @@ Title:
 
 Copy:
 
-> YATYASLegacy.com is being built to become more than a website — a secure member hub for profiles, events, mentorship, history, chapters, memorials, and Association governance.
+> YATYASAssociation.com is being built to become more than a website — a secure member hub for profiles, events, mentorship, history, chapters, memorials, and Association governance.
 
 Use "planned", "coming", or "being built" language for features not yet operational.
 
