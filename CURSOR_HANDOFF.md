@@ -17,19 +17,20 @@ Maintain a durable formation record for YAT-YAS Association, Inc. and prepare th
 - Address: 1253 Sunset Avenue, Perris, CA 92571
 - Incorporator: Jorge A. Mejia Lozoya
 - Agent for service of process: Jorge A. Mejia Lozoya at the same address
-- Initial board: 3 directors
+- Authorized Founding Board: 7 directors
   - Jorge A. Mejia Lozoya — Founder, President, Director
-  - Jose Guerra — Vice President, Director
+  - Jose Guerra — Co-Founder, Vice President, Director
   - Fausto Cabrera — Director
-- Planned board: 5 directors
-- Seats 4 and 5: elected by voting members
+  - Seats 4–7 — Open; may be filled during the organizational period after affirmative consent
+- Full-board quorum when all 7 seats are filled: 4 directors
+- While vacancies exist: majority of directors then in office, but never fewer than 2 and never fewer than one-fifth of the authorized Board
+- After the member-election system is established, expiring director seats are elected by voting members
 - Treasurer: Victoria Guerra — officer only, not a director unless separately elected
 - Events Director: Elvira Cabrera — program/officer role, not a director unless separately elected
 - Secretary: open
 - Second Events Director: open
 - Fiscal year: October 1 through September 30
 - Board meetings: quarterly
-- Director quorum: 3 of 5 once the full board is seated
 - Director terms after member-election system is active: 2 years, staggered where practical
 - No founder ownership of nonprofit assets
 - No founder veto over ordinary board governance
@@ -45,9 +46,9 @@ Maintain a durable formation record for YAT-YAS Association, Inc. and prepare th
 
 - Voting Service/Veteran Members: qualifying past or present U.S. Armed Forces members; one vote each
 - Active-duty members may qualify using current service verification; a DD-214 is not required for a currently serving member
-- Founding Charter 001–100: permanent, non-transferable designation for the first 100 qualifying members
-- Current Founding Charter dues: $5/month or $50/year
-- Current regular voting-member dues: $10/month or $100/year
+- The First Wave: permanent, non-transferable designation FW-001 through FW-100 for the first 100 approved qualifying members
+- First Wave pricing: pending final Board approval
+- Regular voting-member dues: pending final Board approval
 - Dues changes require at least 30 days notice
 - Legacy Members: qualifying family members, initially nonvoting
 - Supporters: nonmembers; no governance vote
@@ -58,7 +59,6 @@ Do not invent these values. Leave them visibly open until adopted:
 
 - Secretary
 - Second Events Director
-- Exact timing of the first member election for board seats 4 and 5, beyond the working target of the first annual cycle / roughly 12 months after formation
 - Any future chapter structure
 
 ## Legal/compliance caution
@@ -109,6 +109,7 @@ Important implementation rule: legal formation, governance, banking, membership-
 - docs/formation/financial-controls.md
 - docs/formation/compliance-checklist.md
 - docs/formation/source-notes.md
+- docs/formation/board-structure.md
 - docs/strategy/association-blueprint.md
 - docs/strategy/digital-platform.md
 - docs/strategy/launch-roadmap.md
