@@ -115,7 +115,7 @@ The seven directors seated during the initial organizational period shall be kno
 
 The currently identified initial directors are:
 
-1. **Jorge A. Mejia Lozoya** — Founder, President, Director
+1. **Jorge A. Mejia Lozoya** — Founder, Founding President, **Founder-Director (Protected Founder Seat)**
 2. **Jose Guerra** — Co-Founder, Vice President, Director
 3. **Fausto Cabrera** — Director
 4. **Open**
@@ -125,27 +125,37 @@ The currently identified initial directors are:
 
 The four open Founding Board seats may be filled by Board action after incorporation. No person shall be listed as a director until that person has affirmatively consented to serve.
 
-### Section 4.3 — Independence / Interested-Person Limit
+### Section 4.3 — Protected Founder-Director Seat
+
+Seat 1 is the **Protected Founder-Director Seat**. Jorge A. Mejia Lozoya, as Founder and Founding President, shall hold that seat by designation rather than by regular member election.
+
+The Founder-Director Seat has no fixed electoral term and is not subject to the ordinary two-year director cycle. Jorge A. Mejia Lozoya shall continue in that seat for his lifetime while willing and legally qualified to serve, unless he resigns or his service must end under applicable law.
+
+This protected seat does not create ownership of nonprofit assets, a superior vote, a unilateral veto over ordinary Board action, or immunity from fiduciary duties or any removal remedy that cannot lawfully be waived.
+
+The remaining six Board seats are governed by the ordinary appointment, election, term, vacancy, and removal provisions of these bylaws.
+
+### Section 4.4 — Independence / Interested-Person Limit
 
 At all times, the Board shall be composed so that no more than 49 percent of directors are “interested persons” within the meaning of California Corporations Code Section 5227.
 
 With seven directors, no more than three directors may be interested persons under that rule.
 
-### Section 4.4 — Director Terms
+### Section 4.5 — Director Terms
 
-After the initial organizational period, director terms are two years.
+Except for the Protected Founder-Director Seat described in Section 4.3, director terms after the initial organizational period are two years.
 
-The Board may assign initial staggered terms to create continuity. Directors may be reelected or reappointed unless a future bylaw amendment establishes term limits.
+The Board may assign initial staggered terms to create continuity. Directors other than the Founder-Director may be reelected or reappointed unless a future bylaw amendment establishes term limits.
 
-### Section 4.5 — Election and Appointment
+### Section 4.6 — Election and Appointment
 
 During the initial organizational period, vacancies in the seven-seat Founding Board may be filled by the directors then in office as permitted by California law.
 
-After the member-election system is established, directors whose terms expire shall be elected by Voting Service/Veteran Members in good standing, except that vacancies may be filled as permitted by law and these bylaws.
+After the member-election system is established, directors whose terms expire shall be elected by Voting Service/Veteran Members in good standing, except for the Protected Founder-Director Seat and except that vacancies may be filled as permitted by law and these bylaws.
 
 The Board shall adopt an election policy covering nominations, candidate eligibility, ballots, notice, tie procedures, and recordkeeping before the first member election.
 
-### Section 4.6 — Powers and Duties
+### Section 4.7 — Powers and Duties
 
 The Board has ultimate responsibility for the affairs of the corporation, including:
 
@@ -162,29 +172,29 @@ The Board has ultimate responsibility for the affairs of the corporation, includ
 
 Directors shall perform their duties in good faith, in the best interests of the corporation, and with the care required by California law.
 
-### Section 4.7 — Regular Meetings
+### Section 4.8 — Regular Meetings
 
 The Board shall meet at least quarterly.
 
 The Board may establish a recurring meeting schedule by resolution.
 
-### Section 4.8 — Special Meetings
+### Section 4.9 — Special Meetings
 
 Special meetings may be called by the President, Vice President, Secretary, or any two directors.
 
 Special-meeting notice shall comply with California law, including at least four days' notice by first-class mail or at least 48 hours' notice when delivered personally, by telephone, or by permitted electronic transmission, unless a lawful waiver applies.
 
-### Section 4.9 — Remote Participation
+### Section 4.10 — Remote Participation
 
 Directors may participate by telephone, video conference, or other permitted electronic means when all participating directors can communicate concurrently and participate in matters before the Board as required by California law.
 
-### Section 4.10 — Quorum
+### Section 4.11 — Quorum
 
 A majority of the directors then in office constitutes a quorum, **provided that the quorum shall never be fewer than two directors or fewer than one-fifth of the authorized number of directors, whichever is greater**.
 
 When all seven seats are filled, four directors constitute a quorum.
 
-### Section 4.11 — Board Voting
+### Section 4.12 — Board Voting
 
 Each director has one vote.
 
@@ -192,23 +202,23 @@ Unless a greater vote is required by law, the Articles, or these bylaws, an acti
 
 Directors may not vote by proxy.
 
-### Section 4.12 — Action Without a Meeting
+### Section 4.13 — Action Without a Meeting
 
 The Board may act without a meeting only through written or electronic consent in the manner permitted by California law. Any such consent shall be maintained with the Board minutes and corporate records.
 
-### Section 4.13 — Vacancies
+### Section 4.14 — Vacancies
 
 A vacancy may be filled by the remaining directors as permitted by California law and these bylaws.
 
 A director selected to fill a vacancy serves for the remainder of the applicable term unless law or a properly adopted election policy requires otherwise.
 
-### Section 4.14 — Resignation and Removal
+### Section 4.15 — Resignation and Removal
 
 A director may resign by written notice.
 
 Directors may be removed in the manner permitted by California law, the Articles, these bylaws, and any applicable member voting rights.
 
-### Section 4.15 — Committees
+### Section 4.16 — Committees
 
 The Board may create committees and advisory groups and may delegate authority to them to the extent permitted by law.
 
@@ -274,14 +284,15 @@ Officers serve at the pleasure of the Board and may be appointed or removed by t
 
 ### Section 6.3 — Effect of Designations
 
-Founder and Co-Founder designations are historical honors.
+Founder and Co-Founder designations are permanent historical honors.
 
-They do not create:
+The Founder designation is accompanied by the Protected Founder-Director Seat established in Article IV. The Co-Founder designation, by itself, does not create lifetime Board tenure.
+
+Neither designation creates:
 
 - ownership of nonprofit assets;
-- a unilateral veto;
+- a unilateral veto over ordinary Board action;
 - a superior Board vote;
-- lifetime Board tenure;
 - authority outside powers granted by the Board, these bylaws, or law; or
 - any right to corporate assets upon dissolution.
 
