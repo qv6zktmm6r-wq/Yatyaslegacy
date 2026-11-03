@@ -1,14 +1,26 @@
-# YAT-YAS Association, Inc. — Bylaws Working Draft
+# YAT-YAS Association, Inc. — Bylaws Final Draft for Adoption
 
-Status: Working draft for post-incorporation board adoption.
+Status: Final working draft for adoption by the initial Board after California incorporation is accepted. This document should be reviewed against the endorsed Articles and any final legal/tax advice before signature.
 
-## Article I — Name and Purpose
+## Article I — Name, Status, and Purpose
 
-The name of the corporation is YAT-YAS Association, Inc.
+### Section 1.1 — Name
+
+The name of the corporation is **YAT-YAS Association, Inc.**
+
+### Section 1.2 — Nonprofit Status
 
 The corporation is organized as a California nonprofit public benefit corporation and intends to operate consistently with Internal Revenue Code Section 501(c)(19) and California Revenue and Taxation Code Section 23701w.
 
-Its purpose is to preserve and perpetuate the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community, and to conduct veterans-support, historical, educational, patriotic, memorial, mentorship, scholarship, family-support, fellowship, social, recreational, museum, restoration, oral-history, reunion, and related programs.
+### Section 1.3 — Purpose
+
+The corporation exists to preserve and perpetuate the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community and to conduct veterans-support, historical, educational, patriotic, memorial, mentorship, scholarship, family-support, fellowship, social, recreational, museum, restoration, oral-history, reunion, deployment-support, homecoming, care-package, and related programs.
+
+The corporation may conduct any lawful activity consistent with its Articles, nonprofit public benefit status, and intended Section 501(c)(19) qualification.
+
+### Section 1.4 — No Ownership Interest
+
+No member, director, officer, Founder, Co-Founder, or other individual owns any portion of the corporation or its assets.
 
 ## Article II — Principal Office
 
@@ -17,159 +29,378 @@ The initial principal office is:
 1253 Sunset Avenue  
 Perris, California 92571
 
-The board may change the principal office by resolution.
+The Board may change the principal office by resolution.
 
 ## Article III — Members
 
 ### Section 3.1 — Voting Service/Veteran Members
 
-Voting Service/Veteran Members are qualifying past or present members of the U.S. Armed Forces who satisfy the membership criteria adopted by the board and the applicable Section 501(c)(19) membership-composition requirements.
+Voting Service/Veteran Members are qualifying past or present members of the U.S. Armed Forces who satisfy the membership criteria adopted by the Board and all applicable Section 501(c)(19) membership-composition requirements.
 
 Each Voting Service/Veteran Member in good standing has one vote.
 
-### Section 3.2 — Founding Charter Members
+Active-duty members may qualify through current service verification. A DD-214 is not required from a member who is still serving when other acceptable verification is available.
 
-The first 100 qualifying members may receive a permanent, non-transferable Founding Charter designation numbered 001 through 100.
+### Section 3.2 — The First Wave
 
-The designation does not create ownership rights, a superior governance vote, or any claim to corporate assets.
+The first 100 approved qualifying members may receive a permanent, non-transferable **First Wave** designation numbered **FW-001 through FW-100**.
 
-Current founding dues policy: $5 per month or $50 per year, subject to amendment under the dues policy.
+The First Wave designation:
+
+- is a permanent historical membership recognition;
+- may be reflected on a numbered coin, membership card, digital profile, First Wave Roll, and Association records;
+- does not create ownership rights;
+- does not create a superior governance vote;
+- does not automatically make the member a Founder, director, or officer; and
+- does not create any claim to corporate assets.
+
+First Wave pricing and welcome-kit pricing shall be established by Board resolution and are **not fixed in these bylaws**.
 
 ### Section 3.3 — Legacy Members
 
 Legacy Members are qualifying spouses, surviving spouses, ancestors, or lineal descendants permitted by applicable Section 501(c)(19) rules.
 
-Legacy Members are initially nonvoting unless the bylaws are later amended in a manner consistent with federal and state law.
+Legacy Members are initially nonvoting unless these bylaws are later amended in a manner consistent with federal and state law.
 
 ### Section 3.4 — Supporters
 
-Supporters may participate in activities or support the organization but are not corporate voting members unless separately admitted into a voting membership class.
+Supporters may donate, volunteer, attend eligible events, sponsor programs, or otherwise support the mission but are not corporate voting members unless separately admitted to a voting membership class.
 
 ### Section 3.5 — Good Standing
 
-A member is in good standing when the member remains eligible, has satisfied applicable dues or an approved waiver, and is not under suspension.
+A member is in good standing when the member:
+
+- remains eligible for the applicable membership class;
+- has satisfied applicable dues or an approved waiver;
+- complies with the Articles, bylaws, and adopted policies; and
+- is not under suspension.
 
 ### Section 3.6 — Membership Composition
 
-The corporation shall maintain records sufficient to monitor all membership-composition tests applicable to Section 501(c)(19), including the percentage of past or present Armed Forces members, permitted family/cadet categories, and any war-veteran percentage relevant to federal recognition or charitable-contribution treatment.
+The corporation shall maintain records sufficient to monitor all membership-composition tests applicable to Section 501(c)(19), including:
 
-No membership policy may knowingly cause the corporation to fail an applicable tax-exemption requirement.
+- total legal membership;
+- past or present Armed Forces members;
+- permitted family/cadet categories;
+- war-veteran counts where relevant; and
+- any percentage relevant to charitable-contribution deductibility.
+
+No membership policy or admission decision may knowingly cause the corporation to fail an applicable tax-exemption requirement.
+
+### Section 3.7 — Suspension or Termination
+
+Membership may be suspended or terminated for loss of eligibility, nonpayment after applicable notice, material violation of governing documents, fraud, or serious misconduct, subject to a fair and reasonable procedure consistent with California law.
+
+### Section 3.8 — Annual Member Meeting
+
+The corporation shall hold an annual meeting of voting members when required for director elections or other member business. The date, time, place, and remote-participation method, if any, shall be set by the Board.
+
+Notice shall be provided in the manner and within the time required by California law.
+
+### Section 3.9 — Member Quorum and Voting
+
+One-third of the voting power constitutes a quorum at a meeting of members unless a different quorum is later lawfully adopted.
+
+Unless a greater vote is required by law, the Articles, or these bylaws, action by the members requires the affirmative vote of a majority of the voting power represented and voting at a meeting at which a quorum is present.
 
 ## Article IV — Board of Directors
 
-### Section 4.1 — Size
+### Section 4.1 — Authorized Size
 
-The authorized board size is five directors.
+The authorized Board consists of **seven directors**.
 
-### Section 4.2 — Initial Directors
+### Section 4.2 — Founding Board
 
-The initial directors are:
+The seven directors seated during the initial organizational period shall be known historically as the **Founding Board of Directors**.
 
-- Jorge A. Mejia Lozoya
-- Jose Guerra
-- Fausto Cabrera
+The currently identified initial directors are:
 
-### Section 4.3 — Additional Directors
+1. **Jorge A. Mejia Lozoya** — Founder, President, Director
+2. **Jose Guerra** — Co-Founder, Vice President, Director
+3. **Fausto Cabrera** — Director
+4. **Open**
+5. **Open**
+6. **Open**
+7. **Open**
 
-Seats four and five shall be filled by election of voting members after the member-election system is established.
+The four open Founding Board seats may be filled by Board action after incorporation. No person shall be listed as a director until that person has affirmatively consented to serve.
 
-### Section 4.4 — Terms
+### Section 4.3 — Independence / Interested-Person Limit
 
-After the member-election system is active, director terms are two years. Terms should be staggered where practical.
+At all times, the Board shall be composed so that no more than 49 percent of directors are “interested persons” within the meaning of California Corporations Code Section 5227.
 
-### Section 4.5 — Meetings
+With seven directors, no more than three directors may be interested persons under that rule.
 
-The board shall meet at least quarterly.
+### Section 4.4 — Director Terms
 
-### Section 4.6 — Quorum
+After the initial organizational period, director terms are two years.
 
-Once all five seats are filled, three directors constitute a quorum.
+The Board may assign initial staggered terms to create continuity. Directors may be reelected or reappointed unless a future bylaw amendment establishes term limits.
 
-Before all five seats are filled, a majority of directors then in office constitutes a quorum unless California law requires otherwise.
+### Section 4.5 — Election and Appointment
 
-### Section 4.7 — Voting
+During the initial organizational period, vacancies in the seven-seat Founding Board may be filled by the directors then in office as permitted by California law.
 
-Each director has one vote. Unless a greater vote is required by law or these bylaws, an action approved by a majority of directors present at a meeting with quorum is an act of the board.
+After the member-election system is established, directors whose terms expire shall be elected by Voting Service/Veteran Members in good standing, except that vacancies may be filled as permitted by law and these bylaws.
 
-### Section 4.8 — Vacancies
+The Board shall adopt an election policy covering nominations, candidate eligibility, ballots, notice, tie procedures, and recordkeeping before the first member election.
 
-A board vacancy may be filled as permitted by California law and these bylaws. A vacancy in an elected member seat should, when practical, be filled through the member-election process.
+### Section 4.6 — Powers and Duties
 
-### Section 4.9 — Removal
+The Board has ultimate responsibility for the affairs of the corporation, including:
 
-Directors may be removed as permitted by California law and these bylaws.
+- mission and strategy;
+- budgets and financial oversight;
+- policies and internal controls;
+- officer appointment and oversight;
+- tax and regulatory compliance;
+- membership rules;
+- programs and chapters;
+- contracts and material commitments;
+- safeguarding corporate assets; and
+- long-term institutional continuity.
 
-## Article V — Officers
+Directors shall perform their duties in good faith, in the best interests of the corporation, and with the care required by California law.
 
-The corporation shall have a President, Secretary, and Treasurer/CFO or equivalent officers required by California law, and may have a Vice President and other officers.
+### Section 4.7 — Regular Meetings
 
-Initial working assignments:
+The Board shall meet at least quarterly.
 
-- Jorge A. Mejia Lozoya — Founder, President, Director
-- Jose Guerra — Vice President, Director
-- Victoria Guerra — Treasurer
-- Secretary — Open
-- Elvira Cabrera — Events Director
-- Second Events Director — Open
-- Fausto Cabrera — Director
+The Board may establish a recurring meeting schedule by resolution.
 
-Officer status does not by itself confer a board seat.
+### Section 4.8 — Special Meetings
 
-## Article VI — Founder Designation
+Special meetings may be called by the President, Vice President, Secretary, or any two directors.
 
-Jorge A. Mejia Lozoya is recognized as Founder as a permanent historical designation.
+Special-meeting notice shall comply with California law, including at least four days' notice by first-class mail or at least 48 hours' notice when delivered personally, by telephone, or by permitted electronic transmission, unless a lawful waiver applies.
 
-The Founder designation does not create ownership of nonprofit assets, a veto power, a superior director vote, or authority outside powers otherwise granted by the board, these bylaws, or law.
+### Section 4.9 — Remote Participation
 
-## Article VII — Compensation and Conflicts
+Directors may participate by telephone, video conference, or other permitted electronic means when all participating directors can communicate concurrently and participate in matters before the Board as required by California law.
 
-Directors and officers may receive reasonable compensation for bona fide services actually rendered to the corporation, and may receive reimbursement for properly documented expenses, if approved in accordance with the conflict-of-interest and compensation rules adopted by the board.
+### Section 4.10 — Quorum
 
-A director with a material financial interest in a proposed transaction must disclose the interest and abstain from deliberation and voting to the extent required by law and policy.
+A majority of the directors then in office constitutes a quorum, **provided that the quorum shall never be fewer than two directors or fewer than one-fifth of the authorized number of directors, whichever is greater**.
 
-The corporation shall keep the number of interested persons below the level prohibited for a California nonprofit public benefit corporation.
+When all seven seats are filled, four directors constitute a quorum.
+
+### Section 4.11 — Board Voting
+
+Each director has one vote.
+
+Unless a greater vote is required by law, the Articles, or these bylaws, an action approved by a majority of directors present at a duly held meeting with quorum is an act of the Board.
+
+Directors may not vote by proxy.
+
+### Section 4.12 — Action Without a Meeting
+
+The Board may act without a meeting only through written or electronic consent in the manner permitted by California law. Any such consent shall be maintained with the Board minutes and corporate records.
+
+### Section 4.13 — Vacancies
+
+A vacancy may be filled by the remaining directors as permitted by California law and these bylaws.
+
+A director selected to fill a vacancy serves for the remainder of the applicable term unless law or a properly adopted election policy requires otherwise.
+
+### Section 4.14 — Resignation and Removal
+
+A director may resign by written notice.
+
+Directors may be removed in the manner permitted by California law, the Articles, these bylaws, and any applicable member voting rights.
+
+### Section 4.15 — Committees
+
+The Board may create committees and advisory groups and may delegate authority to them to the extent permitted by law.
+
+Any committee exercising authority of the Board shall be composed and governed as required by California law.
+
+## Article V — Officers and Program Leadership
+
+### Section 5.1 — Required Officers
+
+The corporation shall have a President or Chair, a Secretary, and a Treasurer/Chief Financial Officer or equivalent officers as required by California law.
+
+The corporation may also have a Vice President and other officers or program directors.
+
+### Section 5.2 — Initial Leadership
+
+Initial working assignments are:
+
+- **Jorge A. Mejia Lozoya — Founder, President, Director**
+- **Jose Guerra — Co-Founder, Vice President, Director**
+- **Victoria Guerra — Treasurer**
+- **Secretary — Open**
+- **Elvira Cabrera — Events Director**
+- **Second Events Director — Open**
+- **Fausto Cabrera — Director**
+
+Officer or program-director status does not by itself confer a Board seat.
+
+### Section 5.3 — President
+
+The President shall provide executive leadership, preside at Board meetings unless the Board designates another chair, carry out Board-approved actions, and perform other duties assigned by the Board.
+
+### Section 5.4 — Vice President
+
+The Vice President shall support the President, perform duties delegated by the Board or President, and serve in the President's place when the President is unavailable as authorized by the Board.
+
+### Section 5.5 — Secretary
+
+The Secretary shall ensure maintenance of minutes, resolutions, governing documents, notices, membership-governance records, and other corporate records required by law.
+
+### Section 5.6 — Treasurer
+
+The Treasurer shall oversee financial reporting, budget tracking, banking controls, and presentation of periodic financial information to the Board.
+
+### Section 5.7 — Events Directors and Other Program Leaders
+
+Events Directors and other program leaders may be appointed by the Board or authorized officers and may coordinate events, deployment send-offs, homecomings, care-package initiatives, the YAT-YAS Muster, family activities, and other approved programs.
+
+Program leadership does not create authority to bind the corporation financially unless such authority has been expressly delegated.
+
+### Section 5.8 — Officer Appointment and Removal
+
+Officers serve at the pleasure of the Board and may be appointed or removed by the Board subject to California law and any contractual rights.
+
+## Article VI — Founder and Co-Founder Designations
+
+### Section 6.1 — Founder
+
+**Jorge A. Mejia Lozoya** is recognized as **Founder** as a permanent historical designation.
+
+### Section 6.2 — Co-Founder
+
+**Jose Guerra** is recognized as **Co-Founder** as a permanent historical designation.
+
+### Section 6.3 — Effect of Designations
+
+Founder and Co-Founder designations are historical honors.
+
+They do not create:
+
+- ownership of nonprofit assets;
+- a unilateral veto;
+- a superior Board vote;
+- lifetime Board tenure;
+- authority outside powers granted by the Board, these bylaws, or law; or
+- any right to corporate assets upon dissolution.
+
+## Article VII — Compensation, Conflicts, and Reimbursements
+
+### Section 7.1 — Compensation
+
+Directors and officers may receive reasonable compensation for bona fide services actually rendered to the corporation if approved in accordance with applicable law and the corporation's conflict-of-interest and compensation policies.
+
+### Section 7.2 — Conflicts
+
+A director or officer with a material financial interest in a proposed transaction must disclose the interest and shall not participate in approval except as permitted by law.
+
+### Section 7.3 — Interested Persons
+
+The corporation shall maintain Board composition consistent with California's interested-person limitation.
+
+### Section 7.4 — Reimbursements
+
+Directors, officers, volunteers, and other authorized persons may receive reimbursement for properly documented legitimate corporate expenses under an accountable reimbursement process.
+
+A person shall not approve their own reimbursement.
 
 ## Article VIII — Financial Administration
 
-The board shall adopt financial controls covering:
+### Section 8.1 — Financial Controls
 
-- bank authority
-- reimbursements
-- documentation
-- budget approval
-- approval of major expenditures
-- related-party transactions
-- record retention
-- periodic financial reporting
+The Board shall maintain financial controls covering:
 
-Routine budgeted expenditures below $1,000 may be approved by an authorized officer acting within delegated authority. Expenditures from $1,000 through $5,000 require approval by two authorized persons. Expenditures over $5,000 require full board approval. Any major unbudgeted commitment requires full board approval regardless of amount. These thresholds become effective when the bylaws and related financial controls are formally adopted by the board.
+- bank authority;
+- reimbursements;
+- documentation;
+- budget approval;
+- major expenditures;
+- contracts;
+- related-party transactions;
+- restricted funds;
+- record retention; and
+- periodic financial reporting.
+
+### Section 8.2 — Spending Approval Thresholds
+
+Routine budgeted expenditures below **$1,000** may be approved by an authorized officer acting within delegated authority.
+
+Expenditures from **$1,000 through $5,000** require approval by two authorized persons.
+
+Expenditures **over $5,000** require full Board approval.
+
+Any major unbudgeted commitment requires full Board approval regardless of amount.
+
+### Section 8.3 — Annual Budget
+
+The Board shall approve an annual operating budget and review performance against budget periodically.
+
+### Section 8.4 — Corporate Funds
+
+Corporate funds shall be held in accounts titled in the corporation's legal name and shall not be commingled with personal funds.
 
 ## Article IX — Fiscal Year
 
-The fiscal year is October 1 through September 30 unless changed by board resolution.
+The fiscal year is October 1 through September 30 unless changed by Board resolution.
 
-## Article X — Records and Minutes
+## Article X — Records, Privacy, and Transparency
 
-The corporation shall maintain complete and accurate books, accounting records, minutes, governing documents, membership records, and tax/compliance records as required by law.
+### Section 10.1 — Corporate Records
 
-Sensitive military and identity documents should be stored securely and should not be committed to the public GitHub repository.
+The corporation shall maintain complete and accurate books, accounting records, minutes, resolutions, governing documents, membership records, and tax/compliance records as required by law.
+
+### Section 10.2 — Sensitive Records
+
+Sensitive military and identity documents must be stored securely and shall not be committed to a public GitHub repository.
+
+The corporation should retain only the minimum verification information reasonably needed for membership and compliance.
+
+### Section 10.3 — Member-Controlled Information
+
+Member profiles, historical submissions, and memorial information shall be handled under privacy and publication policies approved by the Board.
 
 ## Article XI — Programs and Initiatives
 
-The Board may establish, modify, combine, suspend, or discontinue programs and initiatives consistent with the corporation's exempt purposes, including historical preservation, memorial, fellowship, mentorship, education, family support, museum and restoration support, member services, digital archives, events, chapters, and other mission-aligned activities.
+The Board may establish, modify, combine, suspend, or discontinue programs and initiatives consistent with the corporation's exempt purposes.
+
+Programs may include, without limitation:
+
+- Crew Finder and member reconnection;
+- YAT-YAS Legacy Registry;
+- Final Splash memorial;
+- oral histories and historical archives;
+- Heritage Map;
+- Track to Next Mission mentorship;
+- scholarships and trade-school awards;
+- deployment care packages;
+- deployment send-offs and homecomings;
+- family-support and memorial-family support;
+- the YAT-YAS Muster;
+- Breakfast Clubs and chapters;
+- museum and restoration support;
+- volunteer activities;
+- emergency assistance programs when properly governed; and
+- other mission-aligned member, family, historical, educational, and veterans-support programs.
 
 Program names, branding, operating procedures, eligibility standards, budgets, and technology features may be established by Board resolution or Board-approved policy and need not be embedded in these bylaws unless otherwise required by law.
 
 No program may be operated in a manner that causes the corporation to violate its intended Section 501(c)(19) qualification, nonprofit public benefit status, membership-composition requirements, or restrictions on private inurement.
 
-## Article XII — Amendments
+## Article XII — Indemnification and Insurance
 
-These bylaws may be amended by the board and, where required by law or by rights reserved to voting members, by the voting members.
+To the fullest extent permitted by California law, the corporation may indemnify directors, officers, employees, and agents and may purchase appropriate liability, directors-and-officers, event, or other insurance as authorized by the Board.
+
+## Article XIII — Amendments
+
+These bylaws may be amended by the Board except where California law, the Articles, or rights reserved to voting members require member approval.
 
 No amendment may authorize conduct inconsistent with the corporation's nonprofit public benefit status or intended Section 501(c)(19) qualification.
 
 ## Adoption
 
-Adopted by the board of directors on: ____________________
+Adopted by the Board of Directors on: ____________________
 
 Secretary signature: ______________________________
+
+President signature: ______________________________
