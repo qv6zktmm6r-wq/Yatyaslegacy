@@ -97,7 +97,7 @@ YAT-YAS should not separate the LVT, LVTP, AAV, and ACV generations. A Marine fr
 
 ### Digital-first, not social-media dependent
 
-A Facebook group can support the community, but it should not be the Association's institutional memory. YATYASLegacy.com should become the permanent system of record for member-controlled profiles, history, programs, events, and governance.
+A Facebook group can support the community, but it should not be the Association's institutional memory. YATYASAssociation.com should become the permanent system of record for member-controlled profiles, history, programs, events, and governance.
 
 ### Useful while still serving
 
@@ -160,7 +160,7 @@ Primary organization:
 
 Official domain:
 
-**YATYASLegacy.com**
+**YATYASAssociation.com**
 
 Working identity lines:
 
