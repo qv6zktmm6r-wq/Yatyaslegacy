@@ -71,7 +71,7 @@ Do not weaken the membership-composition safeguards without documenting the lega
 
 ## Post-formation product and program direction
 
-Do not treat this repository as only a formation binder. After legal formation, YATYASLegacy.com should become the Association's digital headquarters and institutional memory.
+Do not treat this repository as only a formation binder. After legal formation, YATYASAssociation.com should become the Association's digital headquarters and institutional memory.
 
 Four pillars:
 
