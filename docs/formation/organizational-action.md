@@ -10,7 +10,7 @@ Location / remote method: ____________________
 
 Directors present:
 
-- Jorge A. Mejia Lozoya
+- Jorge A. Mejia Lozoya — Protected Founder-Director Seat
 - Jose Guerra
 - Fausto Cabrera
 
@@ -41,7 +41,7 @@ RESOLVED, that the following officers are appointed to serve until their success
 
 ## 4. Founder Designation
 
-RESOLVED, that Jorge A. Mejia Lozoya is recognized as Founder and Jose Guerra is recognized as Co-Founder as permanent historical designations, without ownership rights in nonprofit assets and without a unilateral veto, superior board vote, or lifetime board tenure.
+RESOLVED, that Jorge A. Mejia Lozoya is recognized as Founder and Founding President and Jose Guerra is recognized as Co-Founder. Jorge A. Mejia Lozoya shall occupy the Protected Founder-Director Seat for his lifetime while willing and legally qualified to serve. The protected seat creates no ownership rights in nonprofit assets, superior board vote, or unilateral veto over ordinary Board action.
 
 ## 5. Founding Board
 
@@ -57,7 +57,7 @@ Seats four through seven are initially open and may be filled by the directors t
 
 Once all seven seats are filled, four directors constitute a quorum. While vacancies exist, quorum shall be determined under the bylaws.
 
-After the member-election system is established, expiring director seats shall be elected by Voting Service/Veteran Members in good standing under a Board-approved election policy.
+After the member-election system is established, expiring director seats other than the Protected Founder-Director Seat shall be elected by Voting Service/Veteran Members in good standing under a Board-approved election policy.
 
 ## 6. Fiscal Year
 
