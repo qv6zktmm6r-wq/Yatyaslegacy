@@ -26,7 +26,7 @@ Exit condition: YAT-YAS can operate through an approved governance and financial
 Objective: create a credible public presence and begin the Founding 100.
 
 - finalize corporate logo and brand system
-- launch YATYASLegacy.com public site
+- launch YATYASAssociation.com public site
 - publish mission and four pillars
 - publish independent/non-DoD disclaimer
 - create Founding 100 page
