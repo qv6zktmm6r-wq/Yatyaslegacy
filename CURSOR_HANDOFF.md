@@ -18,23 +18,24 @@ Maintain a durable formation record for YAT-YAS Association, Inc. and prepare th
 - Incorporator: Jorge A. Mejia Lozoya
 - Agent for service of process: Jorge A. Mejia Lozoya at the same address
 - Authorized Founding Board: 7 directors
-  - Jorge A. Mejia Lozoya — Founder, President, Director
+  - Jorge A. Mejia Lozoya — Founder, Founding President, **Protected Founder-Director Seat**
   - Jose Guerra — Co-Founder, Vice President, Director
   - Fausto Cabrera — Director
   - Seats 4–7 — Open; may be filled during the organizational period after affirmative consent
 - Full-board quorum when all 7 seats are filled: 4 directors
 - While vacancies exist: majority of directors then in office, but never fewer than 2 and never fewer than one-fifth of the authorized Board
-- After the member-election system is established, expiring director seats are elected by voting members
+- Jorge's Protected Founder-Director Seat has no regular electoral term; he serves for life while willing and legally qualified, subject to nonwaivable legal removal remedies
+- After the member-election system is established, expiring director seats other than the Protected Founder-Director Seat are elected by voting members
 - Treasurer: Victoria Guerra — officer only, not a director unless separately elected
 - Events Director: Elvira Cabrera — program/officer role, not a director unless separately elected
 - Secretary: open
 - Second Events Director: open
 - Fiscal year: October 1 through September 30
 - Board meetings: quarterly
-- Director terms after member-election system is active: 2 years, staggered where practical
+- Director terms after member-election system is active: 2 years for Seats 2–7, staggered where practical; the Protected Founder-Director Seat is excluded
 - No founder ownership of nonprofit assets
 - No founder veto over ordinary board governance
-- Founder designation remains permanent as a historical designation
+- Founder and Founding President designations remain permanent historical designations; the Founder also retains the Protected Founder-Director Seat
 - Compensation: only for bona fide services or documented reimbursements; reasonable, documented, and approved by disinterested directors
 - Interested directors must remain below 49% of the board
 - Routine budgeted expenditures below $1,000 may be approved by an authorized officer within delegated authority
