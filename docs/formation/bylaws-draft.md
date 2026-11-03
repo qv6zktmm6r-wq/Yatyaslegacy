@@ -116,7 +116,7 @@ The seven directors seated during the initial organizational period shall be kno
 The currently identified initial directors are:
 
 1. **Jorge A. Mejia Lozoya** — Founder, Founding President, **Founder-Director (Protected Founder Seat)**
-2. **Jose Guerra** — Co-Founder, Vice President, Director
+2. **Jose Guerra** — Co-Founder, Vice President, **Co-Founder-Director (Protected Co-Founder Seat)**
 3. **Fausto Cabrera** — Director
 4. **Open**
 5. **Open**
@@ -125,15 +125,19 @@ The currently identified initial directors are:
 
 The four open Founding Board seats may be filled by Board action after incorporation. No person shall be listed as a director until that person has affirmatively consented to serve.
 
-### Section 4.3 — Protected Founder-Director Seat
+### Section 4.3 — Protected Founder and Co-Founder Director Seats
 
 Seat 1 is the **Protected Founder-Director Seat**. Jorge A. Mejia Lozoya, as Founder and Founding President, shall hold that seat by designation rather than by regular member election.
 
-The Founder-Director Seat has no fixed electoral term and is not subject to the ordinary two-year director cycle. Jorge A. Mejia Lozoya shall continue in that seat for his lifetime while willing and legally qualified to serve, unless he resigns or his service must end under applicable law.
+Seat 2 is the **Protected Co-Founder-Director Seat**. Jose Guerra, as Co-Founder and founding Vice President, shall hold that seat by designation rather than by regular member election.
 
-This protected seat does not create ownership of nonprofit assets, a superior vote, a unilateral veto over ordinary Board action, or immunity from fiduciary duties or any removal remedy that cannot lawfully be waived.
+Neither protected seat has a fixed electoral term and neither is subject to the ordinary two-year director cycle. Jorge A. Mejia Lozoya and Jose Guerra shall each continue in their respective protected seats for life while willing and legally qualified to serve, unless the individual resigns or that individual's service must end under applicable law.
 
-The remaining six Board seats are governed by the ordinary appointment, election, term, vacancy, and removal provisions of these bylaws.
+The protected seats do not create ownership of nonprofit assets, superior votes, unilateral vetoes over ordinary Board action, immunity from fiduciary duties, or immunity from any removal remedy that cannot lawfully be waived.
+
+A protected seat is personal to the named Founder or Co-Founder. If Jorge A. Mejia Lozoya or Jose Guerra permanently ceases to serve, that person's protected designation ends and the resulting vacancy becomes a regular Board seat unless the bylaws are lawfully amended.
+
+The remaining five Board seats are governed by the ordinary appointment, election, term, vacancy, and removal provisions of these bylaws.
 
 ### Section 4.4 — Independence / Interested-Person Limit
 
@@ -143,15 +147,15 @@ With seven directors, no more than three directors may be interested persons und
 
 ### Section 4.5 — Director Terms
 
-Except for the Protected Founder-Director Seat described in Section 4.3, director terms after the initial organizational period are two years.
+Except for the Protected Founder-Director Seat and Protected Co-Founder-Director Seat described in Section 4.3, director terms after the initial organizational period are two years.
 
-The Board may assign initial staggered terms to create continuity. Directors other than the Founder-Director may be reelected or reappointed unless a future bylaw amendment establishes term limits.
+The Board may assign initial staggered terms to create continuity. Directors other than the protected Founder-Director and protected Co-Founder-Director may be reelected or reappointed unless a future bylaw amendment establishes term limits.
 
 ### Section 4.6 — Election and Appointment
 
 During the initial organizational period, vacancies in the seven-seat Founding Board may be filled by the directors then in office as permitted by California law.
 
-After the member-election system is established, directors whose terms expire shall be elected by Voting Service/Veteran Members in good standing, except for the Protected Founder-Director Seat and except that vacancies may be filled as permitted by law and these bylaws.
+After the member-election system is established, directors whose terms expire shall be elected by Voting Service/Veteran Members in good standing, except for the Protected Founder-Director Seat and Protected Co-Founder-Director Seat and except that vacancies may be filled as permitted by law and these bylaws.
 
 The Board shall adopt an election policy covering nominations, candidate eligibility, ballots, notice, tie procedures, and recordkeeping before the first member election.
 
@@ -286,7 +290,7 @@ Officers serve at the pleasure of the Board and may be appointed or removed by t
 
 Founder and Co-Founder designations are permanent historical honors.
 
-The Founder designation is accompanied by the Protected Founder-Director Seat established in Article IV. The Co-Founder designation, by itself, does not create lifetime Board tenure.
+The Founder designation is accompanied by the Protected Founder-Director Seat established in Article IV. The Co-Founder designation is accompanied by the Protected Co-Founder-Director Seat established in Article IV.
 
 Neither designation creates:
 
