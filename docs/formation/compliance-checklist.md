@@ -21,7 +21,8 @@ Status as of October 25, 2026.
 
 - [ ] Hold organizational board meeting or execute permitted written action
 - [ ] Adopt bylaws
-- [ ] Confirm initial directors
+- [ ] Confirm initial directors and retain signed consents to serve
+- [ ] Fill Founding Board seats 4–7 when ready
 - [ ] Appoint President
 - [ ] Appoint Vice President
 - [ ] Appoint Treasurer
@@ -30,7 +31,7 @@ Status as of October 25, 2026.
 - [ ] Fill second Events Director role when ready
 - [ ] Confirm fiscal year: October 1–September 30
 - [ ] Approve membership policy
-- [ ] Approve initial dues
+- [ ] Approve First Wave entrance/welcome-kit pricing and regular member dues
 - [ ] Approve conflict/compensation controls
 - [ ] Formally adopt spending controls: routine budgeted expenditures below $1,000 by an authorized officer; two-person approval at $1,000–$5,000; full board approval over $5,000 and for major unbudgeted commitments
 - [ ] Approve bank resolution
@@ -76,7 +77,7 @@ Status as of October 25, 2026.
 - [ ] Track qualifying family/cadet categories
 - [ ] Track war-veteran count for conservative compliance
 - [ ] Keep sensitive military documents out of GitHub
-- [ ] Establish member-election process for board seats 4 and 5
+- [ ] Establish member-election process for expiring Board seats after the organizational period
 
 ## Phase 8 — Recurring Governance
 

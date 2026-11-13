@@ -10,8 +10,8 @@ Location / remote method: ____________________
 
 Directors present:
 
-- Jorge A. Mejia Lozoya
-- Jose Guerra
+- Jorge A. Mejia Lozoya — Protected Founder-Director Seat
+- Jose Guerra — Protected Co-Founder-Director Seat
 - Fausto Cabrera
 
 Quorum: Yes / No
@@ -41,17 +41,23 @@ RESOLVED, that the following officers are appointed to serve until their success
 
 ## 4. Founder Designation
 
-RESOLVED, that Jorge A. Mejia Lozoya is recognized as Founder as a permanent historical designation, without ownership rights in nonprofit assets and without a unilateral veto or superior board vote.
+RESOLVED, that Jorge A. Mejia Lozoya is recognized as Founder and Founding President and Jose Guerra is recognized as Co-Founder and founding Vice President. Jorge A. Mejia Lozoya shall occupy the Protected Founder-Director Seat and Jose Guerra shall occupy the Protected Co-Founder-Director Seat, each for life while willing and legally qualified to serve. Neither protected seat creates ownership rights in nonprofit assets, a superior board vote, or a unilateral veto over ordinary Board action.
 
-## 5. Initial Board
+## 5. Founding Board
 
-RESOLVED, that the corporation records its three initial directors as:
+RESOLVED, that the corporation authorizes a seven-seat Founding Board of Directors.
+
+The currently identified initial directors are:
 
 - Jorge A. Mejia Lozoya
 - Jose Guerra
 - Fausto Cabrera
 
-The board further confirms the intended five-director structure and directs that seats four and five be filled through the voting-member election system once established.
+Seats four through seven are initially open and may be filled by the directors then in office as permitted by California law, after each appointee affirmatively consents to serve.
+
+Once all seven seats are filled, four directors constitute a quorum. While vacancies exist, quorum shall be determined under the bylaws.
+
+After the member-election system is established, expiring director seats other than the Protected Founder-Director Seat and Protected Co-Founder-Director Seat shall be elected by Voting Service/Veteran Members in good standing under a Board-approved election policy.
 
 ## 6. Fiscal Year
 
@@ -77,12 +83,13 @@ The bank resolution may be supplemented with the financial-controls policy.
 
 RESOLVED, that the initial membership structure is approved in substantially the form contained in the membership policy, subject to compliance with Section 501(c)(19) membership-composition requirements.
 
-## 11. Dues
+## 11. Membership Pricing
 
-RESOLVED, that the following initial dues are approved:
+RESOLVED, that the first 100 approved qualifying members may receive the permanent **First Wave** designation numbered FW-001 through FW-100.
 
-- Founding Charter Members 001–100: $5/month or $50/year
-- Regular Voting Service/Veteran Members: $10/month or $100/year
+First Wave entrance pricing and welcome-kit pricing remain pending final Board approval.
+
+Regular Voting Service/Veteran Member dues also remain subject to final Board approval before collection.
 
 Any future dues change shall follow the notice requirements in the membership policy.
 
