@@ -119,10 +119,79 @@
     if (!form) return;
     var status = $("#crew-finder-status") || $("#crew-ai-status");
     var result = $("#crew-ai-result");
-    var submitBtn = form.querySelector('[type="submit"]');
+    var submitBtn = form.querySelector('[type="submit"]') || $("#crew-submit-btn");
+    var intentGroup = document.querySelector("[data-crew-intent]");
+    var heading = $("#crew-form-heading");
+    var lede = $("#crew-form-lede");
+    var storyLabel = $("#crew-story-label");
+    var storyField = $("#crew-story");
+    var intentValue = $("#crew-intent-value");
+    var currentIntent = "find";
+
+    var copy = {
+      find: {
+        heading: "Who are you looking for?",
+        lede:
+          'Example: <em>“Looking for 3d Tracks guys from 2010–2014 on AAVs at Pendleton — especially motor-T shop.”</em>',
+        storyLabel: "Your story",
+        placeholder:
+          "Unit, years, platform, station, deployment, who you hope to find…",
+        button: "Find my crew",
+        sending: "Sending your crew request to the Board…",
+        thanks:
+          ". Your crew request was sent to the Board. We’ll follow up privately.",
+        subject: "YAT-YAS Crew Finder match",
+        shortErr: "Tell us a bit more — unit, years, or who you’re looking for.",
+      },
+      list: {
+        heading: "Add yourself to Crew Finder",
+        lede:
+          "Tell us where you served so the Board can place you privately — others looking for that crew can be matched with your consent.",
+        storyLabel: "About your service",
+        placeholder:
+          "Unit, years, platform, station, deployment, billet — how others might remember you…",
+        button: "Add me to Crew Finder",
+        sending: "Adding you to Crew Finder for the Board…",
+        thanks:
+          ". You’re listed for Crew Finder matching. The Board will keep it private and only reconnect with consent.",
+        subject: "YAT-YAS Crew Finder listing",
+        shortErr: "Tell us a bit more — unit, years, platform, or where you served.",
+      },
+    };
+
+    function applyIntent(intent) {
+      currentIntent = intent === "list" ? "list" : "find";
+      var c = copy[currentIntent];
+      if (intentValue) intentValue.value = currentIntent;
+      if (heading) heading.textContent = c.heading;
+      if (lede) lede.innerHTML = c.lede;
+      if (storyLabel) storyLabel.textContent = c.storyLabel;
+      if (storyField) storyField.placeholder = c.placeholder;
+      if (submitBtn) submitBtn.textContent = c.button;
+      if (intentGroup) {
+        intentGroup.querySelectorAll("[data-intent]").forEach(function (btn) {
+          var on = btn.getAttribute("data-intent") === currentIntent;
+          btn.classList.toggle("is-active", on);
+          btn.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      }
+    }
+
+    if (intentGroup) {
+      intentGroup.addEventListener("click", function (event) {
+        var btn = event.target.closest("[data-intent]");
+        if (!btn) return;
+        applyIntent(btn.getAttribute("data-intent") || "find");
+      });
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("intent") === "list") applyIntent("list");
+    else applyIntent("find");
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+      var c = copy[currentIntent];
       var text = String(form.elements.story.value || "").trim();
       var name = String(form.elements.name.value || "").trim();
       var email = String(form.elements.email.value || "").trim();
@@ -130,7 +199,7 @@
         (form.elements.preferred_unit && form.elements.preferred_unit.value) || ""
       ).trim();
       if (text.length < 12) {
-        setStatus(status, "Tell us a bit more — unit, years, or who you’re looking for.", "err");
+        setStatus(status, c.shortErr, "err");
         return;
       }
       if (!name || !email) {
@@ -140,13 +209,14 @@
       if (String((form.elements._gotcha && form.elements._gotcha.value) || "").trim()) {
         setStatus(status, "Thanks — your message was received.", "ok");
         form.reset();
+        applyIntent(currentIntent);
         return;
       }
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.textContent = "Sending…";
       }
-      setStatus(status, "Sending your crew request to the Board…", "warn");
+      setStatus(status, c.sending, "warn");
 
       var parsed = {};
       assist("crew_parse", text)
@@ -170,12 +240,14 @@
           setHidden(form, "looking_schoolhouse", parsed.schoolhouse || "");
           setHidden(form, "ai_summary", parsed.query_summary || "");
           setHidden(form, "ai_confidence", parsed.confidence || "");
+          setHidden(form, "crew_intent", currentIntent);
 
           return sendCrewToBoard({
             name: name,
             email: email,
             story: text,
             raw_story: text,
+            crew_intent: currentIntent,
             looking_for: lookingFor,
             looking_unit: unit,
             looking_years: parsed.years || "",
@@ -186,13 +258,14 @@
             preferred_unit: preferredUnit,
             ai_summary: parsed.query_summary || "",
             ai_confidence: parsed.confidence || "",
-            _subject: "YAT-YAS Crew Finder match — " + name,
+            _subject: c.subject + " — " + name,
             _template: "table",
             _replyto: email,
           });
         })
         .then(function () {
           form.reset();
+          applyIntent(currentIntent);
           if (result) {
             result.hidden = true;
             result.innerHTML = "";
@@ -201,13 +274,15 @@
             status,
             "Thank you" +
               (name ? ", " + name.split(/\s+/)[0] : "") +
-              ". Your crew request was sent to the Board. We’ll follow up privately.",
+              c.thanks,
             "ok"
           );
         })
         .catch(function () {
           var body =
-            "Name: " +
+            "Intent: " +
+            currentIntent +
+            "\nName: " +
             name +
             "\nEmail: " +
             email +
@@ -215,7 +290,7 @@
             text;
           window.location.href =
             "mailto:board@yatyasassociation.com?subject=" +
-            encodeURIComponent("YAT-YAS Crew Finder match — " + name) +
+            encodeURIComponent(c.subject + " — " + name) +
             "&body=" +
             encodeURIComponent(body);
           setStatus(
@@ -227,7 +302,7 @@
         .finally(function () {
           if (submitBtn) {
             submitBtn.disabled = false;
-            submitBtn.textContent = "Find my crew";
+            submitBtn.textContent = c.button;
           }
         });
     });

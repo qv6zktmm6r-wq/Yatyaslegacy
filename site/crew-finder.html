@@ -75,8 +75,8 @@
     <section class="crew-forms-section" id="crew-forms">
       <div class="exhibit-shell exhibit-shell-wide">
         <div class="ai-stage">
-          <h2>Who are you looking for?</h2>
-          <p class="panel-lede">Example: <em>“Looking for 3d Tracks guys from 2010–2014 on AAVs at Pendleton — especially motor-T shop.”</em></p>
+          <h2 id="crew-form-heading">Who are you looking for?</h2>
+          <p class="panel-lede" id="crew-form-lede">Example: <em>“Looking for 3d Tracks guys from 2010–2014 on AAVs at Pendleton — especially motor-T shop.”</em></p>
           <form class="program-form contact-form crew-form crew-form-primary" id="crew-finder-form" novalidate>
             <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <input type="hidden" name="preferred_unit" id="crew-preferred-unit" value="" />
@@ -90,6 +90,17 @@
             <input type="hidden" name="ai_summary" value="" />
             <input type="hidden" name="ai_confidence" value="" />
             <input type="hidden" name="raw_story" value="" />
+            <input type="hidden" name="crew_intent" id="crew-intent-value" value="find" />
+
+            <div class="crew-intent" role="radiogroup" aria-label="Crew Finder intent" data-crew-intent>
+              <button type="button" class="crew-intent-btn is-active" data-intent="find" aria-pressed="true">
+                I’m looking for someone
+              </button>
+              <button type="button" class="crew-intent-btn" data-intent="list" aria-pressed="false">
+                Add me so others can find me
+              </button>
+            </div>
+
             <div class="form-row">
               <div class="form-field">
                 <label for="crew-name">Your name</label>
@@ -101,16 +112,16 @@
               </div>
             </div>
             <div class="form-field">
-              <label for="crew-story">Your story</label>
+              <label for="crew-story" id="crew-story-label">Your story</label>
               <textarea id="crew-story" name="story" required rows="5" maxlength="2500" placeholder="Unit, years, platform, station, deployment, who you hope to find…"></textarea>
             </div>
             <div class="ai-result" id="crew-ai-result" hidden></div>
             <div class="crew-form-footer">
-              <button type="submit" class="btn btn-primary contact-submit">Find my crew</button>
+              <button type="submit" class="btn btn-primary contact-submit" id="crew-submit-btn">Find my crew</button>
               <p class="form-status" id="crew-finder-status" role="status" aria-live="polite" hidden></p>
             </div>
           </form>
-          <p class="crew-privacy">Do not include DD-214s, Social Security numbers, or medical details. One send goes straight to the Board.</p>
+          <p class="crew-privacy">Do not include DD-214s, Social Security numbers, or medical details. One send goes straight to the Board — private until you say otherwise.</p>
         </div>
       </div>
     </section>

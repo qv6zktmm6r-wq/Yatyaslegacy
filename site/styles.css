@@ -3571,6 +3571,46 @@ main,
   width: 100%;
 }
 
+.crew-intent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+  margin: 0 0 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .crew-intent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.crew-intent-btn {
+  appearance: none;
+  border: 1px solid rgba(201, 168, 90, 0.4);
+  background: rgba(243, 233, 208, 0.06);
+  color: #f3e9d0;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.35;
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.crew-intent-btn:hover,
+.crew-intent-btn:focus-visible {
+  background: rgba(243, 233, 208, 0.12);
+  outline: none;
+}
+
+.crew-intent-btn.is-active {
+  border-color: rgba(201, 168, 90, 0.85);
+  background: rgba(201, 168, 90, 0.18);
+  color: #fff8e8;
+}
+
 .ai-stage h2 {
   margin: 0 0 0.5rem;
   font-family: var(--font-display);
