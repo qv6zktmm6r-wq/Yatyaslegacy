@@ -1914,6 +1914,99 @@ main,
   display: inline-flex;
 }
 
+/* Lower Support strip — restrained crest breath, not a cartoon pulse */
+.support-strip {
+  position: relative;
+  padding: calc(var(--space) * 2.4) var(--space);
+  text-align: center;
+  color: var(--charcoal);
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 0%, rgba(176, 141, 62, 0.22), transparent 62%),
+    linear-gradient(180deg, #e7dcc4 0%, #d5c6a4 100%);
+  border-block: 1px solid rgba(176, 141, 62, 0.4);
+}
+
+.support-strip-inner {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.support-crest-wrap {
+  display: inline-flex;
+  margin: 0 auto 1rem;
+  animation: crest-breath 3.6s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+.support-crest {
+  display: block;
+  width: 5.5rem;
+  height: auto;
+  filter: drop-shadow(0 10px 18px rgba(31, 28, 24, 0.28));
+}
+
+.support-strip .eyebrow {
+  margin-bottom: 0.55rem;
+}
+
+.support-strip h2 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 4vw, 2.15rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--charcoal);
+}
+
+.support-strip-copy {
+  margin: 0 auto 1.35rem;
+  max-width: 28rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.support-strip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btn-donate-pulse {
+  animation: donate-glow 3.6s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(176, 141, 62, 0.35);
+}
+
+@keyframes crest-breath {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 10px 18px rgba(31, 28, 24, 0.24));
+  }
+  50% {
+    transform: scale(1.045);
+    filter: drop-shadow(0 14px 22px rgba(176, 141, 62, 0.32));
+  }
+}
+
+@keyframes donate-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(176, 141, 62, 0.28);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(176, 141, 62, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .support-crest-wrap,
+  .btn-donate-pulse {
+    animation: none;
+  }
+}
+
 .btn-login-soon {
   appearance: none;
   border: 1px solid rgba(201, 168, 90, 0.55);

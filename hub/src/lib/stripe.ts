@@ -168,6 +168,54 @@ export async function createFirstWaveCheckoutSession(input: {
   return { ok: true, session: result.data };
 }
 
+/** One-time Association donation (open amount, capped). */
+export async function createDonationCheckoutSession(input: {
+  email?: string;
+  amountCents: number;
+  name?: string;
+}): Promise<
+  { ok: true; session: CheckoutSession } | { ok: false; error: string; status: number }
+> {
+  const amount = Math.round(input.amountCents);
+  if (!Number.isFinite(amount) || amount < 500 || amount > 500000) {
+    return {
+      ok: false,
+      error: "Choose an amount between $5 and $5,000.",
+      status: 400,
+    };
+  }
+
+  const base = hubBaseUrl();
+  const form: StripeForm = {
+    mode: "payment",
+    success_url: `${base}/donate/success?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${base}/donate`,
+    "metadata[kind]": "association_donation",
+    "metadata[amount_cents]": String(amount),
+    "line_items[0][price_data][currency]": "usd",
+    "line_items[0][price_data][product_data][name]": "YAT-YAS Association donation",
+    "line_items[0][price_data][product_data][description]":
+      "Supports scholarships, events, and Association programs.",
+    "line_items[0][price_data][unit_amount]": amount,
+    "line_items[0][quantity]": 1,
+    "payment_intent_data[metadata][kind]": "association_donation",
+  };
+
+  const email = (input.email || "").trim().toLowerCase();
+  if (email) {
+    form.customer_email = email;
+    form["metadata[email]"] = email;
+  }
+  const name = (input.name || "").trim();
+  if (name) form["metadata[name]"] = name.slice(0, 120);
+
+  const result = await stripeRequest<CheckoutSession>("/checkout/sessions", {
+    form,
+  });
+  if (!result.ok) return result;
+  return { ok: true, session: result.data };
+}
+
 export async function retrieveCheckoutSession(sessionId: string) {
   return stripeRequest<CheckoutSession>(
     `/checkout/sessions/${encodeURIComponent(sessionId)}`,
