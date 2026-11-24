@@ -80,6 +80,7 @@
           <p class="panel-lede">Example: <em>“Looking for 3d Tracks guys from 2010–2014 on AAVs at Pendleton — especially motor-T shop.”</em></p>
           <form class="program-form contact-form crew-form" id="crew-ai-form" novalidate>
             <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="hidden" name="preferred_unit" id="crew-preferred-unit" value="" />
             <div class="form-row">
               <div class="form-field">
                 <label for="crew-name">Your name</label>
@@ -153,5 +154,24 @@
   <script src="script.js"></script>
   <script src="forms.js"></script>
   <script src="ai.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var unit = (params.get("unit") || "").trim();
+      if (!unit || unit === "any") return;
+      var labels = { "2d": "2d Tracks", "3d": "3d Tracks", "4th": "4th Tracks", other: "Alligator / other tracks" };
+      var label = labels[unit] || unit;
+      var story = document.getElementById("crew-story");
+      var hidden = document.getElementById("crew-preferred-unit");
+      var heading = document.getElementById("crew-heading");
+      if (hidden) hidden.value = label;
+      if (heading) heading.textContent = "Find your " + label + " crew";
+      if (story && !story.value) {
+        story.value = "Looking for " + label + " — ";
+        story.focus();
+        story.setSelectionRange(story.value.length, story.value.length);
+      }
+    })();
+  </script>
 </body>
 </html>

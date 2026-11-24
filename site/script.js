@@ -28,7 +28,7 @@
   window.addEventListener("scroll", syncScroll, { passive: true });
   syncScroll();
 
-  var sectionIds = ["about", "membership", "crew", "lineage", "programs", "first-wave", "scholarships", "contact"];
+  var sectionIds = ["about", "membership", "crew", "lineage", "voices", "programs", "first-wave", "scholarships", "contact"];
   var linkMap = {};
   nav.querySelectorAll(".nav-links a[href^='#']").forEach(function (link) {
     linkMap[link.getAttribute("href").slice(1)] = link;
