@@ -1426,6 +1426,29 @@ main,
   }
 }
 
+.pillars-grid li {
+  padding: 1.2rem 1.15rem 1.3rem;
+  background: rgba(247, 239, 216, 0.88);
+  border-top: 2px solid rgba(63, 70, 51, 0.55);
+}
+
+.pillars-grid .folio-num {
+  color: var(--olive-deep);
+}
+
+.pillars-grid h3 {
+  color: var(--charcoal);
+}
+
+.pillars-grid p {
+  color: #1a1713;
+  font-weight: 500;
+}
+
+.exhibit.pillars .lede {
+  color: #1f1c18;
+}
+
 .why-lede {
   margin-bottom: 1.75rem;
 }
