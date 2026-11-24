@@ -87,7 +87,87 @@
     form.elements[name].value = value == null ? "" : String(value);
   }
 
-  function sendCrewToBoard(payload) {
+  function renderCrewMatches(box, payload) {
+    if (!box) return;
+    var matches = (payload && payload.matches) || [];
+    if (!matches.length) {
+      if (payload && payload.intent === "list") {
+        var seeking = Number(payload.seeking_count || 0);
+        box.hidden = false;
+        box.innerHTML =
+          '<p class="ai-result-label">You’re on the wall for matching</p>' +
+          '<p class="ai-result-body">Listed privately. ' +
+          (seeking
+            ? seeking +
+              " open find request" +
+              (seeking === 1 ? "" : "s") +
+              " are waiting — the Board introduces with consent."
+            : "When someone looks for your unit/years/platform, the Board can introduce you with consent.") +
+          "</p>";
+        return;
+      }
+      box.hidden = false;
+      box.innerHTML =
+        '<p class="ai-result-label">No live match yet</p>' +
+        '<p class="ai-result-body">Your request is with the Board. As more crew list themselves, matching runs live — introductions stay private until both sides agree.</p>';
+      return;
+    }
+    var cards = matches
+      .map(function (m) {
+        var meta = [m.unit, m.years, m.platform, m.station]
+          .filter(Boolean)
+          .join(" · ");
+        var overlap = (m.overlap || []).join(", ");
+        return (
+          '<li class="crew-match-card">' +
+          '<p class="crew-match-name">' +
+          escapeHtml(m.display_name) +
+          "</p>" +
+          (meta
+            ? '<p class="crew-match-meta">' + escapeHtml(meta) + "</p>"
+            : "") +
+          (overlap
+            ? '<p class="crew-match-overlap">Overlap: ' +
+              escapeHtml(overlap) +
+              "</p>"
+            : "") +
+          "</li>"
+        );
+      })
+      .join("");
+    box.hidden = false;
+    box.innerHTML =
+      '<p class="ai-result-label">Possible crew matches</p>' +
+      '<ul class="crew-match-list" role="list">' +
+      cards +
+      "</ul>" +
+      '<p class="ai-result-note">Emails stay private. The Board will introduce you if both sides want the reconnect.</p>';
+  }
+
+  function sendCrewToHub(payload) {
+    return fetch("https://hub.yatyasassociation.com/api/crew-finder", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      credentials: "omit",
+      cache: "no-store",
+      body: JSON.stringify(payload),
+    }).then(function (res) {
+      return res
+        .json()
+        .catch(function () {
+          return {};
+        })
+        .then(function (data) {
+          if (res.ok && data && data.ok) return data;
+          throw new Error((data && data.error) || "crew-hub-failed");
+        });
+    });
+  }
+
+  function notifyBoardFormSubmit(payload) {
     return fetch("https://formsubmit.co/ajax/board@yatyasassociation.com", {
       method: "POST",
       headers: {
@@ -137,23 +217,23 @@
         placeholder:
           "Unit, years, platform, station, deployment, who you hope to find…",
         button: "Find my crew",
-        sending: "Sending your crew request to the Board…",
+        sending: "Matching against listed crew…",
         thanks:
-          ". Your crew request was sent to the Board. We’ll follow up privately.",
+          ". Live matching ran. The Board still handles introductions privately.",
         subject: "YAT-YAS Crew Finder match",
         shortErr: "Tell us a bit more — unit, years, or who you’re looking for.",
       },
       list: {
         heading: "Add yourself to Crew Finder",
         lede:
-          "Tell us where you served so the Board can place you privately — others looking for that crew can be matched with your consent.",
+          "Tell us where you served so others looking for that crew can be matched live — introductions stay private until you both agree.",
         storyLabel: "About your service",
         placeholder:
           "Unit, years, platform, station, deployment, billet — how others might remember you…",
         button: "Add me to Crew Finder",
-        sending: "Adding you to Crew Finder for the Board…",
+        sending: "Listing you for live matching…",
         thanks:
-          ". You’re listed for Crew Finder matching. The Board will keep it private and only reconnect with consent.",
+          ". You’re listed for live matching. The Board only reconnects with consent.",
         subject: "YAT-YAS Crew Finder listing",
         shortErr: "Tell us a bit more — unit, years, platform, or where you served.",
       },
@@ -242,7 +322,7 @@
           setHidden(form, "ai_confidence", parsed.confidence || "");
           setHidden(form, "crew_intent", currentIntent);
 
-          return sendCrewToBoard({
+          var hubPayload = {
             name: name,
             email: email,
             story: text,
@@ -258,18 +338,37 @@
             preferred_unit: preferredUnit,
             ai_summary: parsed.query_summary || "",
             ai_confidence: parsed.confidence || "",
-            _subject: c.subject + " — " + name,
-            _template: "table",
-            _replyto: email,
+            _gotcha:
+              (form.elements._gotcha && form.elements._gotcha.value) || "",
+          };
+
+          return sendCrewToHub(hubPayload).then(function (hubResult) {
+            notifyBoardFormSubmit({
+              name: name,
+              email: email,
+              story: text,
+              crew_intent: currentIntent,
+              looking_for: lookingFor,
+              looking_unit: unit,
+              looking_years: parsed.years || "",
+              looking_platform: parsed.platform || "",
+              looking_station: parsed.duty_station || "",
+              preferred_unit: preferredUnit,
+              ai_summary: parsed.query_summary || "",
+              match_count: (hubResult.matches || []).length,
+              _subject: c.subject + " — " + name,
+              _template: "table",
+              _replyto: email,
+            }).catch(function () {
+              /* Hub is source of truth; FormSubmit is a Board notify only. */
+            });
+            return hubResult;
           });
         })
-        .then(function () {
+        .then(function (hubResult) {
           form.reset();
           applyIntent(currentIntent);
-          if (result) {
-            result.hidden = true;
-            result.innerHTML = "";
-          }
+          renderCrewMatches(result, hubResult || {});
           setStatus(
             status,
             "Thank you" +

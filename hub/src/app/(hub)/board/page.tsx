@@ -12,6 +12,10 @@ import {
   SponsorsBoardClient,
   type SponsorRow,
 } from "@/components/SponsorsBoardClient";
+import {
+  CrewFinderBoardClient,
+  type CrewFinderRow,
+} from "@/components/CrewFinderBoardClient";
 import { createClient } from "@/lib/supabase/server";
 import { stripeMode } from "@/lib/stripe";
 import { isVipRole } from "@/lib/types";
@@ -51,6 +55,7 @@ export default async function BoardPage() {
     { count: waitlistPending },
     { count: holdsActive },
     { data: sponsors },
+    { data: crewEntries },
   ] = await Promise.all([
     supabase.rpc("registration_status"),
     supabase
@@ -80,6 +85,13 @@ export default async function BoardPage() {
         "id, organization_name, contact_name, contact_email, website_url, logo_url, interest_type, support_focus, gift_range, message, status, display_order, created_at",
       )
       .order("created_at", { ascending: false }),
+    supabase
+      .from("crew_finder_entries")
+      .select(
+        "id, intent, full_name, email, story_raw, looking_for, unit, years, platform, station, matchable, status, created_at",
+      )
+      .order("created_at", { ascending: false })
+      .limit(120),
   ]);
 
   const regStatus =
@@ -101,6 +113,9 @@ export default async function BoardPage() {
       </div>
       <RegistrationWavePanel initial={regStatus} />
       <SponsorsBoardClient initialRows={(sponsors || []) as SponsorRow[]} />
+      <CrewFinderBoardClient
+        initialRows={(crewEntries || []) as CrewFinderRow[]}
+      />
       <BoardDashboardClient
         stripeReady={stripeMode() === "ready"}
         regStatus={regStatus}

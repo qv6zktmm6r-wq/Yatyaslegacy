@@ -39,6 +39,8 @@ export async function updateSession(request: NextRequest) {
     path.startsWith("/api/first-wave-waitlist/");
   const isSponsorsApi =
     path === "/api/sponsors" || path.startsWith("/api/sponsors/");
+  const isCrewFinderApi =
+    path === "/api/crew-finder" || path.startsWith("/api/crew-finder/");
   const isStripePublic =
     path.startsWith("/api/stripe/") ||
     path.startsWith("/pay") ||
@@ -51,6 +53,7 @@ export async function updateSession(request: NextRequest) {
     isDigestApi ||
     isWaitlistApi ||
     isSponsorsApi ||
+    isCrewFinderApi ||
     isStripePublic;
 
   if (!user && !isPublic) {
