@@ -2855,6 +2855,18 @@ main,
   text-decoration: underline;
 }
 
+.home-crew-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 0.35rem;
+}
+
+.home-crew-steps {
+  margin-bottom: 1.75rem;
+}
+
 /* —— Crew Finder redesign —— */
 .crew-finder-page .site-header {
   background: transparent;
