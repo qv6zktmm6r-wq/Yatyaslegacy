@@ -26,7 +26,7 @@ Active duty, reserve, and veteran sponsors may all qualify when the amphibious t
 
 ## 4. What the award supports
 
-Scholarship funds are for education-related costs (tuition, fees, books, required tools or training materials, or similar documented school expenses). Awards are paid to the school when practical, or reimbursed against receipts under Association financial controls. Awards are not wages, dues refunds, or unrestricted cash gifts to members.
+Awards are scholarships paid directly to the recipient. The Association does not require payment to the school or receipt reimbursement. Recipients decide how to apply the funds toward their education or trade path. Awards are not wages or dues refunds.
 
 ## 5. Selection
 

@@ -86,7 +86,7 @@ This is a draft for family review only.`,
 - Sponsor is past/present U.S. Armed Forces associated with amphibious-vehicle community; member in good standing OR board-verified until membership admin is standing.
 - Applicant enrolled in or accepted to high-school completion pathway, trade/vocational, community college, or undergraduate program.
 - Applications are NOT open yet; award amounts/deadlines unpublished until Board opens a cycle.
-- Awards cover education costs (tuition, fees, books, required tools); preferably paid to school.
+- Awards are scholarships paid to the recipient; they decide how to use the funds for education or trade training.
 - This is interest/notify only today — not an official application and not a guarantee.
 Return ONLY valid JSON:
 answer (string, clear, 2-5 sentences),
