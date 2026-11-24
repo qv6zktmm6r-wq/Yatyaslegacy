@@ -82,19 +82,53 @@
     });
   }
 
+  function setHidden(form, name, value) {
+    if (!form.elements[name]) return;
+    form.elements[name].value = value == null ? "" : String(value);
+  }
+
+  function sendCrewToBoard(payload) {
+    return fetch("https://formsubmit.co/ajax/board@yatyasassociation.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    }).then(function (res) {
+      return res
+        .json()
+        .catch(function () {
+          return {};
+        })
+        .then(function (data) {
+          if (
+            res.ok ||
+            data.success === "true" ||
+            data.success === true
+          ) {
+            return data;
+          }
+          throw new Error("send-failed");
+        });
+    });
+  }
+
   function bindCrew() {
-    var form = $("#crew-ai-form");
+    var form = $("#crew-finder-form") || $("#crew-ai-form");
     if (!form) return;
-    var status = $("#crew-ai-status");
+    var status = $("#crew-finder-status") || $("#crew-ai-status");
     var result = $("#crew-ai-result");
     var submitBtn = form.querySelector('[type="submit"]');
-    var boardForm = $("#crew-board-form");
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var text = String(form.elements.story.value || "").trim();
       var name = String(form.elements.name.value || "").trim();
       var email = String(form.elements.email.value || "").trim();
+      var preferredUnit = String(
+        (form.elements.preferred_unit && form.elements.preferred_unit.value) || ""
+      ).trim();
       if (text.length < 12) {
         setStatus(status, "Tell us a bit more — unit, years, or who you’re looking for.", "err");
         return;
@@ -103,60 +137,92 @@
         setStatus(status, "Add your name and email so the board can follow up.", "err");
         return;
       }
+      if (String((form.elements._gotcha && form.elements._gotcha.value) || "").trim()) {
+        setStatus(status, "Thanks — your message was received.", "ok");
+        form.reset();
+        return;
+      }
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.textContent = "Structuring…";
+        submitBtn.textContent = "Sending…";
       }
-      setStatus(status, "Structuring your story…", "warn");
+      setStatus(status, "Sending your crew request to the Board…", "warn");
+
+      var parsed = {};
       assist("crew_parse", text)
         .then(function (payload) {
-          var data = payload.data || {};
-          renderCrewResult(result, data);
-          if (boardForm) {
-            boardForm.hidden = false;
-            fillFromObject(
-              boardForm,
-              {
-                name: name,
-                email: email,
-                looking_for: data.looking_for || text,
-                looking_unit: data.unit || "",
-                looking_years: data.years || "",
-                looking_platform: data.platform || "",
-                looking_station: data.duty_station || "",
-                looking_deployment: data.deployment || "",
-                looking_schoolhouse: data.schoolhouse || "",
-                ai_summary: data.query_summary || "",
-                ai_confidence: data.confidence || "",
-                raw_story: text,
-              },
-              {
-                name: "name",
-                email: "email",
-                looking_for: "looking_for",
-                looking_unit: "looking_unit",
-                looking_years: "looking_years",
-                looking_platform: "looking_platform",
-                looking_station: "looking_station",
-                looking_deployment: "looking_deployment",
-                looking_schoolhouse: "looking_schoolhouse",
-                ai_summary: "ai_summary",
-                ai_confidence: "ai_confidence",
-                raw_story: "raw_story",
-              }
-            );
-            boardForm.scrollIntoView({ behavior: "smooth", block: "start" });
+          parsed = payload.data || {};
+          if (result) renderCrewResult(result, parsed);
+        })
+        .catch(function () {
+          parsed = {};
+        })
+        .then(function () {
+          var lookingFor = parsed.looking_for || text;
+          var unit = parsed.unit || preferredUnit || "";
+          setHidden(form, "raw_story", text);
+          setHidden(form, "looking_for", lookingFor);
+          setHidden(form, "looking_unit", unit);
+          setHidden(form, "looking_years", parsed.years || "");
+          setHidden(form, "looking_platform", parsed.platform || "");
+          setHidden(form, "looking_station", parsed.duty_station || "");
+          setHidden(form, "looking_deployment", parsed.deployment || "");
+          setHidden(form, "looking_schoolhouse", parsed.schoolhouse || "");
+          setHidden(form, "ai_summary", parsed.query_summary || "");
+          setHidden(form, "ai_confidence", parsed.confidence || "");
+
+          return sendCrewToBoard({
+            name: name,
+            email: email,
+            story: text,
+            raw_story: text,
+            looking_for: lookingFor,
+            looking_unit: unit,
+            looking_years: parsed.years || "",
+            looking_platform: parsed.platform || "",
+            looking_station: parsed.duty_station || "",
+            looking_deployment: parsed.deployment || "",
+            looking_schoolhouse: parsed.schoolhouse || "",
+            preferred_unit: preferredUnit,
+            ai_summary: parsed.query_summary || "",
+            ai_confidence: parsed.confidence || "",
+            _subject: "YAT-YAS Crew Finder match — " + name,
+            _template: "table",
+            _replyto: email,
+          });
+        })
+        .then(function () {
+          form.reset();
+          if (result) {
+            result.hidden = true;
+            result.innerHTML = "";
           }
           setStatus(
             status,
-            payload.provider === "fallback"
-              ? "Structured from your story — review and send to the board."
-              : "Review below, then send it for board follow-up.",
-            payload.provider === "fallback" ? "warn" : "ok"
+            "Thank you" +
+              (name ? ", " + name.split(/\s+/)[0] : "") +
+              ". Your crew request was sent to the Board. We’ll follow up privately.",
+            "ok"
           );
         })
-        .catch(function (err) {
-          setStatus(status, err.message || "Could not structure your story.", "err");
+        .catch(function () {
+          var body =
+            "Name: " +
+            name +
+            "\nEmail: " +
+            email +
+            "\n\nStory:\n" +
+            text;
+          window.location.href =
+            "mailto:board@yatyasassociation.com?subject=" +
+            encodeURIComponent("YAT-YAS Crew Finder match — " + name) +
+            "&body=" +
+            encodeURIComponent(body);
+          setStatus(
+            status,
+            "Opening your email app as a backup — you can also write board@yatyasassociation.com directly.",
+            "ok"
+          );
         })
         .finally(function () {
           if (submitBtn) {

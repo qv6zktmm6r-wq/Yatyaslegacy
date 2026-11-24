@@ -67,8 +67,7 @@
       <div class="exhibit-shell exhibit-shell-wide">
         <ol class="crew-steps">
           <li><span class="crew-step-num">1</span><h3>Tell the story</h3><p>Who you served with, where, and when — one paragraph is enough.</p></li>
-          <li><span class="crew-step-num">2</span><h3>We structure it</h3><p>Unit, years, platform, and station get organized so matching starts clean.</p></li>
-          <li><span class="crew-step-num">3</span><h3>Board follow-ups</h3><p>Private by design. Nothing is published without consent.</p></li>
+          <li><span class="crew-step-num">2</span><h3>Send it once</h3><p>One button. We organize unit, years, and platform, then the Board follows up privately.</p></li>
         </ol>
       </div>
     </section>
@@ -78,9 +77,19 @@
         <div class="ai-stage">
           <h2>Who are you looking for?</h2>
           <p class="panel-lede">Example: <em>“Looking for 3d Tracks guys from 2010–2014 on AAVs at Pendleton — especially motor-T shop.”</em></p>
-          <form class="program-form contact-form crew-form crew-form-primary" id="crew-ai-form" novalidate>
+          <form class="program-form contact-form crew-form crew-form-primary" id="crew-finder-form" novalidate>
             <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <input type="hidden" name="preferred_unit" id="crew-preferred-unit" value="" />
+            <input type="hidden" name="looking_unit" value="" />
+            <input type="hidden" name="looking_years" value="" />
+            <input type="hidden" name="looking_platform" value="" />
+            <input type="hidden" name="looking_station" value="" />
+            <input type="hidden" name="looking_deployment" value="" />
+            <input type="hidden" name="looking_schoolhouse" value="" />
+            <input type="hidden" name="looking_for" value="" />
+            <input type="hidden" name="ai_summary" value="" />
+            <input type="hidden" name="ai_confidence" value="" />
+            <input type="hidden" name="raw_story" value="" />
             <div class="form-row">
               <div class="form-field">
                 <label for="crew-name">Your name</label>
@@ -98,33 +107,10 @@
             <div class="ai-result" id="crew-ai-result" hidden></div>
             <div class="crew-form-footer">
               <button type="submit" class="btn btn-primary contact-submit">Find my crew</button>
-              <p class="form-status" id="crew-ai-status" role="status" aria-live="polite" hidden></p>
+              <p class="form-status" id="crew-finder-status" role="status" aria-live="polite" hidden></p>
             </div>
           </form>
-
-          <form class="program-form contact-form crew-form" id="crew-board-form" data-yat-form data-subject="YAT-YAS Crew Finder match" hidden novalidate>
-            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
-            <input type="hidden" name="name" />
-            <input type="hidden" name="email" />
-            <input type="hidden" name="raw_story" />
-            <input type="hidden" name="ai_summary" />
-            <input type="hidden" name="ai_confidence" />
-            <p class="form-section-label">Review before sending</p>
-            <div class="form-row">
-              <div class="form-field"><label for="cf-unit">Unit</label><input id="cf-unit" name="looking_unit" maxlength="120" /></div>
-              <div class="form-field"><label for="cf-years">Years</label><input id="cf-years" name="looking_years" maxlength="80" /></div>
-            </div>
-            <div class="form-row">
-              <div class="form-field"><label for="cf-platform">Platform</label><input id="cf-platform" name="looking_platform" maxlength="40" /></div>
-              <div class="form-field"><label for="cf-station">Duty station</label><input id="cf-station" name="looking_station" maxlength="120" /></div>
-            </div>
-            <div class="form-field"><label for="cf-dep">Deployment</label><input id="cf-dep" name="looking_deployment" maxlength="160" /></div>
-            <div class="form-field"><label for="cf-school">Schoolhouse</label><input id="cf-school" name="looking_schoolhouse" maxlength="120" /></div>
-            <div class="form-field"><label for="cf-looking">Looking for</label><textarea id="cf-looking" name="looking_for" rows="4" maxlength="1500" required></textarea></div>
-            <button type="submit" class="btn btn-primary contact-submit">Send match to the board</button>
-            <p class="form-status" id="crew-board-form-status" role="status" aria-live="polite" hidden></p>
-          </form>
-          <p class="crew-privacy">Do not include DD-214s, Social Security numbers, or medical details.</p>
+          <p class="crew-privacy">Do not include DD-214s, Social Security numbers, or medical details. One send goes straight to the Board.</p>
         </div>
       </div>
     </section>
