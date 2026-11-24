@@ -895,6 +895,22 @@ main,
   color: rgba(239, 230, 208, 0.72);
 }
 
+.brotherhood-splash {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gold-soft);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.brotherhood-splash:hover,
+.brotherhood-splash:focus-visible {
+  color: #f8f0dc;
+}
+
 /* ——— Museum exhibits below the hero ——— */
 
 .exhibit {
@@ -962,9 +978,9 @@ main,
   pointer-events: none;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.26;
-  mix-blend-mode: multiply;
-  filter: grayscale(0.28) contrast(1.08) saturate(0.78) brightness(1.02);
+  opacity: 0.48;
+  mix-blend-mode: normal;
+  filter: grayscale(0.12) contrast(1.12) saturate(0.92) brightness(1.05);
 }
 
 .exhibit-photo-wash::after {
@@ -972,8 +988,8 @@ main,
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(228, 216, 184, 0.88) 0%, rgba(228, 216, 184, 0.48) 36%, rgba(228, 216, 184, 0.16) 66%, transparent 100%),
-    linear-gradient(180deg, rgba(239, 228, 200, 0.48), transparent 34%, rgba(215, 199, 159, 0.58) 100%);
+    linear-gradient(90deg, rgba(228, 216, 184, 0.72) 0%, rgba(228, 216, 184, 0.32) 34%, rgba(228, 216, 184, 0.08) 62%, transparent 100%),
+    linear-gradient(180deg, rgba(239, 228, 200, 0.28), transparent 38%, rgba(215, 199, 159, 0.36) 100%);
 }
 
 .exhibit-photo-wash.wash-left::after,
@@ -982,8 +998,8 @@ main,
 .exhibit.news .exhibit-photo-wash::after,
 .exhibit.hub .exhibit-photo-wash::after {
   background:
-    linear-gradient(270deg, rgba(228, 216, 184, 0.88) 0%, rgba(228, 216, 184, 0.48) 36%, rgba(228, 216, 184, 0.16) 66%, transparent 100%),
-    linear-gradient(180deg, rgba(239, 228, 200, 0.48), transparent 34%, rgba(215, 199, 159, 0.58) 100%);
+    linear-gradient(270deg, rgba(228, 216, 184, 0.72) 0%, rgba(228, 216, 184, 0.32) 34%, rgba(228, 216, 184, 0.08) 62%, transparent 100%),
+    linear-gradient(180deg, rgba(239, 228, 200, 0.28), transparent 38%, rgba(215, 199, 159, 0.36) 100%);
 }
 
 /* Unique lineage photos — one per sand section (no crest repeat) */
@@ -1030,20 +1046,20 @@ main,
 .exhibit.hub .exhibit-photo-wash {
   background-image: url("assets/vehicle-lvt1.jpg");
   background-position: 14% 40%;
-  opacity: 0.22;
+  opacity: 0.42;
 }
 
 @media (max-width: 719px) {
   .exhibit-photo-wash {
-    opacity: 0.2;
+    opacity: 0.38;
   }
 
   .exhibit-photo-wash::after {
     background: linear-gradient(
       180deg,
-      rgba(232, 220, 188, 0.82) 0%,
-      rgba(232, 220, 188, 0.68) 45%,
-      rgba(232, 220, 188, 0.84) 100%
+      rgba(232, 220, 188, 0.62) 0%,
+      rgba(232, 220, 188, 0.42) 45%,
+      rgba(232, 220, 188, 0.58) 100%
     );
   }
 }
@@ -3372,7 +3388,12 @@ main,
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(165deg, rgba(22, 18, 14, 0.92), rgba(12, 10, 8, 0.96)),
+    linear-gradient(
+      165deg,
+      rgba(22, 18, 14, 0.58) 0%,
+      rgba(18, 14, 10, 0.52) 42%,
+      rgba(12, 10, 8, 0.68) 100%
+    ),
     url("assets/heroes/crew-on-aav.jpg") center 28% / cover no-repeat;
 }
 
@@ -3411,7 +3432,8 @@ main,
 .member-benefits li {
   padding: 1.2rem 1.15rem 1.35rem;
   border-top: 2px solid rgba(201, 168, 90, 0.55);
-  background: rgba(243, 233, 208, 0.05);
+  background: rgba(12, 10, 8, 0.42);
+  backdrop-filter: blur(2px);
   animation: benefit-rise 0.7s ease both;
 }
 
