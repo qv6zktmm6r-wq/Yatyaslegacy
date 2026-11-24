@@ -112,7 +112,7 @@ export function RosterClient({
           Add them before they create a login. Leave tag blank to auto-issue the
           next public number ({nextTag}
           {registrationsOpen ? ` · ${seatsRemaining} public seats left` : ""}).
-          Board-held tags (FW-001–010, FW-013) must be typed in manually.
+          Board-held tags (FW-001–007) must be typed in manually.
           Adding them prepares the welcome letter with their number and a Hub
           signup link.
         </p>

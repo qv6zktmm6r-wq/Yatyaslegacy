@@ -128,7 +128,7 @@
   }
 
   function fallbackRoll() {
-    renderRoll([], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13], 100, "FW");
+    renderRoll([], [1, 2, 3, 4, 5, 6, 7], 100, "FW");
     if (statusEl) {
       statusEl.textContent = "Roll board offline — showing held numbers only.";
     }
