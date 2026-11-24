@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Final Splash — YAT-YAS Association</title>
-  <meta name="description" content="Honor deceased Amtrackers with family-approved remembrances. We help draft — family always reviews." />
+  <meta name="description" content="A permanent roll of remembrance for Amtrackers who have crossed the last beach — published only with family permission." />
   <link rel="canonical" href="https://yatyasassociation.com/final-splash" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yatyasassociation.com/final-splash" />
   <meta property="og:title" content="Final Splash — YAT-YAS Association" />
-  <meta property="og:description" content="Honor deceased Amtrackers with family-approved remembrances. We help draft — family always reviews." />
+  <meta property="og:description" content="A permanent roll of remembrance for Amtrackers who have crossed the last beach — published only with family permission." />
   <meta property="og:image" content="https://yatyasassociation.com/assets/crest-20261124.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="https://yatyasassociation.com/assets/crest-20261124.png" />
@@ -40,13 +40,13 @@
       <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
         <div class="nav-links">
           <a href="index.html#about">Mission</a>
-          <a href="index.html#lineage">Legacy</a>
+          <a href="index.html#membership">Membership</a>
+          <a class="nav-memorial" href="final-splash.html" aria-current="page">Final Splash</a>
           <a href="index.html#programs">Programs</a>
           <a href="first-wave.html">First Wave</a>
-          <a href="scholarships.html">Scholarships</a>
         </div>
         <div class="nav-actions">
-          <a class="nav-cta" href="first-wave.html">Join</a>
+          <a class="nav-cta" href="https://hub.yatyasassociation.com/pay">Become a Member</a>
           <a class="nav-contact" href="index.html#contact">Contact</a>
         </div>
       </nav>
@@ -57,26 +57,106 @@
     <section class="premium-hero splash-hero" aria-labelledby="splash-heading">
       <div class="premium-hero-wash splash-hero-wash" aria-hidden="true"></div>
       <div class="premium-hero-inner">
+        <img class="splash-crest" src="assets/crest-20261124.png" alt="" width="96" height="110" />
         <p class="eyebrow on-dark">Legacy · Memorial</p>
         <h1 id="splash-heading">Final Splash</h1>
-        <p class="lede">A permanent place of remembrance — with family permission, never without it.</p>
+        <p class="lede">
+          A permanent roll of remembrance for the Amtrackers who have crossed the last beach.
+          Published only with family permission.
+        </p>
+        <div class="splash-hero-actions">
+          <button type="button" class="btn btn-primary taps-toggle" data-taps-toggle aria-pressed="false">
+            Play Taps
+          </button>
+          <a class="btn btn-ghost splash-hero-ghost" href="#roll">Read the Roll</a>
+          <a class="btn btn-ghost splash-hero-ghost" href="#request">Request a remembrance</a>
+        </div>
+        <p class="taps-note" id="taps-status" role="status">
+          Taps plays only when you press Play — never automatically.
+        </p>
+        <audio
+          id="taps-audio"
+          data-taps-audio
+          preload="metadata"
+          playsinline
+        >
+          <source src="assets/audio/taps-usmc.mp3" type="audio/mpeg" />
+          <source src="assets/audio/taps-usmc.ogg" type="audio/ogg" />
+        </audio>
       </div>
     </section>
-    <section class="exhibit program-detail splash-detail">
+
+    <section class="exhibit splash-roll" id="roll" aria-labelledby="roll-heading">
+      <div class="exhibit-shell exhibit-shell-wide">
+        <header class="exhibit-head">
+          <p class="eyebrow">The Roll</p>
+          <h2 id="roll-heading">Remembered with family blessing</h2>
+          <div class="ornament" aria-hidden="true"></div>
+        </header>
+        <div class="roll-empty" role="status">
+          <p>
+            The first remembrances will be placed here with their families’ permission.
+            Until then, the Roll stands ready — quiet, permanent, and waiting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibit splash-how has-photo-wash" id="how" aria-labelledby="how-heading">
+      <div class="exhibit-photo-wash" aria-hidden="true" style="background-image:url('assets/heroes/aav-ocean.jpg');background-position:72% 40%"></div>
+      <div class="exhibit-shell exhibit-shell-wide">
+        <header class="exhibit-head">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-heading">Dignity first</h2>
+          <div class="ornament" aria-hidden="true"></div>
+        </header>
+        <ol class="splash-steps">
+          <li>
+            <span class="splash-step-num">01</span>
+            <h3>Family asks</h3>
+            <p>A family member or someone they trust sends a remembrance request.</p>
+          </li>
+          <li>
+            <span class="splash-step-num">02</span>
+            <h3>Board verifies</h3>
+            <p>We contact the family before anything is prepared for the public Roll.</p>
+          </li>
+          <li>
+            <span class="splash-step-num">03</span>
+            <h3>Family approves</h3>
+            <p>The final text is theirs. Nothing publishes until they say yes.</p>
+          </li>
+          <li>
+            <span class="splash-step-num">04</span>
+            <h3>Published</h3>
+            <p>The remembrance joins the Roll. Family may edit or withdraw at any time.</p>
+          </li>
+        </ol>
+        <ul class="splash-promises">
+          <li>Nothing is public without recorded family approval.</li>
+          <li>We never invent service, medals, or combat actions.</li>
+          <li>Family can withdraw a remembrance at any time.</li>
+          <li>Prefer to talk first? Email <a href="mailto:board@yatyasassociation.com">board@yatyasassociation.com</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="exhibit program-detail splash-detail" id="request" aria-labelledby="request-heading">
       <div class="exhibit-shell exhibit-shell-wide program-layout">
         <div class="program-copy">
-          <h2>Dignity first</h2>
-          <p>Share what you know. We can help draft a remembrance for family review. Nothing goes public until the family says so. Muster may recognize remembrances added that year.</p>
-          <ul class="program-bullets">
-            <li>Name, photo, service dates when approved</li>
-            <li>Unit and platform history</li>
-            <li>Family-written remembrance</li>
-            <li>Optional Muster recognition</li>
-          </ul>
+          <h2 id="request-heading">Request a remembrance</h2>
+          <p>
+            Tell us who should be remembered and how to reach you. A Board member will contact
+            the family before anything is drafted for the Roll.
+          </p>
+          <p class="splash-muster-note">
+            Muster may recognize remembrances added that year — if the family wishes.
+          </p>
         </div>
         <div class="program-form-panel">
           <form class="program-form contact-form" id="final-splash-form" data-yat-form data-subject="YAT-YAS Final Splash remembrance request" novalidate>
             <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <p class="form-section-label">Your contact</p>
             <div class="form-row">
               <div class="form-field"><label for="sp-name">Your name</label><input id="sp-name" name="name" required autocomplete="name" maxlength="120" /></div>
               <div class="form-field"><label for="sp-email">Your email</label><input id="sp-email" type="email" name="email" required autocomplete="email" maxlength="160" /></div>
@@ -92,20 +172,6 @@
                 <option value="friend">Friend of the family</option>
               </select>
             </div>
-            <div class="form-field"><label for="sp-honoree">Honoree full name</label><input id="sp-honoree" name="honoree_name" required maxlength="160" /></div>
-            <div class="form-field">
-              <label for="sp-notes">What should be remembered?</label>
-              <textarea id="sp-notes" name="notes_raw" required rows="4" maxlength="2000" placeholder="Service, crew, character, units, years…"></textarea>
-            </div>
-            <button type="button" class="btn btn-ghost ai-assist-btn" data-ai-mode="splash_assist" data-ai-source="#sp-notes" data-ai-form="#final-splash-form" data-ai-status="#sp-ai-status" data-ai-out="#sp-ai-out" data-ai-map='{"honoree_name":"honoree_name","draft_remembrance":"remembrance","service_dates":"service_dates","unit_history":"unit_history","platform":"platform"}'>Draft remembrance</button>
-            <p class="form-status" id="sp-ai-status" hidden></p>
-            <div class="ai-result" id="sp-ai-out" hidden></div>
-            <div class="form-field"><label for="sp-remembrance">Remembrance / biography</label><textarea id="sp-remembrance" name="remembrance" required rows="5" maxlength="2500"></textarea></div>
-            <div class="form-row">
-              <div class="form-field"><label for="sp-dates">Service dates</label><input id="sp-dates" name="service_dates" maxlength="80" /></div>
-              <div class="form-field"><label for="sp-platform">Platform</label><input id="sp-platform" name="platform" maxlength="40" /></div>
-            </div>
-            <div class="form-field"><label for="sp-units">Unit history</label><input id="sp-units" name="unit_history" maxlength="200" /></div>
             <div class="form-field">
               <label for="sp-perm">Family permission</label>
               <select id="sp-perm" name="family_permission" required>
@@ -115,13 +181,29 @@
                 <option value="need_intro">Help contact the family first</option>
               </select>
             </div>
+            <p class="form-section-label">Who should be remembered</p>
+            <div class="form-field"><label for="sp-honoree">Honoree full name</label><input id="sp-honoree" name="honoree_name" required maxlength="160" /></div>
+            <div class="form-row">
+              <div class="form-field"><label for="sp-dates">Service dates <span class="optional">(optional)</span></label><input id="sp-dates" name="service_dates" maxlength="80" /></div>
+              <div class="form-field"><label for="sp-platform">Platform <span class="optional">(optional)</span></label><input id="sp-platform" name="platform" maxlength="40" /></div>
+            </div>
+            <div class="form-field"><label for="sp-units">Unit history <span class="optional">(optional)</span></label><input id="sp-units" name="unit_history" maxlength="200" /></div>
+            <div class="form-field">
+              <label for="sp-notes">What should be remembered?</label>
+              <textarea id="sp-notes" name="notes_raw" required rows="5" maxlength="2000" placeholder="Service, crew, character, units, years…"></textarea>
+            </div>
             <button type="submit" class="btn btn-primary contact-submit">Submit remembrance request</button>
+            <p class="form-hint">
+              Thank you. A Board member will contact the family before anything is prepared.
+              Nothing is public until the family approves the final text.
+            </p>
             <p class="form-status" id="final-splash-form-status" hidden></p>
           </form>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="footer-inner">
       <img class="footer-crest" src="assets/crest-20261124.png" alt="" width="72" height="84" />
@@ -142,12 +224,12 @@
         · <a href="https://yatyasassociation.com">yatyasassociation.com</a>
       </p>
       <p class="footer-disclaimer">
-        YAT-YAS Association is an independent organization and is not affiliated with or endorsed by the United States Marine Corps, Department of the Navy, Department of Defense, or any other agency of the United States Government. Historical photographs are U.S. government works in the public domain.
+        YAT-YAS Association is an independent organization and is not affiliated with or endorsed by the United States Marine Corps, Department of the Navy, Department of Defense, or any other agency of the United States Government. Historical photographs and the ceremonial recording of Taps used here are U.S. government works in the public domain.
       </p>
     </div>
   </footer>
   <script src="script.js"></script>
   <script src="forms.js"></script>
-  <script src="ai.js"></script>
+  <script src="taps.js"></script>
 </body>
 </html>
