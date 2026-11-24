@@ -28,7 +28,7 @@ Local: `/Volumes/KEYSTONE-WORK/01-ACTIVE-PROJECTS/YATYASASSOCIATION`
 ## CURRENT STATE (2026-11-24)
 
 **Phase 1 complete. EIN issued 2026-11-17** — CP575 offline Desktop Business Files only (number never in Git/Brain/chat).
-**Official crest (2026-11-24):** Owner shield mark is canonical. Source `site/assets/crest-official.jpg`; web/email `site/assets/crest-transparent.png`; favicons crest-derived on site + hub. Synced to hub/public, letters, correspondence, signing. Prior crest archived as `crest-previous-transparent.png` (do not ship).
+**Official crest (2026-11-24):** Owner shield mark is canonical. Source `site/assets/crest-official.jpg`; web/email `site/assets/crest-20261124.png` (cache-bust); favicons crest-derived on site + hub. Synced to hub/public, letters, correspondence, signing. Prior crest archived as `crest-previous-transparent.png` (do not ship).
 **Mailbox:** `board@yatyasassociation.com` live (Namecheap Private Email).
 **Site:** production live with premium program pages + `/api/assist` (AI Gateway). First Wave service + waitlist → Hub.
 **Member Hub:** Live at https://hub.yatyasassociation.com · Supabase **YATYAS Association** (`tfavgqqqagcqhfeeutzc`). Registration wave lock + reserved FW tags shipped.

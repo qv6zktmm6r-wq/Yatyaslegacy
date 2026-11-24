@@ -37,7 +37,7 @@ export function firstWaveWelcomeHtml(props: FirstWaveWelcomeProps) {
   const safeTag = escapeHtml(membershipTag);
   const safeUrl = escapeHtml(hubSignupUrl);
   const crest =
-    "https://yatyasassociation.com/assets/crest-transparent.png";
+    "https://yatyasassociation.com/assets/crest-20261124.png";
 
   return `<!DOCTYPE html>
 <html lang="en">

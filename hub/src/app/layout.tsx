@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description: "Member Hub feed, chat, and profiles for YAT-YAS Association.",
     images: [
       {
-        url: "https://yatyasassociation.com/assets/crest-transparent.png",
+        url: "https://yatyasassociation.com/assets/crest-20261124.png",
         alt: "YAT-YAS Association crest",
       },
     ],
   },
   twitter: {
     card: "summary",
-    images: ["https://yatyasassociation.com/assets/crest-transparent.png"],
+    images: ["https://yatyasassociation.com/assets/crest-20261124.png"],
   },
   icons: {
     icon: [

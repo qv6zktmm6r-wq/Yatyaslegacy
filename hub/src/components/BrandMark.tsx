@@ -15,7 +15,7 @@ export function BrandMark({
       title="Back to YAT-YAS Association website"
     >
       <Image
-        src="/crest-transparent.png"
+        src="/crest-20261124.png"
         alt=""
         width={44}
         height={52}

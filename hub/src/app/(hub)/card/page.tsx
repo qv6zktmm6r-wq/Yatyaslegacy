@@ -34,7 +34,7 @@ export default async function MemberCardPage() {
         <div className="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[var(--gold)]/20 blur-2xl" />
         <div className="flex items-start justify-between gap-4">
           <Image
-            src="/crest-transparent.png"
+            src="/crest-20261124.png"
             alt="YAT-YAS crest"
             width={72}
             height={82}

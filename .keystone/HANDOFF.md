@@ -10,7 +10,7 @@ Bank + Stripe after EIN. Board dashboard tracks paid + numbers automatically onc
 
 - Entity **B20260476255** Active; SI due **2027-02-02**.
 - Mailbox `board@yatyasassociation.com` live.
-- **Official crest locked 2026-11-24:** `site/assets/crest-official.jpg` → `crest-transparent.png` + crest favicons on site/hub/letters/docs; Hub OG/Twitter meta added. **Needs deploy** for production CDN.
+- **Official crest locked 2026-11-24:** `site/assets/crest-official.jpg` → web/email `crest-20261124.png` (cache-bust; prior `crest-transparent.png` kept as copy). Favicons crest-derived on site + hub. Prior crest archived as `crest-previous-transparent.png` (do not ship).
 - **Board Dashboard `/board` (2026-11-24):** VIP cockpit for seats, waitlist, roster, entrance paid, dues, unclaimed Hub. Ledger + RPCs applied on Supabase `tfavgqqqagcqhfeeutzc`. Checkout + webhook auto-issue next public FW tag after paid (incl. async); success poll capped; soft 30m holds; audited override; refunds keep tags. **Public `/pay`**, site First Wave pay CTA, waitlist **Invite to pay** (preferred) vs roster-without-payment exception; Board unpaid-row pay links; checkout validates waitlist `applicationId`↔email.
 - **Stripe LIVE (2026-11-24):** Isolated YAT-YAS account `acct_1UfNVKENhdhgrESP` (not Keystone). Live `sk`/`pk` + webhook secret in Keychain (`yatyasassociation`) + Vercel `yatyas-hub`. Live webhook → `https://hub.yatyasassociation.com/api/stripe/webhook`. Smoke: `cs_live_…` Checkout create PASS. Hub prod redeployed.
 - Site live with premium hero photography (PD USMC/USN via Commons; see `site/assets/heroes/CREDITS.md`).
