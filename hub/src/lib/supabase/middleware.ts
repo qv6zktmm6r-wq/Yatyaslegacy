@@ -37,6 +37,8 @@ export async function updateSession(request: NextRequest) {
   const isWaitlistApi =
     path === "/api/first-wave-waitlist" ||
     path.startsWith("/api/first-wave-waitlist/");
+  const isSponsorsApi =
+    path === "/api/sponsors" || path.startsWith("/api/sponsors/");
   const isStripePublic =
     path.startsWith("/api/stripe/") ||
     path.startsWith("/pay") ||
@@ -48,6 +50,7 @@ export async function updateSession(request: NextRequest) {
     path === "/health" ||
     isDigestApi ||
     isWaitlistApi ||
+    isSponsorsApi ||
     isStripePublic;
 
   if (!user && !isPublic) {

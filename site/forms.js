@@ -2,6 +2,7 @@
   var endpoint = "https://formsubmit.co/ajax/board@yatyasassociation.com";
   var firstWaveEndpoint =
     "https://hub.yatyasassociation.com/api/first-wave-waitlist";
+  var sponsorsEndpoint = "https://hub.yatyasassociation.com/api/sponsors";
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   function fieldWrap(input) {
@@ -135,17 +136,22 @@
       }
 
       var isFirstWave = form.id === "first-wave-form";
-      var postUrl = isFirstWave ? firstWaveEndpoint : endpoint;
+      var isSponsor = form.id === "sponsor-form";
+      var postUrl = isFirstWave
+        ? firstWaveEndpoint
+        : isSponsor
+          ? sponsorsEndpoint
+          : endpoint;
 
-      fetch(postUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then(function (res) {
+      function postJson(url, body) {
+        return fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(body),
+        }).then(function (res) {
           return res
             .json()
             .catch(function () {
@@ -154,7 +160,24 @@
             .then(function (payload) {
               return { ok: res.ok, data: payload };
             });
-        })
+        });
+      }
+
+      var chain = postJson(postUrl, data);
+      if (isSponsor) {
+        chain = chain.then(function (payload) {
+          if (!(payload.data && payload.data.ok)) {
+            throw new Error(
+              (payload.data && payload.data.error) || "send-failed"
+            );
+          }
+          return postJson(endpoint, data).catch(function () {
+            return { ok: true, data: { success: true } };
+          });
+        });
+      }
+
+      chain
         .then(function (payload) {
           if (isFirstWave) {
             if (payload.data && payload.data.ok) {
@@ -180,6 +203,20 @@
             throw new Error(
               (payload.data && payload.data.error) || "send-failed"
             );
+          }
+          if (isSponsor) {
+            form.reset();
+            Array.prototype.forEach.call(form.elements, function (el) {
+              if (el.name) setError(form, el.name, "");
+            });
+            showStatus(
+              statusEl,
+              "Thank you" +
+                (name ? ", " + name.split(/\s+/)[0] : "") +
+                ". Your sponsor inquiry is with the Board. After approval, your logo can appear on the public Sponsors wall.",
+              true
+            );
+            return;
           }
           if (
             payload.ok ||

@@ -8,6 +8,10 @@ import {
   RegistrationWavePanel,
   type RegistrationStatus,
 } from "@/components/RegistrationWavePanel";
+import {
+  SponsorsBoardClient,
+  type SponsorRow,
+} from "@/components/SponsorsBoardClient";
 import { createClient } from "@/lib/supabase/server";
 import { stripeMode } from "@/lib/stripe";
 import { isVipRole } from "@/lib/types";
@@ -46,6 +50,7 @@ export default async function BoardPage() {
     { data: roster },
     { count: waitlistPending },
     { count: holdsActive },
+    { data: sponsors },
   ] = await Promise.all([
     supabase.rpc("registration_status"),
     supabase
@@ -69,6 +74,12 @@ export default async function BoardPage() {
       .from("membership_checkout_holds")
       .select("id", { count: "exact", head: true })
       .gte("expires_at", new Date().toISOString()),
+    supabase
+      .from("association_sponsors")
+      .select(
+        "id, organization_name, contact_name, contact_email, website_url, logo_url, interest_type, support_focus, gift_range, message, status, display_order, created_at",
+      )
+      .order("created_at", { ascending: false }),
   ]);
 
   const regStatus =
@@ -89,6 +100,7 @@ export default async function BoardPage() {
         </p>
       </div>
       <RegistrationWavePanel initial={regStatus} />
+      <SponsorsBoardClient initialRows={(sponsors || []) as SponsorRow[]} />
       <BoardDashboardClient
         stripeReady={stripeMode() === "ready"}
         regStatus={regStatus}
