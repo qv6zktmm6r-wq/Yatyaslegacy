@@ -895,20 +895,105 @@ main,
   color: rgba(239, 230, 208, 0.72);
 }
 
-.brotherhood-splash {
-  display: inline-block;
-  margin-top: 0.85rem;
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--gold-soft);
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
+.memorial-ribbon {
+  display: block;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 0.75rem var(--space);
+  background: #16140f;
+  color: #efe6d0;
+  border-bottom: 1px solid rgba(201, 168, 90, 0.35);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  line-height: 1.45;
 }
 
-.brotherhood-splash:hover,
-.brotherhood-splash:focus-visible {
+.memorial-ribbon span {
+  display: inline-block;
+  margin-right: 0.55rem;
+  color: var(--gold-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.memorial-ribbon strong {
+  color: var(--gold-soft);
+  font-weight: 600;
+}
+
+.memorial-ribbon:hover strong,
+.memorial-ribbon:focus-visible strong {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.memorial-ribbon:focus-visible {
+  outline: 2px solid var(--gold-soft);
+  outline-offset: -4px;
+}
+
+.nav-memorial::before {
+  content: "";
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-right: 0.4rem;
+  background: #a8452f;
+  border-radius: 50%;
+  vertical-align: 0.08em;
+}
+
+.final-splash-band {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  padding: calc(var(--space) * 2.6) var(--space);
+  text-align: center;
+  color: #f3e9d0;
+}
+
+.final-splash-band-wash {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(14, 12, 9, 0.55) 0%,
+      rgba(14, 12, 9, 0.42) 45%,
+      rgba(14, 12, 9, 0.72) 100%
+    ),
+    url("assets/vehicle-acvp-water.jpg") center 48% / cover no-repeat;
+  filter: saturate(0.88) contrast(1.06);
+}
+
+.final-splash-band-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.final-splash-band h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.05;
   color: #f8f0dc;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+}
+
+.final-splash-band-lede {
+  margin: 0 auto 1.35rem;
+  max-width: 28rem;
+  font-size: 1.08rem;
+  line-height: 1.45;
+  color: rgba(243, 233, 208, 0.9);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* ——— Museum exhibits below the hero ——— */
@@ -1093,11 +1178,20 @@ main,
 
 .eyebrow {
   margin: 0 0 0.45rem;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
+}
+
+.exhibit .eyebrow,
+.exhibit .folio-label {
+  color: #6e5418;
+}
+
+.exhibit .eyebrow.on-dark {
+  color: var(--gold-soft);
 }
 
 .exhibit h2 {
@@ -2379,7 +2473,7 @@ main,
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1120px) {
   .nav-toggle {
     display: none;
   }
@@ -2390,7 +2484,7 @@ main,
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    gap: 1.75rem;
+    gap: 1.5rem;
     background: transparent;
     border: 0;
     padding: 0;
@@ -2401,7 +2495,7 @@ main,
   .nav-links {
     flex-direction: row;
     align-items: center;
-    gap: 1.35rem;
+    gap: 1.1rem;
   }
 
   .nav-links a {
@@ -3389,12 +3483,13 @@ main,
   inset: 0;
   background:
     linear-gradient(
-      165deg,
-      rgba(22, 18, 14, 0.58) 0%,
-      rgba(18, 14, 10, 0.52) 42%,
-      rgba(12, 10, 8, 0.68) 100%
+      180deg,
+      rgba(14, 12, 9, 0.5) 0%,
+      rgba(14, 12, 9, 0.22) 40%,
+      rgba(14, 12, 9, 0.55) 100%
     ),
-    url("assets/heroes/crew-on-aav.jpg") center 28% / cover no-repeat;
+    url("assets/heroes/crew-on-aav.jpg") center 30% / cover no-repeat;
+  filter: saturate(0.95) contrast(1.05);
 }
 
 .membership-pros-inner {
@@ -3402,9 +3497,14 @@ main,
   z-index: 1;
 }
 
+.membership-pros .exhibit-head h2,
+.membership-pros .membership-lede {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65);
+}
+
 .membership-lede {
   max-width: 38rem;
-  color: rgba(243, 233, 208, 0.88);
+  color: #f7efd8;
 }
 
 .member-benefits {
