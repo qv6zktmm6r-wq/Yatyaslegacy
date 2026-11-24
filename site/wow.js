@@ -26,26 +26,6 @@
     }
   }
 
-  // Iron lineage track progress
-  var lineage = document.getElementById("lineage");
-  var progress = document.querySelector("[data-lineage-progress]");
-  if (lineage && progress && !reduceMotion) {
-    function syncLineage() {
-      var rect = lineage.getBoundingClientRect();
-      var view = window.innerHeight || 1;
-      var start = view * 0.75;
-      var end = view * 0.2;
-      var raw = (start - rect.top) / (start - end + rect.height * 0.35);
-      var pct = Math.max(0, Math.min(1, raw));
-      progress.style.transform = "scaleY(" + pct + ")";
-    }
-    window.addEventListener("scroll", syncLineage, { passive: true });
-    window.addEventListener("resize", syncLineage);
-    syncLineage();
-  } else if (progress) {
-    progress.style.transform = "scaleY(1)";
-  }
-
   // Unit chooser → Crew Finder
   var unitCopy = {
     any: "Say it in your own words. We pull out unit, years, and platform — you don’t fill a maze of fields.",
