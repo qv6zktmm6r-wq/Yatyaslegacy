@@ -57,7 +57,14 @@ export default function DonatePage() {
       <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
         One-time gifts help scholarships, gatherings, and the programs that keep
         the tracks community connected. Not membership dues — First Wave
-        entrance is separate.
+        entrance is separate. Organizations and partners should use the{" "}
+        <a
+          className="underline underline-offset-2"
+          href="https://yatyasassociation.com/sponsor"
+        >
+          Sponsor / Partner inquiry
+        </a>{" "}
+        instead of this personal donate form.
       </p>
 
       <form className="mt-8 space-y-5" onSubmit={onSubmit}>
@@ -151,8 +158,14 @@ export default function DonatePage() {
         </button>
       </form>
 
-      <p className="mt-6 text-center text-xs text-[var(--ink-soft)]">
-        <Link className="underline underline-offset-2" href="https://yatyasassociation.com/#support">
+      <p className="mt-6 space-y-2 text-center text-xs text-[var(--ink-soft)]">
+        <a
+          className="block underline underline-offset-2"
+          href="https://yatyasassociation.com/sponsor"
+        >
+          Organization sponsor / partner form
+        </a>
+        <Link className="block underline underline-offset-2" href="https://yatyasassociation.com/#support">
           Back to the Association site
         </Link>
       </p>

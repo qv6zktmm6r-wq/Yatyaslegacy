@@ -3526,13 +3526,15 @@ main,
 .legacy-hero-wash { background-image: url("assets/heroes/lvtp7-beach.jpg"); background-position: center 40%; }
 .sch-hero-wash { background-image: url("assets/heroes/aav-beach-land.jpg"); background-position: center 48%; }
 .splash-hero-wash { background-image: url("assets/heroes/aav-ocean.jpg"); background-position: center 50%; }
+.sponsor-hero-wash { background-image: url("assets/heroes/aav-ocean.jpg"); background-position: center 42%; }
 
 .first-wave-page .site-header,
 .oral-page .site-header,
 .legacy-page .site-header,
 .scholarship-page .site-header,
 .final-splash-page .site-header,
-.crew-finder-page .site-header {
+.crew-finder-page .site-header,
+.sponsor-page .site-header {
   background: transparent;
 }
 
