@@ -136,8 +136,12 @@
     }
   }
 
-  if (roll) {
-    fetch(HUB_STATUS, { credentials: "omit" })
+  function loadRoll() {
+    if (!roll) return;
+    fetch(HUB_STATUS + "?t=" + Date.now(), {
+      credentials: "omit",
+      cache: "no-store",
+    })
       .then(function (res) {
         return res.json();
       })
@@ -155,5 +159,13 @@
         );
       })
       .catch(fallbackRoll);
+  }
+
+  if (roll) {
+    loadRoll();
+    setInterval(loadRoll, 20000);
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "visible") loadRoll();
+    });
   }
 })();

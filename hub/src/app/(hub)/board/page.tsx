@@ -4,7 +4,10 @@ import {
   type BoardPaymentRow,
   type BoardRosterRow,
 } from "@/components/BoardDashboardClient";
-import type { RegistrationStatus } from "@/components/RegistrationWavePanel";
+import {
+  RegistrationWavePanel,
+  type RegistrationStatus,
+} from "@/components/RegistrationWavePanel";
 import { createClient } from "@/lib/supabase/server";
 import { stripeMode } from "@/lib/stripe";
 import { isVipRole } from "@/lib/types";
@@ -15,10 +18,11 @@ const defaultRegStatus: RegistrationStatus = {
   tag_prefix: "FW",
   tag_cap: 100,
   issued_count: 0,
-  next_number: 11,
-  seats_remaining: 89,
+  next_number: 8,
+  seats_remaining: 93,
   closed_reason: "",
   reserved_numbers: [5, 6, 7],
+  claimed_numbers: [1, 2, 3, 4],
 };
 
 export default async function BoardPage() {
@@ -84,6 +88,7 @@ export default async function BoardPage() {
           entrance payment clears.
         </p>
       </div>
+      <RegistrationWavePanel initial={regStatus} />
       <BoardDashboardClient
         stripeReady={stripeMode() === "ready"}
         regStatus={regStatus}

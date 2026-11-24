@@ -15,10 +15,11 @@ const defaultRegStatus: RegistrationStatus = {
   tag_prefix: "FW",
   tag_cap: 100,
   issued_count: 0,
-  next_number: 11,
-  seats_remaining: 89,
+  next_number: 8,
+  seats_remaining: 93,
   closed_reason: "",
   reserved_numbers: [5, 6, 7],
+  claimed_numbers: [1, 2, 3, 4],
 };
 
 export default async function ApprovalsPage() {

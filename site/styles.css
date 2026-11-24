@@ -3925,6 +3925,11 @@ main,
   max-width: 44rem;
 }
 
+.fw-roll-wrap-compact {
+  margin: 1.25rem 0 1.5rem;
+  max-width: none;
+}
+
 .fw-roll-meta {
   display: flex;
   flex-wrap: wrap;

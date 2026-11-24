@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 
@@ -14,6 +14,7 @@ export type RegistrationStatus = {
   seats_remaining: number;
   closed_reason: string;
   reserved_numbers?: number[];
+  claimed_numbers?: number[];
 };
 
 export function RegistrationWavePanel({
@@ -29,14 +30,27 @@ export function RegistrationWavePanel({
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  async function refresh() {
+  async function refresh(full = true) {
     const supabase = createClient();
     const { data } = await supabase.rpc("registration_status");
     if (data && typeof data === "object") {
       setStatus(data as RegistrationStatus);
     }
-    router.refresh();
+    if (full) router.refresh();
   }
+
+  useEffect(() => {
+    const tick = () => void refresh(false);
+    const id = window.setInterval(tick, 15000);
+    const onVis = () => {
+      if (document.visibilityState === "visible") tick();
+    };
+    document.addEventListener("visibilitychange", onVis);
+    return () => {
+      window.clearInterval(id);
+      document.removeEventListener("visibilitychange", onVis);
+    };
+  }, []);
 
   async function pauseOrResume(open: boolean) {
     setBusy(true);
@@ -125,14 +139,15 @@ export function RegistrationWavePanel({
         </div>
       </dl>
 
+      <FirstWaveRollLive status={status} />
+
       {status.reserved_numbers && status.reserved_numbers.length > 0 ? (
         <p className="text-xs text-[var(--ink-soft)]">
           Board-held (not auto-issued):{" "}
           {status.reserved_numbers
             .map((n) => `${status.tag_prefix}-${String(n).padStart(3, "0")}`)
             .join(", ")}
-          . Claimed so far: Jorge FW-001, Jose Guerra FW-002, Fausto Cabrera
-          FW-003, Sammy Subnet FW-004. Update roster emails when they join.
+          .
         </p>
       ) : null}
 
@@ -207,5 +222,45 @@ export function RegistrationWavePanel({
         </p>
       ) : null}
     </section>
+  );
+}
+
+function FirstWaveRollLive({ status }: { status: RegistrationStatus }) {
+  const claimed = new Set(status.claimed_numbers || []);
+  const reserved = new Set(status.reserved_numbers || []);
+  const cap = Math.min(status.tag_cap || 100, 100);
+  const plates = [];
+  for (let i = 1; i <= cap; i += 1) {
+    const state = claimed.has(i) ? "claimed" : reserved.has(i) ? "held" : "open";
+    const tone =
+      state === "claimed"
+        ? "bg-[var(--olive-deep)] text-[var(--parchment)]"
+        : state === "held"
+          ? "bg-amber-100 text-amber-950 border-amber-300"
+          : "bg-white/70 text-[var(--ink-soft)] border-[var(--rule)]";
+    plates.push(
+      <span
+        key={i}
+        title={`${status.tag_prefix}-${String(i).padStart(3, "0")} — ${state}`}
+        className={`inline-flex h-6 w-7 items-center justify-center rounded border text-[9px] font-semibold tabular-nums ${tone}`}
+      >
+        {String(i).padStart(3, "0")}
+      </span>,
+    );
+  }
+  return (
+    <div className="space-y-1.5">
+      <p className="text-xs font-medium text-[var(--charcoal)]">
+        Live member tracker · updates as payments clear
+      </p>
+      <div className="flex max-h-40 flex-wrap gap-1 overflow-y-auto rounded-lg border border-[var(--rule)] bg-white/50 p-2">
+        {plates}
+      </div>
+      <p className="text-[11px] text-[var(--ink-soft)]">
+        {(status.claimed_numbers || []).length} claimed ·{" "}
+        {(status.reserved_numbers || []).filter((n) => !claimed.has(n)).length}{" "}
+        held · auto-refreshes every 15s
+      </p>
+    </div>
   );
 }

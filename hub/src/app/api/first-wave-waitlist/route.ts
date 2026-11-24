@@ -20,7 +20,14 @@ function corsHeaders(origin: string | null) {
 }
 
 function json(data: unknown, origin: string | null, status = 200) {
-  return NextResponse.json(data, { status, headers: corsHeaders(origin) });
+  return NextResponse.json(data, {
+    status,
+    headers: {
+      ...corsHeaders(origin),
+      "Cache-Control": "no-store, max-age=0",
+      Pragma: "no-cache",
+    },
+  });
 }
 
 function adminClient() {

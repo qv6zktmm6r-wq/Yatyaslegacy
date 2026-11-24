@@ -232,27 +232,37 @@
   function loadFirstWaveSeats() {
     var el = document.getElementById("fw-seat-status");
     if (!el) return;
-    fetch(firstWaveEndpoint, { method: "GET", headers: { Accept: "application/json" } })
+    fetch(firstWaveEndpoint + "?t=" + Date.now(), {
+      method: "GET",
+      headers: { Accept: "application/json" },
+      cache: "no-store",
+    })
       .then(function (res) {
         return res.json();
       })
       .then(function (payload) {
         if (!payload || !payload.ok || !payload.registration) return;
         var reg = payload.registration;
+        var claimed = (reg.claimed_numbers || []).length;
         if (!reg.registrations_open) {
           el.hidden = false;
           el.textContent =
             (reg.wave_label || "First Wave") +
             " registrations are closed" +
-            (reg.closed_reason ? " — " + reg.closed_reason : ".");
+            (reg.closed_reason ? " — " + reg.closed_reason : ".") +
+            " · " +
+            claimed +
+            " claimed.";
           return;
         }
         el.hidden = false;
         el.textContent =
           (reg.wave_label || "First Wave") +
           ": " +
+          claimed +
+          " claimed · " +
           reg.seats_remaining +
-          " public seats remaining (Board-held numbers reserved). Next public number " +
+          " public seats remaining. Next public number " +
           (reg.tag_prefix || "FW") +
           "-" +
           String(reg.next_number || 0).padStart(3, "0") +
@@ -263,6 +273,12 @@
 
   document.querySelectorAll("form[data-yat-form]").forEach(bindForm);
   loadFirstWaveSeats();
+  if (document.getElementById("fw-seat-status")) {
+    setInterval(loadFirstWaveSeats, 20000);
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "visible") loadFirstWaveSeats();
+    });
+  }
 
   var tabsRoot = document.querySelector("[data-crew-tabs]");
   if (tabsRoot) {

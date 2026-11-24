@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState, type ReactNode } from "react";
+import { FormEvent, useEffect, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
@@ -81,6 +81,7 @@ export function BoardDashboardClient({
   holdsActive: number;
 }) {
   const router = useRouter();
+  const [liveReg, setLiveReg] = useState(regStatus);
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -89,6 +90,30 @@ export function BoardDashboardClient({
   const [note, setNote] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [payBusy, setPayBusy] = useState(false);
+
+  useEffect(() => {
+    setLiveReg(regStatus);
+  }, [regStatus]);
+
+  useEffect(() => {
+    const tick = async () => {
+      const supabase = createClient();
+      const { data } = await supabase.rpc("registration_status");
+      if (data && typeof data === "object") {
+        setLiveReg(data as RegistrationStatus);
+      }
+      router.refresh();
+    };
+    const id = window.setInterval(() => void tick(), 20000);
+    const onVis = () => {
+      if (document.visibilityState === "visible") void tick();
+    };
+    document.addEventListener("visibilitychange", onVis);
+    return () => {
+      window.clearInterval(id);
+      document.removeEventListener("visibilitychange", onVis);
+    };
+  }, [router]);
 
   const entrancePaid = useMemo(
     () =>
@@ -105,9 +130,9 @@ export function BoardDashboardClient({
     [roster],
   );
   const nextTag =
-    regStatus.next_number > 0
-      ? `${regStatus.tag_prefix}-${String(regStatus.next_number).padStart(3, "0")}`
-      : `${regStatus.tag_prefix}-###`;
+    liveReg.next_number > 0
+      ? `${liveReg.tag_prefix}-${String(liveReg.next_number).padStart(3, "0")}`
+      : `${liveReg.tag_prefix}-###`;
 
   async function onOverride(e: FormEvent) {
     e.preventDefault();
@@ -188,8 +213,9 @@ export function BoardDashboardClient({
       )}
 
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-        <Stat label="Seats left" value={String(regStatus.seats_remaining)} />
+        <Stat label="Seats left" value={String(liveReg.seats_remaining)} />
         <Stat label="Next public #" value={nextTag} />
+        <Stat label="Claimed" value={String((liveReg.claimed_numbers || []).length)} />
         <Stat label="Waitlist" value={String(waitlistPending)} />
         <Stat label="Entrance paid" value={String(entrancePaid)} />
         <Stat label="Unclaimed Hub" value={String(unclaimed)} />
@@ -197,12 +223,12 @@ export function BoardDashboardClient({
       </section>
 
       <p className="text-sm text-[var(--ink-soft)]">
-        Wave: {regStatus.wave_label}
-        {regStatus.registrations_open ? " · open" : " · closed"}
+        Wave: {liveReg.wave_label}
+        {liveReg.registrations_open ? " · open" : " · closed"}
         {unpaidRoster > 0
           ? ` · ${unpaidRoster} rostered without entrance paid (Board/founder path)`
           : ""}
-        .{" "}
+        . Tracker refreshes as payments clear.{" "}
         <Link href="/approvals" className="underline">
           Open Roster / waitlist actions
         </Link>
