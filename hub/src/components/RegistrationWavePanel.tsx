@@ -131,8 +131,8 @@ export function RegistrationWavePanel({
           {status.reserved_numbers
             .map((n) => `${status.tag_prefix}-${String(n).padStart(3, "0")}`)
             .join(", ")}
-          . Named so far: Jose Guerra FW-002, Fausto Cabrera FW-003, Sammy
-          Subnet FW-004 — assign on the roster with their emails when ready.
+          . Claimed so far: Jorge FW-001, Jose Guerra FW-002, Fausto Cabrera
+          FW-003, Sammy Subnet FW-004. Update roster emails when they join.
         </p>
       ) : null}
 
