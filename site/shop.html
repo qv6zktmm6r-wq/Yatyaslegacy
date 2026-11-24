@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Association Gear — YAT-YAS Association</title>
+  <meta name="description" content="YAT-YAS Association gear — crest apparel, caps, stickers, and the association coin. Opening soon; prices set by the Board." />
+  <link rel="canonical" href="https://yatyasassociation.com/shop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yatyasassociation.com/shop" />
+  <meta property="og:title" content="Association Gear — YAT-YAS Association" />
+  <meta property="og:description" content="Crest apparel, caps, stickers, and the association coin — gear for the tracks community." />
+  <meta property="og:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="program-page shop-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header>
+    <div class="header-inner">
+      <a class="brand-mark" href="index.html#top" aria-label="YAT-YAS Association home">
+        <img src="assets/crest-transparent.png" alt="" width="48" height="56" />
+        <span class="brand-copy">
+          <span class="brand-name">YAT-YAS</span>
+          <span class="brand-sub">Association</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
+        <div class="nav-links">
+          <a href="index.html#about">Mission</a>
+          <a href="index.html#membership">Membership</a>
+          <a href="shop.html" aria-current="page">Gear</a>
+          <a href="first-wave.html">First Wave</a>
+          <a href="https://yatyas-hub.vercel.app/login">Member Hub</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-cta" href="#gear-interest">Get notified</a>
+          <a class="nav-contact" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="program-hero" aria-labelledby="shop-heading">
+      <div class="program-hero-copy">
+        <p class="eyebrow">Association Gear</p>
+        <h1 id="shop-heading">Wear the tracks</h1>
+        <p class="lede">
+          Crest apparel, caps, stickers, and the YAT-YAS Association coin — gear for members and supporters.
+          The shop is standing up now; the Board sets prices before checkout opens.
+        </p>
+      </div>
+    </section>
+
+    <section class="program-body" aria-labelledby="catalog-heading">
+      <h2 id="catalog-heading">Coming first</h2>
+      <ul class="program-points">
+        <li>
+          <h3>YAT-YAS Crest Tee</h3>
+          <p>Association crest on everyday apparel.</p>
+        </li>
+        <li>
+          <h3>Tracks Cap</h3>
+          <p>A daily-wear cap for the community.</p>
+        </li>
+        <li>
+          <h3>Crest Sticker Pack</h3>
+          <p>For vehicles, kits, and gear bags.</p>
+        </li>
+        <li>
+          <h3>YAT-YAS Association Coin</h3>
+          <p>Official association challenge coin.</p>
+        </li>
+      </ul>
+      <p class="membership-fine">
+        No prices are listed until the Board publishes them. This is not Command Deck Collectives merch — this is association gear only.
+      </p>
+    </section>
+
+    <section class="program-form-section" id="gear-interest" aria-labelledby="interest-heading">
+      <h2 id="interest-heading">Get notified</h2>
+      <p>Tell us what you want first. The board will follow up when checkout opens.</p>
+      <form class="intake-form" data-intake="gear-interest" data-subject="Association Gear interest" novalidate>
+        <label>
+          Name
+          <input name="name" type="text" required maxlength="120" autocomplete="name" />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required maxlength="200" autocomplete="email" />
+        </label>
+        <fieldset>
+          <legend>Interested in</legend>
+          <label class="check"><input type="checkbox" name="item" value="crest-tee" /> Crest Tee</label>
+          <label class="check"><input type="checkbox" name="item" value="tracks-cap" /> Tracks Cap</label>
+          <label class="check"><input type="checkbox" name="item" value="sticker-pack" /> Sticker Pack</label>
+          <label class="check"><input type="checkbox" name="item" value="association-coin" /> Association Coin</label>
+        </fieldset>
+        <label>
+          Notes (optional)
+          <textarea name="notes" rows="4" maxlength="1000" placeholder="Sizes, quantities, or ideas…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send interest</button>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="footer-crest" src="assets/crest-transparent.png" alt="" width="72" height="84" />
+    <p>
+      <a href="mailto:board@yatyasassociation.com">board@yatyasassociation.com</a>
+      · <a href="https://yatyasassociation.com">yatyasassociation.com</a>
+    </p>
+  </footer>
+  <script src="script.js" defer></script>
+  <script src="forms.js" defer></script>
+</body>
+</html>

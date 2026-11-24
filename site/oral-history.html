@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oral History Project — YAT-YAS Association</title>
+  <meta name="description" content="Preserve Amtracker stories. We help tag units, platforms, and interview questions — you keep the truth." />
+  <link rel="canonical" href="https://yatyasassociation.com/oral-history" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yatyasassociation.com/oral-history" />
+  <meta property="og:title" content="Oral History Project — YAT-YAS Association" />
+  <meta property="og:description" content="Preserve Amtracker stories. We help tag units, platforms, and interview questions — you keep the truth." />
+  <meta property="og:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="program-page oral-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header>
+    <div class="header-inner">
+      <a class="brand-mark" href="index.html#top" aria-label="YAT-YAS Association home">
+        <img src="assets/crest-transparent.png" alt="" width="48" height="56" />
+        <span class="brand-copy">
+          <span class="brand-name">YAT-YAS</span>
+          <span class="brand-sub">Association</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
+        <div class="nav-links">
+          <a href="index.html#about">Mission</a>
+          <a href="index.html#lineage">Legacy</a>
+          <a href="index.html#programs">Programs</a>
+          <a href="first-wave.html">First Wave</a>
+          <a href="scholarships.html">Scholarships</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-cta" href="first-wave.html">Join</a>
+          <a class="nav-contact" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="premium-hero oral-hero" aria-labelledby="oral-heading">
+      <div class="premium-hero-wash oral-hero-wash" aria-hidden="true"></div>
+      <div class="premium-hero-inner">
+        <p class="eyebrow on-dark">Legacy · Oral History</p>
+        <h1 id="oral-heading">Stories before they’re gone</h1>
+        <p class="lede">First-hand Amtracker memory — crew, platforms, places, and the lessons only the tracks community can tell.</p>
+      </div>
+    </section>
+    <section class="exhibit program-detail">
+      <div class="exhibit-shell exhibit-shell-wide program-layout">
+        <div class="program-copy">
+          <h2>What we’re collecting</h2>
+          <p>Not a polished documentary. A living archive: how a crew worked, what a deployment felt like, who taught you the job, what changed from LVT to ACV.</p>
+          <ul class="program-bullets">
+            <li>Service period, units, MOS / role</li>
+            <li>Platform and places that matter</li>
+            <li>Crew and leaders worth remembering</li>
+            <li>Lessons for the next generation</li>
+          </ul>
+          <p>Paste rough notes below. We suggest tags and interview questions — you edit before anything is archived.</p>
+        </div>
+        <div class="program-form-panel">
+          <form class="program-form contact-form" id="oral-history-form" data-yat-form data-subject="YAT-YAS Oral History intake" novalidate>
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-row">
+              <div class="form-field"><label for="oh-name">Your name</label><input id="oh-name" name="name" required autocomplete="name" maxlength="120" /></div>
+              <div class="form-field"><label for="oh-email">Email</label><input id="oh-email" type="email" name="email" required autocomplete="email" maxlength="160" /></div>
+            </div>
+            <div class="form-field">
+              <label for="oh-role">I am</label>
+              <select id="oh-role" name="role" required>
+                <option value="">Select</option>
+                <option value="veteran">Sharing my own story</option>
+                <option value="family">Family offering a story</option>
+                <option value="interviewer">Volunteer interviewer</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="oh-notes">Rough notes or story seeds</label>
+              <textarea id="oh-notes" name="story_summary" required rows="5" maxlength="2500" placeholder="Units, years, platforms, places, people, moments…"></textarea>
+            </div>
+            <button type="button" class="btn btn-ghost ai-assist-btn" data-ai-mode="oral_assist" data-ai-source="#oh-notes" data-ai-form="#oral-history-form" data-ai-status="#oral-ai-status" data-ai-out="#oral-ai-out" data-ai-map='{"era":"service_period","summary":"story_summary"}'>Help me shape this</button>
+            <p class="form-status" id="oral-ai-status" hidden></p>
+            <div class="ai-result" id="oral-ai-out" hidden></div>
+            <div class="form-row">
+              <div class="form-field"><label for="oh-period">Service period</label><input id="oh-period" name="service_period" maxlength="80" /></div>
+              <div class="form-field">
+                <label for="oh-platform">Platform</label>
+                <select id="oh-platform" name="platform">
+                  <option value="">Select</option>
+                  <option>LVT</option><option>LVTP</option><option>AAV</option><option>ACV</option><option value="multiple">Multiple</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field"><label for="oh-units">Units</label><input id="oh-units" name="units" maxlength="160" /></div>
+            <div class="form-field"><label for="oh-mos">MOS / role</label><input id="oh-mos" name="mos_role" maxlength="120" /></div>
+            <div class="form-field">
+              <label for="oh-recording">Preferred format</label>
+              <select id="oh-recording" name="recording" required>
+                <option value="">Select</option>
+                <option value="phone">Phone / video interview</option>
+                <option value="written">Written first</option>
+                <option value="in_person">In person when available</option>
+                <option value="unsure">Not sure</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="oh-perm">Archive permission</label>
+              <select id="oh-perm" name="permission" required>
+                <option value="">Select</option>
+                <option value="yes_review">Yes — with my review before public use</option>
+                <option value="private">Association archive only for now</option>
+                <option value="discuss">Discuss later</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary contact-submit">Submit oral history interest</button>
+            <p class="form-status" id="oral-history-form-status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img class="footer-crest" src="assets/crest-transparent.png" alt="" width="72" height="84" />
+      <p class="footer-brand">YAT-YAS Association, Inc.</p>
+      <p class="footer-purpose">
+        YAT-YAS Association preserves and perpetuates the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community.
+      </p>
+      <nav class="footer-program-links" aria-label="Program pages">
+        <a href="first-wave.html">First Wave</a>
+        <a href="crew-finder.html">Crew Finder</a>
+        <a href="legacy-registry.html">Legacy Registry</a>
+        <a href="oral-history.html">Oral History</a>
+        <a href="final-splash.html">Final Splash</a>
+        <a href="scholarships.html">Scholarships</a>
+      </nav>
+      <p class="footer-meta">
+        <a href="mailto:board@yatyasassociation.com">board@yatyasassociation.com</a>
+        · <a href="https://yatyasassociation.com">yatyasassociation.com</a>
+      </p>
+      <p class="footer-disclaimer">
+        YAT-YAS Association is an independent organization and is not affiliated with or endorsed by the United States Marine Corps, Department of the Navy, Department of Defense, or any other agency of the United States Government. Historical photographs are U.S. government works in the public domain.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="forms.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

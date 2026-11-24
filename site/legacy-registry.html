@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legacy Registry — YAT-YAS Association</title>
+  <meta name="description" content="Reserve a member-controlled Legacy Registry profile. Tell your story — we help draft the fields. You control visibility." />
+  <link rel="canonical" href="https://yatyasassociation.com/legacy-registry" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yatyasassociation.com/legacy-registry" />
+  <meta property="og:title" content="Legacy Registry — YAT-YAS Association" />
+  <meta property="og:description" content="Reserve a member-controlled Legacy Registry profile. Tell your story — we help draft the fields. You control visibility." />
+  <meta property="og:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="program-page legacy-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header>
+    <div class="header-inner">
+      <a class="brand-mark" href="index.html#top" aria-label="YAT-YAS Association home">
+        <img src="assets/crest-transparent.png" alt="" width="48" height="56" />
+        <span class="brand-copy">
+          <span class="brand-name">YAT-YAS</span>
+          <span class="brand-sub">Association</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
+        <div class="nav-links">
+          <a href="index.html#about">Mission</a>
+          <a href="index.html#lineage">Legacy</a>
+          <a href="index.html#programs">Programs</a>
+          <a href="first-wave.html">First Wave</a>
+          <a href="scholarships.html">Scholarships</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-cta" href="first-wave.html">Join</a>
+          <a class="nav-contact" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="premium-hero legacy-hero" aria-labelledby="lr-heading">
+      <div class="premium-hero-wash legacy-hero-wash" aria-hidden="true"></div>
+      <div class="premium-hero-inner">
+        <p class="eyebrow on-dark">Legacy · Registry</p>
+        <h1 id="lr-heading">Your place in the iron lineage</h1>
+        <p class="lede">People, units, platforms, and stories — member-controlled, built to outlast a Facebook post.</p>
+      </div>
+    </section>
+    <section class="exhibit program-detail">
+      <div class="exhibit-shell exhibit-shell-wide program-layout">
+        <div class="program-copy">
+          <h2>Write it once. Own what shows.</h2>
+          <p>Dump the messy version of your service history. We help draft a clean profile. You choose what stays private when the secure hub launches.</p>
+          <ul class="program-bullets">
+            <li>Unit and platform history</li>
+            <li>Duty stations and schools</li>
+            <li>Short bio in your voice</li>
+            <li>Visibility: members only, limited public, or private</li>
+          </ul>
+        </div>
+        <div class="program-form-panel">
+          <form class="program-form contact-form" id="legacy-registry-form" data-yat-form data-subject="YAT-YAS Legacy Registry intake" novalidate>
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-row">
+              <div class="form-field"><label for="lr-name">Full name</label><input id="lr-name" name="name" required autocomplete="name" maxlength="120" /></div>
+              <div class="form-field"><label for="lr-email">Email</label><input id="lr-email" type="email" name="email" required autocomplete="email" maxlength="160" /></div>
+            </div>
+            <div class="form-field">
+              <label for="lr-raw">Tell your tracks story</label>
+              <textarea id="lr-raw" name="raw_story" required rows="5" maxlength="2500" placeholder="Where you served, what you drove, who you were with, what you want remembered…"></textarea>
+            </div>
+            <button type="button" class="btn btn-ghost ai-assist-btn" data-ai-mode="legacy_assist" data-ai-source="#lr-raw" data-ai-form="#legacy-registry-form" data-ai-status="#lr-ai-status" data-ai-out="#lr-ai-out" data-ai-map='{"service_era":"service_era","unit_history":"unit_history","duty_stations":"duty_stations","platforms":"platforms","billets":"billets","deployments":"deployments","schools":"schools","short_bio":"story","suggested_visibility":"visibility"}'>Draft my profile</button>
+            <p class="form-status" id="lr-ai-status" hidden></p>
+            <div class="ai-result" id="lr-ai-out" hidden></div>
+            <div class="form-field"><label for="lr-era">Service era</label><input id="lr-era" name="service_era" maxlength="80" /></div>
+            <div class="form-field"><label for="lr-units">Unit history</label><textarea id="lr-units" name="unit_history" rows="2" maxlength="800"></textarea></div>
+            <div class="form-field"><label for="lr-stations">Duty stations</label><input id="lr-stations" name="duty_stations" maxlength="200" /></div>
+            <div class="form-field"><label for="lr-platforms">Platforms</label><input id="lr-platforms" name="platforms" maxlength="120" /></div>
+            <div class="form-field"><label for="lr-billets">Billets</label><input id="lr-billets" name="billets" maxlength="200" /></div>
+            <div class="form-field"><label for="lr-deps">Deployments</label><input id="lr-deps" name="deployments" maxlength="200" /></div>
+            <div class="form-field"><label for="lr-schools">Schools</label><input id="lr-schools" name="schools" maxlength="200" /></div>
+            <div class="form-field"><label for="lr-bio">Short biography</label><textarea id="lr-bio" name="story" rows="4" maxlength="2000"></textarea></div>
+            <div class="form-field">
+              <label for="lr-vis">Preferred visibility</label>
+              <select id="lr-vis" name="visibility" required>
+                <option value="">Select</option>
+                <option value="member">Members only</option>
+                <option value="public_limited">Limited public historical fields</option>
+                <option value="private">Private until I decide</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary contact-submit">Register for the Legacy Registry</button>
+            <p class="form-status" id="legacy-registry-form-status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img class="footer-crest" src="assets/crest-transparent.png" alt="" width="72" height="84" />
+      <p class="footer-brand">YAT-YAS Association, Inc.</p>
+      <p class="footer-purpose">
+        YAT-YAS Association preserves and perpetuates the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community.
+      </p>
+      <nav class="footer-program-links" aria-label="Program pages">
+        <a href="first-wave.html">First Wave</a>
+        <a href="crew-finder.html">Crew Finder</a>
+        <a href="legacy-registry.html">Legacy Registry</a>
+        <a href="oral-history.html">Oral History</a>
+        <a href="final-splash.html">Final Splash</a>
+        <a href="scholarships.html">Scholarships</a>
+      </nav>
+      <p class="footer-meta">
+        <a href="mailto:board@yatyasassociation.com">board@yatyasassociation.com</a>
+        · <a href="https://yatyasassociation.com">yatyasassociation.com</a>
+      </p>
+      <p class="footer-disclaimer">
+        YAT-YAS Association is an independent organization and is not affiliated with or endorsed by the United States Marine Corps, Department of the Navy, Department of Defense, or any other agency of the United States Government. Historical photographs are U.S. government works in the public domain.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="forms.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

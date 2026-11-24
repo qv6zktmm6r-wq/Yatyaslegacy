@@ -1,7 +1,8 @@
 # YAT-YAS Association, Inc. — Articles of Incorporation (as filed)
 
-Status: **Submitted to California Secretary of State via bizfile Online on October 25, 2026.**  
-Work Queue / Document No. **B20260476255** · Receipt No. **15225284** · Auth. No. **741170** · Status **Pending Review** (entity number not yet issued).  
+Status: **Submitted 2026-10-25; SOS Needs Correction 2026-11-04 (Correction No. 0006031455; due 11/28/2026).**  
+Work Queue / Document No. **B20260476255** · Receipt No. **15225284** · Auth. No. **741170**.  
+Corrected attachment for resubmit: [`attachments/YATYAS-SOS-Correction-Attachment.pdf`](./attachments/YATYAS-SOS-Correction-Attachment.pdf) with online specific purpose **`SEE ATTACHMENT`**.  
 Full filing/receipt record: [`filing-record.md`](./filing-record.md).
 
 ## Article I — Corporate Name

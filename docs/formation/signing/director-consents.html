@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YAT-YAS — Director Consents (Digital Signature)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-storage-key="yatyas-director-consents-v1">
+  <div class="toolbar">
+    <div>
+      <strong>Director Consents</strong>
+      <div class="hint" data-sign-summary>0 of 3 signatures complete</div>
+    </div>
+    <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+      <a href="organizational-action.html">Open Organizational Action</a>
+      <button type="button" data-action="clear">Clear signatures</button>
+      <button type="button" class="primary" data-action="print">Print / Save PDF</button>
+    </div>
+  </div>
+
+  <article class="sheet">
+    <header class="letterhead">
+      <img class="crest" src="assets/crest.png" alt="YAT-YAS Association crest" />
+      <div>
+        <h1 class="org-name">YAT-YAS Association, Inc.</h1>
+        <p class="org-sub">California Nonprofit Public Benefit Corporation · Entity No. B20260476255</p>
+        <p class="org-sub">1253 Sunset Avenue · Perris, CA 92571</p>
+      </div>
+    </header>
+
+    <h1 class="doc-title">Director Consents to Serve</h1>
+    <p class="meta">
+      Status: <strong>Ready for digital signature</strong> · File date: <strong>November 4, 2026</strong><br />
+      Type your full legal name in the signature field. It renders as a cursive digital signature and auto-dates when valid.
+    </p>
+
+    <section class="sign-block" data-signer="jorge">
+      <h3>Consent 1 — Jorge A. Mejia Lozoya</h3>
+      <p>
+        I, <strong>Jorge A. Mejia Lozoya</strong>, consent to serve as a director of YAT-YAS Association, Inc.,
+        occupying the <strong>Protected Founder-Director Seat</strong>, and as Founding President, effective upon
+        the organizational action of the directors.
+      </p>
+      <p>
+        I understand that this seat is a protected Founder-Director designation under the bylaws, does not create
+        ownership of nonprofit assets, does not create a superior Board vote, and does not create a unilateral veto
+        over ordinary Board action.
+      </p>
+      <div class="sign-row">
+        <div>
+          <label for="sig-jorge">Digital signature (type full legal name)</label>
+          <input id="sig-jorge" class="typed-signature" data-expected="Jorge A. Mejia Lozoya" autocomplete="name" placeholder="Type: Jorge A. Mejia Lozoya" />
+          <div class="status-pill">Type full legal name to sign</div>
+          <div class="printed">Printed name: Jorge A. Mejia Lozoya</div>
+        </div>
+        <div>
+          <label for="date-jorge">Date</label>
+          <input id="date-jorge" class="date-field" type="date" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sign-block" data-signer="jose">
+      <h3>Consent 2 — Jose Guerra</h3>
+      <p>
+        I, <strong>Jose Guerra</strong>, consent to serve as a director of YAT-YAS Association, Inc., occupying the
+        <strong>Protected Co-Founder-Director Seat</strong>, and as Vice President, effective upon the organizational
+        action of the directors.
+      </p>
+      <p>
+        I understand that this seat is a protected Co-Founder-Director designation under the bylaws, does not create
+        ownership of nonprofit assets, does not create a superior Board vote, and does not create a unilateral veto
+        over ordinary Board action.
+      </p>
+      <div class="sign-row">
+        <div>
+          <label for="sig-jose">Digital signature (type full legal name)</label>
+          <input id="sig-jose" class="typed-signature" data-expected="Jose Guerra" autocomplete="name" placeholder="Type: Jose Guerra" />
+          <div class="status-pill">Type full legal name to sign</div>
+          <div class="printed">Printed name: Jose Guerra</div>
+        </div>
+        <div>
+          <label for="date-jose">Date</label>
+          <input id="date-jose" class="date-field" type="date" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sign-block" data-signer="fausto">
+      <h3>Consent 3 — Fausto Cabrera</h3>
+      <p>
+        I, <strong>Fausto Cabrera</strong>, consent to serve as a director of YAT-YAS Association, Inc.
+        (Seat 3 of the seven-seat Founding Board), effective upon the organizational action of the directors.
+      </p>
+      <p>
+        I understand that directors owe fiduciary duties to the corporation under California law and that no director
+        owns any portion of the corporation or its assets.
+      </p>
+      <div class="sign-row">
+        <div>
+          <label for="sig-fausto">Digital signature (type full legal name)</label>
+          <input id="sig-fausto" class="typed-signature" data-expected="Fausto Cabrera" autocomplete="name" placeholder="Type: Fausto Cabrera" />
+          <div class="status-pill">Type full legal name to sign</div>
+          <div class="printed">Printed name: Fausto Cabrera</div>
+        </div>
+        <div>
+          <label for="date-fausto">Date</label>
+          <input id="date-fausto" class="date-field" type="date" />
+        </div>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      Retain a printed/PDF copy of the signed version in the corporate records binder. Do not commit completed
+      signed PDFs containing only routine names if preferred; signed originals may also be stored offline.
+      Signatures are stored in this browser only (localStorage) until cleared or printed.
+    </p>
+  </article>
+
+  <script src="sign.js"></script>
+</body>
+</html>

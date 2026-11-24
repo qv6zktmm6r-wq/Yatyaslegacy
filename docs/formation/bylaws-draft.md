@@ -1,6 +1,6 @@
 # YAT-YAS Association, Inc. — Bylaws Final Draft for Adoption
 
-Status: Final working draft for adoption by the initial Board after California incorporation is accepted. This document should be reviewed against the endorsed Articles and any final legal/tax advice before signature.
+Status: **Ready for Board adoption** with the organizational action. California Articles are FILED (Entity **B20260476255**, file date **November 4, 2026**). Review against the stamped Articles and any final legal/tax advice before signature.
 
 ## Article I — Name, Status, and Purpose
 
@@ -306,9 +306,19 @@ Neither designation creates:
 
 Directors and officers may receive reasonable compensation for bona fide services actually rendered to the corporation if approved in accordance with applicable law and the corporation's conflict-of-interest and compensation policies.
 
-### Section 7.2 — Conflicts
+### Section 7.2 — Member-Owned Businesses and Conflicts of Interest
 
-A director or officer with a material financial interest in a proposed transaction must disclose the interest and shall not participate in approval except as permitted by law.
+Members, directors, and officers may propose providing goods or services to the Association, subject to applicable law, these bylaws, and the Association’s conflict-of-interest policy. Membership does not guarantee business opportunities or preferential treatment.
+
+For any proposed transaction involving a member’s, director’s, officer’s, or immediate family member’s business:
+
+1. **Disclosure.** The interested person must disclose the business relationship and financial interest before the Association makes a commitment.
+2. **Independent review.** Disinterested directors must review pricing, quality, delivery terms, and reasonably available alternatives.
+3. **Recusal.** Interested directors and officers may provide requested information but must leave the discussion and abstain from the decision.
+4. **Approval.** The transaction must receive advance approval from disinterested directors under applicable voting requirements. They must determine that it serves the Association’s interests and is fair and reasonable.
+5. **Documentation.** Meeting minutes must record the disclosure, recusals, alternatives considered, approval, and basis for the decision.
+6. **Payment controls.** Neither the supplier nor an interested family member may authorize or release payment to the supplier. An independent authorized person must verify delivery and approve payment.
+7. **Membership rights.** Acting as a supplier does not create additional membership rights, votes, or authority.
 
 ### Section 7.3 — Interested Persons
 
@@ -416,6 +426,8 @@ No amendment may authorize conduct inconsistent with the corporation's nonprofit
 
 Adopted by the Board of Directors on: ____________________
 
-Secretary signature: ______________________________
+Certified with the organizational action. Until a Secretary is appointed, the President may sign below as certifying officer.
+
+Secretary signature (if appointed): ______________________________
 
 President signature: ______________________________

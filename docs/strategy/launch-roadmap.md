@@ -25,7 +25,7 @@ Exit condition: YAT-YAS can operate through an approved governance and financial
 
 Objective: create a credible public presence and begin the Founding 100.
 
-- finalize corporate logo and brand system
+- [x] lock corporate logo (official shield crest, 2026-11-24)
 - launch YATYASAssociation.com public site
 - publish mission and four pillars
 - publish independent/non-DoD disclaimer

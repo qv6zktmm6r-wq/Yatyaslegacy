@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <title>A letter for Jose — YAT-YAS Association</title>
+  <meta name="description" content="Private correspondence from the YAT-YAS Association — open the envelope." />
+  <meta property="og:title" content="A letter for Jose — YAT-YAS Association" />
+  <meta property="og:description" content="Open the sealed letter from the Association." />
+  <meta property="og:image" content="https://yatyasassociation.com/letters/crest-transparent.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://yatyasassociation.com/letters/crest-transparent.png" />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="envelope.css" />
+</head>
+<body>
+  <div class="scene" id="scene">
+    <p class="invite-line">YAT-YAS Association · Private correspondence</p>
+
+    <div
+      class="envelope-wrap"
+      id="envelope"
+      role="button"
+      tabindex="0"
+      aria-label="Open the sealed letter"
+      aria-expanded="false"
+    >
+      <div class="envelope">
+        <div class="pocket">
+          <div class="lining" aria-hidden="true"></div>
+          <div class="letter-peek" aria-hidden="true">
+            <img class="mini-crest" src="crest-transparent.png" alt="" width="80" height="94" />
+            <div class="lines">
+              <span></span><span></span><span style="width:55%"></span>
+            </div>
+          </div>
+          <div class="front" aria-hidden="true">
+            <div class="front-bottom"></div>
+          </div>
+          <div class="flap" aria-hidden="true">
+            <div class="flap-face"></div>
+          </div>
+          <div class="seal" aria-hidden="true">
+            <img src="crest-transparent.png" alt="YAT-YAS crest wax seal" width="120" height="140" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="tap">Open me<small>Click the seal</small></p>
+
+    <div class="letter-stage" id="letterStage" aria-hidden="true">
+      <article class="sheet">
+        <header class="letterhead">
+          <img class="crest" src="crest-transparent.png" width="280" height="327" alt="YAT-YAS Association crest" />
+          <div class="org-block">
+            <p class="org-name">YAT-YAS Association, Inc.</p>
+            <p class="org-line">Assault Amphibian Community</p>
+            <p class="org-web">yatyasassociation.com</p>
+          </div>
+        </header>
+
+        <div class="meta">
+          <div><strong>From</strong>The Association</div>
+          <div><strong>Date</strong>October 25, 2026</div>
+          <div><strong>Re</strong>An invitation to partake as Vice President and Founder</div>
+        </div>
+
+        <p class="salutation">Dear Jose,</p>
+
+        <div class="body">
+          <p>This letter comes from the Association with a straightforward ask — and a real one.</p>
+          <p>
+            YAT-YAS is the tracks motto of the amphibious community —
+            <span class="motto">You ain't tracks, you ain't shit.</span>
+            That call belongs to the Alligator Marines who manned the iron from ship to shore, and to the families who stood with them. The Association’s mission is clear: <em>Preserving the legacy of the Alligator Marines — for those who served, those serving, and those still to come — through family, fellowship, and the next generation.</em> That means carrying the lineage forward from the Landing Vehicle Tracked through today’s Amphibious Combat Vehicle, and looking after our own along the way — supporting scholarships for the next generation, holding gatherings where the tracks community can come together, and serving as a place where deployed individuals receive care packages, a simple way to remind them they are not forgotten while they are downrange.
+          </p>
+          <p>
+            The Association is underway. The legacy site is live at yatyasassociation.com. The name is on the door. What makes it real is the people who choose to partake — not as spectators, but as those willing to help lead.
+          </p>
+          <p>Jose, the Association is asking you to partake as <strong>Vice President and Founder</strong>.</p>
+          <p>
+            That role means standing with the Association as it finds its footing: helping set the tone, speaking plainly when it matters, and helping keep faith with the tracks community that gave this name its meaning. The Association does not need ceremony for its own sake. It needs someone who understands what YAT-YAS actually means — and who is willing to carry that forward.
+          </p>
+          <p>
+            If you are willing to partake in this way, please reply and say so. If you have questions or reservations, send those too. The Association would rather hear the truth early and clear.
+          </p>
+          <p>YAT-YAS. From the iron, for the ones still to come.</p>
+        </div>
+
+        <div class="closing">
+          <p class="sign-off">Respectfully, on behalf of the Association,</p>
+          <p class="signature-name">The Association</p>
+          <p class="signature-title">YAT-YAS Association, Inc.</p>
+        </div>
+
+        <p class="footer-rule">Private correspondence · YAT-YAS Association, Inc.</p>
+      </article>
+    </div>
+
+    <div class="again">
+      <button type="button" id="again">Close &amp; open again</button>
+    </div>
+  </div>
+
+  <script src="envelope.js"></script>
+</body>
+</html>

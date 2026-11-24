@@ -13,7 +13,8 @@ Formation and governance repository for YAT-YAS Association, Inc., a California 
 - Identified directors: Jorge A. Mejia Lozoya (Protected Founder-Director Seat), Jose Guerra (Protected Co-Founder-Director Seat), Fausto Cabrera; Seats 4–7 open pending consent
 - Fiscal year: October 1 through September 30
 - Public domain: YATYASAssociation.com
-- **Articles filed** via bizfile Online on **October 25, 2026** (Public Benefit form): Receipt **15225284**, Document **B20260476255**, Auth **741170**, paid **$35.00**, status **Pending Review** — entity number not yet issued. See `docs/formation/filing-record.md`.
+- **California entity Active:** **B20260476255** — Articles FILED **November 4, 2026**; SI due **02/02/2027**. See `docs/formation/filing-record.md`.
+- **Phase 2 package ready for signature:** `docs/formation/organizational-action.md` (+ director consents, bylaws, bank resolution, EIN/SI data sheets).
 
 ## Formation documents
 

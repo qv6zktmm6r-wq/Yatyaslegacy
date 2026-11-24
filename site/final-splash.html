@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final Splash — YAT-YAS Association</title>
+  <meta name="description" content="Honor deceased Amtrackers with family-approved remembrances. We help draft — family always reviews." />
+  <link rel="canonical" href="https://yatyasassociation.com/final-splash" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yatyasassociation.com/final-splash" />
+  <meta property="og:title" content="Final Splash — YAT-YAS Association" />
+  <meta property="og:description" content="Honor deceased Amtrackers with family-approved remembrances. We help draft — family always reviews." />
+  <meta property="og:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="program-page final-splash-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header>
+    <div class="header-inner">
+      <a class="brand-mark" href="index.html#top" aria-label="YAT-YAS Association home">
+        <img src="assets/crest-transparent.png" alt="" width="48" height="56" />
+        <span class="brand-copy">
+          <span class="brand-name">YAT-YAS</span>
+          <span class="brand-sub">Association</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
+        <div class="nav-links">
+          <a href="index.html#about">Mission</a>
+          <a href="index.html#lineage">Legacy</a>
+          <a href="index.html#programs">Programs</a>
+          <a href="first-wave.html">First Wave</a>
+          <a href="scholarships.html">Scholarships</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-cta" href="first-wave.html">Join</a>
+          <a class="nav-contact" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="premium-hero splash-hero" aria-labelledby="splash-heading">
+      <div class="premium-hero-wash splash-hero-wash" aria-hidden="true"></div>
+      <div class="premium-hero-inner">
+        <p class="eyebrow on-dark">Legacy · Memorial</p>
+        <h1 id="splash-heading">Final Splash</h1>
+        <p class="lede">A permanent place of remembrance — with family permission, never without it.</p>
+      </div>
+    </section>
+    <section class="exhibit program-detail splash-detail">
+      <div class="exhibit-shell exhibit-shell-wide program-layout">
+        <div class="program-copy">
+          <h2>Dignity first</h2>
+          <p>Share what you know. We can help draft a remembrance for family review. Nothing goes public until the family says so. Muster may recognize remembrances added that year.</p>
+          <ul class="program-bullets">
+            <li>Name, photo, service dates when approved</li>
+            <li>Unit and platform history</li>
+            <li>Family-written remembrance</li>
+            <li>Optional Muster recognition</li>
+          </ul>
+        </div>
+        <div class="program-form-panel">
+          <form class="program-form contact-form" id="final-splash-form" data-yat-form data-subject="YAT-YAS Final Splash remembrance request" novalidate>
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-row">
+              <div class="form-field"><label for="sp-name">Your name</label><input id="sp-name" name="name" required autocomplete="name" maxlength="120" /></div>
+              <div class="form-field"><label for="sp-email">Your email</label><input id="sp-email" type="email" name="email" required autocomplete="email" maxlength="160" /></div>
+            </div>
+            <div class="form-field">
+              <label for="sp-rel">Your relationship</label>
+              <select id="sp-rel" name="relationship" required>
+                <option value="">Select</option>
+                <option value="spouse">Spouse / surviving spouse</option>
+                <option value="child">Child / descendant</option>
+                <option value="parent">Parent / family</option>
+                <option value="shipmate">Shipmate / crew</option>
+                <option value="friend">Friend of the family</option>
+              </select>
+            </div>
+            <div class="form-field"><label for="sp-honoree">Honoree full name</label><input id="sp-honoree" name="honoree_name" required maxlength="160" /></div>
+            <div class="form-field">
+              <label for="sp-notes">What should be remembered?</label>
+              <textarea id="sp-notes" name="notes_raw" required rows="4" maxlength="2000" placeholder="Service, crew, character, units, years…"></textarea>
+            </div>
+            <button type="button" class="btn btn-ghost ai-assist-btn" data-ai-mode="splash_assist" data-ai-source="#sp-notes" data-ai-form="#final-splash-form" data-ai-status="#sp-ai-status" data-ai-out="#sp-ai-out" data-ai-map='{"honoree_name":"honoree_name","draft_remembrance":"remembrance","service_dates":"service_dates","unit_history":"unit_history","platform":"platform"}'>Draft remembrance</button>
+            <p class="form-status" id="sp-ai-status" hidden></p>
+            <div class="ai-result" id="sp-ai-out" hidden></div>
+            <div class="form-field"><label for="sp-remembrance">Remembrance / biography</label><textarea id="sp-remembrance" name="remembrance" required rows="5" maxlength="2500"></textarea></div>
+            <div class="form-row">
+              <div class="form-field"><label for="sp-dates">Service dates</label><input id="sp-dates" name="service_dates" maxlength="80" /></div>
+              <div class="form-field"><label for="sp-platform">Platform</label><input id="sp-platform" name="platform" maxlength="40" /></div>
+            </div>
+            <div class="form-field"><label for="sp-units">Unit history</label><input id="sp-units" name="unit_history" maxlength="200" /></div>
+            <div class="form-field">
+              <label for="sp-perm">Family permission</label>
+              <select id="sp-perm" name="family_permission" required>
+                <option value="">Select</option>
+                <option value="i_am_family">I am family / next of kin</option>
+                <option value="family_aware">Family asked me to submit</option>
+                <option value="need_intro">Help contact the family first</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary contact-submit">Submit remembrance request</button>
+            <p class="form-status" id="final-splash-form-status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img class="footer-crest" src="assets/crest-transparent.png" alt="" width="72" height="84" />
+      <p class="footer-brand">YAT-YAS Association, Inc.</p>
+      <p class="footer-purpose">
+        YAT-YAS Association preserves and perpetuates the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community.
+      </p>
+      <nav class="footer-program-links" aria-label="Program pages">
+        <a href="first-wave.html">First Wave</a>
+        <a href="crew-finder.html">Crew Finder</a>
+        <a href="legacy-registry.html">Legacy Registry</a>
+        <a href="oral-history.html">Oral History</a>
+        <a href="final-splash.html">Final Splash</a>
+        <a href="scholarships.html">Scholarships</a>
+      </nav>
+      <p class="footer-meta">
+        <a href="mailto:board@yatyasassociation.com">board@yatyasassociation.com</a>
+        · <a href="https://yatyasassociation.com">yatyasassociation.com</a>
+      </p>
+      <p class="footer-disclaimer">
+        YAT-YAS Association is an independent organization and is not affiliated with or endorsed by the United States Marine Corps, Department of the Navy, Department of Defense, or any other agency of the United States Government. Historical photographs are U.S. government works in the public domain.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="forms.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

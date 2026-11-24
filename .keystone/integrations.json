@@ -1,0 +1,27 @@
+{
+  "sentry": false,
+  "figma": false,
+  "browserstack": false,
+  "amplitude": false,
+  "runway": false,
+  "elevenlabs": false,
+  "github": true,
+  "vercel": true,
+  "supabase": true,
+  "stripe": true,
+  "resend": true,
+  "stripe_isolation": {
+    "required_account_name": "YAT-YAS Association",
+    "forbidden_accounts": [
+      "KEYSTONE GROUP HOLDINGS LLC",
+      "Bridgeforge OS",
+      "BRIDGEVOICE",
+      "keystone_host"
+    ],
+    "keychain_project": "yatyasassociation",
+    "cli_project_name": "yatyasassociation",
+    "vercel_project": "yatyas-hub",
+    "note": "Never reuse Keystone or other portfolio Stripe keys for First Wave / Hub payments."
+  }
+}
+

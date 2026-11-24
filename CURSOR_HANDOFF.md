@@ -69,19 +69,15 @@ Current IRS public guidance says a Section 501(c)(19) veterans organization gene
 
 Do not weaken the membership-composition safeguards without documenting the legal basis.
 
-## California Articles filing (submitted)
+## California Articles filing (FILED / Active)
 
-Filed **October 25, 2026** via California Secretary of State **bizfile Online**:
-
-- Form: Articles of Incorporation - CA Nonprofit Corporation - Public Benefit
-- Receipt No.: **15225284**
-- Document / Work Queue No.: **B20260476255**
-- Authorization No.: **741170**
-- Total paid: **$35.00** ($30.00 filing + $5.00 certified copy)
-- Status as of 10/25/2026: **Pending Review** (no entity number yet)
+- Entity No.: **B20260476255**
+- Official file date: **November 4, 2026**
+- Status (bizfile 11/12/2026): **Active**; standing SOS/FTB/Agent/VCFCF **Good**
+- Statement of Information due: **February 2, 2027**
+- Submitted 10/25/2026; Needs Correction then Make a Correction 11/04/2026; Receipt **15225284**; Auth **741170**; paid **$35.00**
 - Agent: Jorge A. Mejia Lozoya · Address: 1253 Sunset Avenue, Perris, CA 92571
-- Purpose: public benefit; 501(c)(19) tax-exemption statement attached
-- Receipt PDF (Desktop, outside Git): `Business Files/YAT-YAS Association/YATYAS-Articles-Filing-Receipt-15225284-B20260476255.pdf`
+- Stamped Articles: `docs/formation/attachments/YATYAS-Articles-FILED-B20260476255-2026-11-04.pdf`
 - Repo record: `docs/formation/filing-record.md`
 
 ## Post-formation product and program direction
@@ -106,24 +102,30 @@ Important implementation rule: legal formation, governance, banking, membership-
 
 ## Cursor tasks after California accepts the Articles
 
-1. Insert the California entity number and official acceptance/filing date into `filing-record.md` and the compliance checklist; save stamped Articles / certified copy.
-2. Finalize the organizational action/minutes for signature.
-3. Finalize the bylaws for board adoption.
-4. Finalize the membership application fields and compliance counters without storing sensitive military documents in Git.
-5. Prepare the EIN data sheet.
-6. Prepare SI-100 filing data.
-7. Prepare the bank resolution.
-8. Prepare IRS Form 1024 data and Schedule K membership counts.
-9. Prepare California exemption filing data.
-10. Track Attorney General registration if/when charitable assets are first received.
+1. [x] Insert entity number / file date; save stamped Articles / acknowledgment.
+2. [x] Finalize organizational action for signature (`organizational-action.md`).
+3. [x] Finalize bylaws for board adoption (`bylaws-draft.md`).
+4. [ ] Finalize membership application fields and compliance counters without storing sensitive military documents in Git.
+5. [x] Prepare EIN data sheet (`ein-data-sheet.md`).
+6. [x] Prepare SI-100 filing data (`si-100-data-sheet.md`).
+7. [x] Prepare bank resolution (`bank-resolution.md`).
+8. [ ] Prepare IRS Form 1024 data and Schedule K membership counts.
+9. [ ] Prepare California exemption filing data.
+10. [ ] Track Attorney General registration if/when charitable assets are first received.
+
+**Immediate human step:** Jorge, Jose, and Fausto sign `organizational-action.md` + `director-consents.md`; then obtain EIN.
 
 ## Files
 
 - docs/formation/filing-record.md
 - docs/formation/ca-articles.md
-- docs/formation/attachments/YATYAS-Article-V-Tax-Exemption-Statement.pdf
+- docs/formation/attachments/YATYAS-Articles-FILED-B20260476255-2026-11-04.pdf
 - docs/formation/bylaws-draft.md
 - docs/formation/organizational-action.md
+- docs/formation/director-consents.md
+- docs/formation/ein-data-sheet.md
+- docs/formation/si-100-data-sheet.md
+- docs/formation/bank-resolution.md
 - docs/formation/membership-policy.md
 - docs/formation/financial-controls.md
 - docs/formation/compliance-checklist.md

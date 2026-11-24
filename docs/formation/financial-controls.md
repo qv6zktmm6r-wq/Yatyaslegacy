@@ -1,6 +1,6 @@
 # YAT-YAS Association, Inc. — Financial Controls Draft
 
-Status: Working draft.
+Status: **Ready for Board adoption** with the organizational action (Entity **B20260476255**).
 
 ## 1. Purpose
 
@@ -40,9 +40,11 @@ A compensated director or officer must not participate in the approval of their 
 
 ## 6. Related-Party Transactions
 
-Any proposed transaction involving a director, officer, key person, family member, or related business must be disclosed before approval.
+Any proposed transaction involving a director, officer, key person, member, family member, or related business (including member-owned apparel, coins, merchandise, or other goods/services) must be disclosed before approval and handled under Bylaws Article VII, Section 7.2.
 
 The disinterested directors must determine that the transaction is fair, reasonable, and in the corporation's best interest and must document the basis for approval.
+
+Neither the supplier nor an interested family member may authorize or release payment to the supplier. An independent authorized person must verify delivery and approve payment.
 
 ## 7. Major Expenditures
 

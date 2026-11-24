@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crew Finder — YAT-YAS Association</title>
+  <meta name="description" content="Tell your story. We structure the match — unit, years, platform — then the board follows up." />
+  <link rel="canonical" href="https://yatyasassociation.com/crew-finder" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yatyasassociation.com/crew-finder" />
+  <meta property="og:title" content="Crew Finder — YAT-YAS Association" />
+  <meta property="og:description" content="Tell your story. We structure the match — unit, years, platform — then the board follows up." />
+  <meta property="og:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="program-page crew-finder-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header>
+    <div class="header-inner">
+      <a class="brand-mark" href="index.html#top" aria-label="YAT-YAS Association home">
+        <img src="assets/crest-transparent.png" alt="" width="48" height="56" />
+        <span class="brand-copy">
+          <span class="brand-name">YAT-YAS</span>
+          <span class="brand-sub">Association</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
+        <div class="nav-links">
+          <a href="index.html#about">Mission</a>
+          <a href="index.html#lineage">Legacy</a>
+          <a href="index.html#programs">Programs</a>
+          <a href="first-wave.html">First Wave</a>
+          <a href="scholarships.html">Scholarships</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-cta" href="first-wave.html">Join</a>
+          <a class="nav-contact" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="premium-hero crew-hero" aria-labelledby="crew-heading">
+      <div class="premium-hero-wash crew-hero-wash" aria-hidden="true"></div>
+      <div class="premium-hero-inner">
+        <p class="eyebrow on-dark">Brotherhood · Crew Finder</p>
+        <h1 id="crew-heading">Find your crew</h1>
+        <p class="lede">Say it in your own words. We pull out unit, years, and platform — you don’t fill a maze of fields.</p>
+      </div>
+    </section>
+
+    <section class="crew-how" id="how-it-works">
+      <div class="exhibit-shell exhibit-shell-wide">
+        <ol class="crew-steps">
+          <li><span class="crew-step-num">1</span><h3>Tell the story</h3><p>Who you served with, where, and when — one paragraph is enough.</p></li>
+          <li><span class="crew-step-num">2</span><h3>We structure it</h3><p>Unit, years, platform, and station get organized so matching starts clean.</p></li>
+          <li><span class="crew-step-num">3</span><h3>Board follow-ups</h3><p>Private by design. Nothing is published without consent.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="crew-forms-section" id="crew-forms">
+      <div class="exhibit-shell exhibit-shell-wide">
+        <div class="ai-stage">
+          <h2>Who are you looking for?</h2>
+          <p class="panel-lede">Example: <em>“Looking for 3d Tracks guys from 2010–2014 on AAVs at Pendleton — especially motor-T shop.”</em></p>
+          <form class="program-form contact-form crew-form" id="crew-ai-form" novalidate>
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-row">
+              <div class="form-field">
+                <label for="crew-name">Your name</label>
+                <input id="crew-name" name="name" required autocomplete="name" maxlength="120" placeholder="Your name" />
+              </div>
+              <div class="form-field">
+                <label for="crew-email">Email</label>
+                <input id="crew-email" type="email" name="email" required autocomplete="email" maxlength="160" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="crew-story">Your story</label>
+              <textarea id="crew-story" name="story" required rows="5" maxlength="2500" placeholder="Unit, years, platform, station, deployment, who you hope to find…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary contact-submit">Find my crew</button>
+            <p class="form-status" id="crew-ai-status" role="status" aria-live="polite" hidden></p>
+          </form>
+          <div class="ai-result" id="crew-ai-result" hidden></div>
+
+          <form class="program-form contact-form crew-form" id="crew-board-form" data-yat-form data-subject="YAT-YAS Crew Finder match" hidden novalidate>
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="hidden" name="name" />
+            <input type="hidden" name="email" />
+            <input type="hidden" name="raw_story" />
+            <input type="hidden" name="ai_summary" />
+            <input type="hidden" name="ai_confidence" />
+            <p class="form-section-label">Review before sending</p>
+            <div class="form-row">
+              <div class="form-field"><label for="cf-unit">Unit</label><input id="cf-unit" name="looking_unit" maxlength="120" /></div>
+              <div class="form-field"><label for="cf-years">Years</label><input id="cf-years" name="looking_years" maxlength="80" /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label for="cf-platform">Platform</label><input id="cf-platform" name="looking_platform" maxlength="40" /></div>
+              <div class="form-field"><label for="cf-station">Duty station</label><input id="cf-station" name="looking_station" maxlength="120" /></div>
+            </div>
+            <div class="form-field"><label for="cf-dep">Deployment</label><input id="cf-dep" name="looking_deployment" maxlength="160" /></div>
+            <div class="form-field"><label for="cf-school">Schoolhouse</label><input id="cf-school" name="looking_schoolhouse" maxlength="120" /></div>
+            <div class="form-field"><label for="cf-looking">Looking for</label><textarea id="cf-looking" name="looking_for" rows="4" maxlength="1500" required></textarea></div>
+            <button type="submit" class="btn btn-primary contact-submit">Send match to the board</button>
+            <p class="form-status" id="crew-board-form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+          <p class="crew-privacy">Do not include DD-214s, Social Security numbers, or medical details.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img class="footer-crest" src="assets/crest-transparent.png" alt="" width="72" height="84" />
+      <p class="footer-brand">YAT-YAS Association, Inc.</p>
+      <p class="footer-purpose">
+        YAT-YAS Association preserves and perpetuates the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community.
+      </p>
+      <nav class="footer-program-links" aria-label="Program pages">
+        <a href="first-wave.html">First Wave</a>
+        <a href="crew-finder.html">Crew Finder</a>
+        <a href="legacy-registry.html">Legacy Registry</a>
+        <a href="oral-history.html">Oral History</a>
+        <a href="final-splash.html">Final Splash</a>
+        <a href="scholarships.html">Scholarships</a>
+      </nav>
+      <p class="footer-meta">
+        <a href="mailto:board@yatyasassociation.com">board@yatyasassociation.com</a>
+        · <a href="https://yatyasassociation.com">yatyasassociation.com</a>
+      </p>
+      <p class="footer-disclaimer">
+        YAT-YAS Association is an independent organization and is not affiliated with or endorsed by the United States Marine Corps, Department of the Navy, Department of Defense, or any other agency of the United States Government. Historical photographs are U.S. government works in the public domain.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="forms.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

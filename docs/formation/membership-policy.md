@@ -1,6 +1,6 @@
 # YAT-YAS Association, Inc. — Membership Policy Draft
 
-Status: Working draft.
+Status: **Ready for Board adoption** with the organizational action. Entrance amounts below reflect President / Board direction (2026-11-13). Online checkout still pending Stripe keys for this project.
 
 ## 1. Purpose
 
@@ -33,11 +33,11 @@ The designation:
 - does not make the holder a Founder, director, or officer
 - does not entitle the holder to corporate assets
 
-First Wave entrance pricing and welcome-kit pricing are pending final Board approval.
+**First Wave entrance: $100 (one-time).** That amount is applied toward the member’s **welcome membership package** (numbered coin, presentation box, t-shirt, membership card materials, and Member Hub access). Funds are reserved for that package; physical kit ships when produced and the member is approved. The fee is not a purchase of ownership, a Board seat, or transferable rights.
 
 ## 4. Regular Voting Service/Veteran Members
 
-Regular member dues are pending final Board approval before collection.
+**Ongoing membership dues: $5 per month** ($60 per year) for Voting Service/Veteran Members in good standing (including First Wave after entrance). Dues support scholarships, musters and events, Member Hub operations, and other Association programs. Collection begins when online dues checkout is enabled.
 
 ## 5. Legacy Members
 

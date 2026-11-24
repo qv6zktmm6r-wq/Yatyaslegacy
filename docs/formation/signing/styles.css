@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Great+Vibes&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+:root {
+  --ink: #1f1c18;
+  --ink-soft: #4a4338;
+  --rule: #b08d3e;
+  --olive: #3f4633;
+  --paper: #f7f1e6;
+  --paper-deep: #ebe2d0;
+  --ok: #2f5d3a;
+  --warn: #8a3b2a;
+  --line: #c9b896;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #d9d0bc;
+  color: var(--ink);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  background: rgba(31, 28, 24, 0.94);
+  color: #f7f1e6;
+}
+
+.toolbar a, .toolbar button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid rgba(201, 168, 90, 0.55);
+  background: transparent;
+  color: #f7f1e6;
+  border-radius: 0;
+  padding: 0.45rem 0.8rem;
+  text-decoration: none;
+}
+
+.toolbar button.primary {
+  background: var(--rule);
+  border-color: var(--rule);
+  color: #1f1c18;
+  font-weight: 700;
+}
+
+.toolbar .hint {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.sheet {
+  width: min(8.5in, 100%);
+  min-height: 11in;
+  margin: 1.25rem auto;
+  padding: 0.7in 0.75in 0.65in;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(176, 141, 62, 0.1), transparent 42%),
+    linear-gradient(180deg, #faf4e8 0%, var(--paper) 45%, var(--paper-deep) 100%);
+  border: 1px solid rgba(176, 141, 62, 0.5);
+  box-shadow: 0 16px 36px rgba(31, 28, 24, 0.25);
+}
+
+.letterhead {
+  display: grid;
+  grid-template-columns: 7.25rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 0.85rem;
+  border-bottom: 2px solid var(--rule);
+  margin-bottom: 1rem;
+}
+
+.crest {
+  width: 7.25rem;
+  height: auto;
+  display: block;
+}
+
+.org-name {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--olive);
+}
+
+.org-sub {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.doc-title {
+  margin: 0.9rem 0 0.35rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.45rem;
+  color: var(--ink);
+}
+
+.meta {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.meta strong { color: var(--ink); }
+
+h2 {
+  margin: 1.25rem 0 0.45rem;
+  font-size: 1.05rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.2rem;
+}
+
+h3 {
+  margin: 1rem 0 0.35rem;
+  font-size: 0.98rem;
+}
+
+p, li { line-height: 1.45; font-size: 0.95rem; }
+ul { padding-left: 1.2rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.55rem 0 0.85rem;
+  font-size: 0.92rem;
+}
+
+th, td {
+  border: 1px solid #b7aa8c;
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { background: rgba(176, 141, 62, 0.12); }
+
+.sign-block {
+  margin: 1.15rem 0;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(176, 141, 62, 0.45);
+  background: rgba(255, 252, 245, 0.55);
+  break-inside: avoid;
+}
+
+.sign-block h3 {
+  margin-top: 0;
+}
+
+.sign-row {
+  display: grid;
+  grid-template-columns: 1fr 8.5rem;
+  gap: 0.75rem;
+  align-items: end;
+  margin-top: 0.75rem;
+}
+
+label {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.25rem;
+}
+
+.typed-signature {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid var(--ink);
+  background: transparent;
+  font-family: "Great Vibes", "Snell Roundhand", "Apple Chancery", cursive;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #1a2744;
+  padding: 0.15rem 0.1rem 0.2rem;
+  outline: none;
+}
+
+.typed-signature::placeholder {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.9rem;
+  color: #8a7f6a;
+  letter-spacing: 0;
+}
+
+.typed-signature.is-valid {
+  color: #15233f;
+}
+
+.typed-signature.is-invalid:not(:placeholder-shown) {
+  color: var(--warn);
+}
+
+.date-field {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid var(--ink);
+  background: transparent;
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.1rem 0.25rem;
+  outline: none;
+}
+
+.status-pill {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.status-pill.ok { color: var(--ok); }
+.status-pill.bad { color: var(--warn); }
+
+.printed {
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.footer-note {
+  margin-top: 1.4rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  padding-top: 0.7rem;
+}
+
+@media print {
+  body { background: white; }
+  .toolbar { display: none !important; }
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    width: auto;
+    min-height: auto;
+  }
+  .typed-signature {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

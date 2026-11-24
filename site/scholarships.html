@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scholarships — YAT-YAS Association</title>
+  <meta name="description" content="Scholarships and trade awards for tracks-community dependents. Ask about eligibility — applications not open yet." />
+  <link rel="canonical" href="https://yatyasassociation.com/scholarships" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yatyasassociation.com/scholarships" />
+  <meta property="og:title" content="Scholarships — YAT-YAS Association" />
+  <meta property="og:description" content="Scholarships and trade awards for tracks-community dependents. Ask about eligibility — applications not open yet." />
+  <meta property="og:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://yatyasassociation.com/assets/crest-transparent.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="program-page scholarship-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header>
+    <div class="header-inner">
+      <a class="brand-mark" href="index.html#top" aria-label="YAT-YAS Association home">
+        <img src="assets/crest-transparent.png" alt="" width="48" height="56" />
+        <span class="brand-copy">
+          <span class="brand-name">YAT-YAS</span>
+          <span class="brand-sub">Association</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
+        <div class="nav-links">
+          <a href="index.html#about">Mission</a>
+          <a href="index.html#lineage">Legacy</a>
+          <a href="index.html#programs">Programs</a>
+          <a href="first-wave.html">First Wave</a>
+          <a href="scholarships.html">Scholarships</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-cta" href="first-wave.html">Join</a>
+          <a class="nav-contact" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="premium-hero sch-hero" aria-labelledby="sch-heading">
+      <div class="premium-hero-wash sch-hero-wash" aria-hidden="true"></div>
+      <div class="premium-hero-inner">
+        <p class="eyebrow on-dark">Family · Next generation</p>
+        <h1 id="sch-heading">Scholarships &amp; trade awards</h1>
+        <p class="lede">Education support for dependents of the amphibious tracks community — college, trade school, and training pathways.</p>
+      </div>
+    </section>
+    <section class="exhibit program-detail">
+      <div class="exhibit-shell exhibit-shell-wide program-layout">
+        <div class="program-copy">
+          <h2>Built for the lineage — not the general public</h2>
+          <p class="scholarship-status" role="status"><span class="scholarship-status-label">Status</span> Applications are not open yet. Amounts and deadlines publish when the Board opens the first cycle.</p>
+          <ul class="program-bullets">
+            <li>Child, stepchild, adopted child, or dependent of a tracks sponsor</li>
+            <li>Sponsor tied to LVT–ACV / Assault Amphibian community</li>
+            <li>Enrolled in or accepted to an eligible education or trade program</li>
+            <li>Funds for tuition, fees, books, required tools — preferably paid to the school</li>
+          </ul>
+          <p>Unsure if you qualify? Ask below in plain language. Answers come from Association policy — this cannot approve an award.</p>
+          <div class="ai-ask-box">
+            <label for="sch-ask">Ask about eligibility</label>
+            <textarea id="sch-ask" rows="3" maxlength="1200" placeholder="e.g. My dad was 2d Tracks in the 90s. Can my daughter apply for a trade school award?"></textarea>
+            <button type="button" class="btn btn-ghost ai-assist-btn" data-ai-mode="scholarship_qa" data-ai-source="#sch-ask" data-ai-status="#sch-ai-status" data-ai-out="#sch-ai-out" data-ai-map="{}">Check eligibility</button>
+            <p class="form-status" id="sch-ai-status" hidden></p>
+            <div class="ai-result" id="sch-ai-out" hidden></div>
+          </div>
+        </div>
+        <div class="program-form-panel">
+          <h2>Interest / notify me</h2>
+          <form class="program-form contact-form" id="scholarship-form" data-yat-form data-subject="YAT-YAS Scholarship interest" novalidate>
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-field"><label for="sch-name">Full name</label><input id="sch-name" name="name" required autocomplete="name" maxlength="120" /></div>
+            <div class="form-field"><label for="sch-email">Email</label><input id="sch-email" type="email" name="email" required autocomplete="email" maxlength="160" /></div>
+            <div class="form-field">
+              <label for="sch-interest">I am interested as</label>
+              <select id="sch-interest" name="interest" required>
+                <option value="">Select</option>
+                <option value="applicant">Prospective applicant / dependent</option>
+                <option value="parent">Parent / sponsor</option>
+                <option value="donor">Donor / supporter</option>
+              </select>
+            </div>
+            <div class="form-field"><label for="sch-conn">Tracks connection</label><textarea id="sch-conn" name="tracks_connection" required rows="3" maxlength="800"></textarea></div>
+            <div class="form-field"><label for="sch-plans">Education / trade plans <span class="optional">(optional)</span></label><textarea id="sch-plans" name="education_plans" rows="3" maxlength="800"></textarea></div>
+            <button type="submit" class="btn btn-primary contact-submit">Send scholarship interest</button>
+            <p class="form-status" id="scholarship-form-status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img class="footer-crest" src="assets/crest-transparent.png" alt="" width="72" height="84" />
+      <p class="footer-brand">YAT-YAS Association, Inc.</p>
+      <p class="footer-purpose">
+        YAT-YAS Association preserves and perpetuates the history, traditions, fellowship, welfare, and legacy of past and present members of the United States Armed Forces associated with the amphibious-vehicle community.
+      </p>
+      <nav class="footer-program-links" aria-label="Program pages">
+        <a href="first-wave.html">First Wave</a>
+        <a href="crew-finder.html">Crew Finder</a>
+        <a href="legacy-registry.html">Legacy Registry</a>
+        <a href="oral-history.html">Oral History</a>
+        <a href="final-splash.html">Final Splash</a>
+        <a href="scholarships.html">Scholarships</a>
+      </nav>
+      <p class="footer-meta">
+        <a href="mailto:board@yatyasassociation.com">board@yatyasassociation.com</a>
+        · <a href="https://yatyasassociation.com">yatyasassociation.com</a>
+      </p>
+      <p class="footer-disclaimer">
+        YAT-YAS Association is an independent organization and is not affiliated with or endorsed by the United States Marine Corps, Department of the Navy, Department of Defense, or any other agency of the United States Government. Historical photographs are U.S. government works in the public domain.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="forms.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

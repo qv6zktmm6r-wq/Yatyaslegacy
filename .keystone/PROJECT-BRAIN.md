@@ -5,111 +5,51 @@
 
 ## PRODUCT
 
-**YAT-YAS Association, Inc.** — formation and governance repository (not an app).
+**YAT-YAS Association, Inc.** — California nonprofit public benefit corporation seeking IRC §501(c)(19) / R&TC §23701w.
 
-California nonprofit public benefit corporation seeking:
+Public GitHub: `qv6zktmm6r-wq/Yatyaslegacy` · Domain: **YATYASAssociation.com**  
+Local: `/Volumes/KEYSTONE-WORK/01-ACTIVE-PROJECTS/YATYASASSOCIATION`
 
-- Federal: IRC §501(c)(19) war veterans organization
-- California: R&TC §23701w
-
-**Mission (purpose):** Preserve and perpetuate history, traditions, fellowship, welfare, and legacy of past/present U.S. Armed Forces members associated with the amphibious-vehicle community (LVT, LVTP, AAV, ACV), plus veterans-support, historical, educational, patriotic, memorial, mentorship, scholarship, family-support, fellowship, social, recreational, museum, restoration, oral-history, reunion programs.
-
-Public GitHub: `qv6zktmm6r-wq/Yatyaslegacy`  
-Local path: `/Volumes/KEYSTONE-WORK/01-ACTIVE-PROJECTS/YATYASLEGACY`
-
-## USERS / STAKEHOLDERS
-
-- Voting Service/Veteran Members (past/present U.S. Armed Forces)
-- Founding Charter 001–100
-- Legacy Members (family categories; initially nonvoting)
-- Supporters (nonmembers)
-- Board / officers (governance)
-
-## LOCKED FORMATION FACTS
+## LOCKED FACTS
 
 | Item | Value |
 |---|---|
-| Name | YAT-YAS Association, Inc. |
-| Address | 1253 Sunset Avenue, Perris, CA 92571 |
-| Incorporator / Agent | Jorge A. Mejia Lozoya |
-| Initial directors (3) | Jorge A. Mejia Lozoya (Founder, President), Jose Guerra (VP), Fausto Cabrera |
-| Planned board | 5; seats 4–5 elected by voting members |
-| Treasurer | Victoria Guerra (officer only) |
-| Events Director | Elvira Cabrera (not a director unless elected) |
-| Open roles | Secretary; Second Events Director |
+| Entity No. | **B20260476255** |
+| File date | **2026-11-04** |
+| Status | **Active** |
+| SI due | **2027-02-02** |
+| Address / Agent | 1253 Sunset Avenue, Perris, CA 92571 · Jorge A. Mejia Lozoya |
+| Board | 7 seats; Seat 1 Jorge (protected Founder); Seat 2 Jose (protected Co-Founder); Seat 3 Fausto; 4–7 open |
+| Officers named | President Jorge; VP Jose; Treasurer Victoria; Events Elvira; Secretary open |
 | Fiscal year | Oct 1 – Sep 30 |
-| Quorum (full board) | 3 of 5 |
-| Director terms | 2 years after member-election active |
-| Spending | &lt;$1k officer; $1k–$5k two-person; &gt;$5k or major unbudgeted → full board |
-| Founding dues | $5/mo or $50/yr |
-| Regular dues | $10/mo or $100/yr |
+| Spend tiers | <$1k / $1k–$5k dual / >$5k board |
+| First Wave / dues $ | **$100** entrance → welcome package; ongoing **$5/month** → scholarships, events, programs (2026-11-13). Checkout pending Stripe keys. |
 
-Founder designation is historical only — no asset ownership, no veto, no superior vote.
+## CURRENT STATE (2026-11-24)
 
-## CURRENT STATE (as of 2026-10-25)
+**Phase 1 complete. EIN issued 2026-11-17** — CP575 offline Desktop Business Files only (number never in Git/Brain/chat).
+**Official crest (2026-11-24):** Owner shield mark is canonical. Source `site/assets/crest-official.jpg`; web/email `site/assets/crest-transparent.png`; favicons crest-derived on site + hub. Synced to hub/public, letters, correspondence, signing. Prior crest archived as `crest-previous-transparent.png` (do not ship).
+**Mailbox:** `board@yatyasassociation.com` live (Namecheap Private Email).
+**Site:** production live with premium program pages + `/api/assist` (AI Gateway). First Wave service + waitlist → Hub.
+**Member Hub:** Live at https://hub.yatyasassociation.com · Supabase **YATYAS Association** (`tfavgqqqagcqhfeeutzc`). Registration wave lock + reserved FW tags shipped.
+**Board payments (2026-11-24):** Ledger + RPCs **applied** on live Supabase; Hub code for `/board`, Checkout, webhook (paid + async), success poll, Board override, refunds-keep-tags. Stripe keys + hub deploy still owner-gated.
+**Gear shop:** `/shop` interest page live; catalog shells inactive until Board prices; Stripe not wired.  
+Command Deck coin SKUs deactivated on this DB. Shopify never connected.
 
-**Phase 1 submitted — Pending Review:** California Articles of Incorporation filed via bizfile Online on **2026-10-25**.
+## NEXT
 
-| Filing field | Value |
-|---|---|
-| Form | Articles of Incorporation - CA Nonprofit Corporation - Public Benefit |
-| Receipt No. | 15225284 |
-| Document / Work Queue No. | B20260476255 |
-| Auth. No. | 741170 |
-| Total paid | $35.00 ($30.00 filing + $5.00 certified copy) |
-| Status | Pending Review (as of 10/25/2026) |
-| Entity number | *Not issued yet* |
-| Agent | Jorge A. Mejia Lozoya |
-| Address | 1253 Sunset Avenue, Perris, CA 92571 |
-| Purpose / tax | Public purposes; 501(c)(19) tax-exemption statement attached |
-| Receipt PDF (Desktop) | `~/Desktop/Business Files/YAT-YAS Association/YATYAS-Articles-Filing-Receipt-15225284-B20260476255.pdf` |
-
-Phases 2–8 (organizational action, EIN, SI-100, bank, Form 1024, CA exemption, AG registry, membership ops) remain blocked until Articles are **accepted** and an entity number is issued.
-
-## IMPORTANT PATHS
-
-- `README.md` — status snapshot
-- `CURSOR_HANDOFF.md` — locked decisions + post-acceptance Cursor tasks
-- `.keystone/HANDOFF.md` — mid-task filing continuity
-- `docs/formation/filing-record.md` — SOS submission / receipt record
-- `docs/formation/ca-articles.md` — CA Articles filing draft (content as filed)
-- `docs/formation/attachments/YATYAS-Article-V-Tax-Exemption-Statement.pdf` — Article V attachment
-- `docs/formation/bylaws-draft.md` — post-incorporation bylaws
-- `docs/formation/organizational-action.md` — org meeting / minutes template
-- `docs/formation/membership-policy.md`
-- `docs/formation/financial-controls.md`
-- `docs/formation/compliance-checklist.md` — phased checklist
-- `docs/formation/source-notes.md` — FTB / SOS / IRS / AG citations
-
-## STACK
-
-Markdown governance package only. No application runtime, package manager, DB, or hosting app.
-
-## SECURITY BOUNDARIES
-
-Public repo. **Never commit:** DD-214s, military IDs, DOB, SSN, EIN letters, bank/routing, member identity docs, donor private data. Store eligibility verification securely outside Git; repo may hold aggregate composition counts only.
-
-## LEGAL / COMPLIANCE CAUTION
-
-Track both 501(c)(19) membership tests conservatively until IRS determination or qualified tax counsel resolves:
-
-- ≥75% past/present Armed Forces + ≥97.5% permitted categories (IRS public guidance)
-- 75% war veterans (Treas. Reg. 1.501(c)(19)-1 / 2026 determination letter practice)
-- Separate 90% war-veteran rule for donor deductibility
-
-Do not invent open roles or weaken composition safeguards without documented legal basis.
-
-## NEXT HIGH-VALUE WORK
-
-1. **Monitor** bizfile My Work Queue item **B20260476255** until Accepted (or rejection comments)
-2. On acceptance: record entity number + official filing date in `filing-record.md` + checklist; save stamped Articles / certified copy
-3. Then Phase 2: finalize org action, bylaws, bank resolution → EIN → SI-100 → bank → Form 1024 / Schedule K → CA exemption → AG if charitable assets received
-
-**Recommended first action:** Watch Work Queue for acceptance of B20260476255; do not file a duplicate Articles package while Pending Review.
+1. Finish YAT-YAS Stripe account (board@) + attach corp bank from Keychain (not Keystone Stripe)
+2. Commit/push hub+site → deploy yatyas-hub → Stripe keys + webhook → First Wave Checkout ($100 + $5/mo)
+3. Deploy crest assets to production CDN
+4. SI-100 by 02/02/2027
+5. Board gear SKU prices + Stripe for shop
+6. Later: live Crew Finder search; Form 1024 path
 
 ## LAST VERIFIED
 
-- Date: 2026-10-25
-- Branch: main
-- Commit base: `20459aa` (docs may be dirty ahead of next commit)
-- Filing: Receipt 15225284 / Doc B20260476255 / Auth 741170 / $35.00 / Pending Review
+- 2026-11-24 payment RPCs + RLS verified on `tfavgqqqagcqhfeeutzc` (issue/board_mark/record_monthly/mark_refunded/holds)
+- 2026-11-24 official crest rolled to site/hub/favicons/letters/email URL path (deploy still needed for production CDN)
+- 2026-11-17 EIN CP575 on Desktop Business Files (number not recorded here)
+- 2026-11-12 via bizfile My Records + stamped Articles
+- 2026-11-12 Namecheap Private Email: board@ ON; dig MX → privateemail.com
+- 2026-11-12 production program pages HTTP 200 on yatyasassociation.com

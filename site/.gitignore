@@ -1,0 +1,7 @@
+.env
+.env*
+.env*.local
+.env.local
+.vercel
+node_modules
+_smoke-assist.js
