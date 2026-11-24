@@ -92,6 +92,7 @@
     var cap = tagCap || 100;
     var frag = document.createDocumentFragment();
     var claimedCount = 0;
+    var heldCount = 0;
     var openCount = 0;
     for (var i = 1; i <= cap; i++) {
       var plate = document.createElement("button");
@@ -105,6 +106,7 @@
         claimedCount += 1;
       } else if (reservedSet[i]) {
         state = "held";
+        heldCount += 1;
       } else {
         openCount += 1;
       }
@@ -120,7 +122,7 @@
       statusEl.textContent =
         claimedCount +
         " claimed · " +
-        (reserved || []).length +
+        heldCount +
         " held · " +
         openCount +
         " open";
@@ -128,9 +130,9 @@
   }
 
   function fallbackRoll() {
-    renderRoll([], [1, 2, 3, 4, 5, 6, 7], 100, "FW");
+    renderRoll([1], [2, 3, 4, 5, 6, 7], 100, "FW");
     if (statusEl) {
-      statusEl.textContent = "Roll board offline — showing held numbers only.";
+      statusEl.textContent = "Roll board offline — showing claimed and held numbers.";
     }
   }
 

@@ -47,7 +47,7 @@ Suggested sequence: **commit/push hub → deploy → add keys → create webhook
 - Entrance: **$100** one-time (welcome package)
 - Ongoing: **$5/month** subscription
 
-Checkout creates both in one session. After paid, webhook issues the next public FW tag (skips reserved FW-001–007).
+Checkout creates both in one session. After paid, webhook issues the next public FW tag (skips claimed tags and board-held FW-002–007).
 
 ## Smoke test
 

@@ -18,7 +18,7 @@ const defaultRegStatus: RegistrationStatus = {
   next_number: 11,
   seats_remaining: 89,
   closed_reason: "",
-  reserved_numbers: [1, 2, 3, 4, 5, 6, 7],
+  reserved_numbers: [2, 3, 4, 5, 6, 7],
 };
 
 export default async function BoardPage() {
