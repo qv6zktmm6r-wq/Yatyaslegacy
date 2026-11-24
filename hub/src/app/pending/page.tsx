@@ -42,7 +42,7 @@ export default function PendingPage() {
       return;
     }
     setError(
-      "Still no roster match. Confirm the Board added your email + exact first/last name, then try again.",
+      "Still no match. Use the exact email and name from your entrance payment, or become a member first.",
     );
   }
 
@@ -52,10 +52,10 @@ export default function PendingPage() {
         <BrandMark subtitle="Verification needed" />
         <h1 className="sr-only">Verification needed</h1>
         <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
-          The Member Hub is for verified association members. Your login did not
-          match the roster yet (email + first + last name). Once the Board adds
-          you with your FW number, claim it below — your membership tag will
-          already be on your profile.
+          The Member Hub is for paid association members. Your login must match
+          the email and first / last name from your entrance payment. If you have
+          not paid yet, become a member first. If you just paid, wait a minute
+          and claim below.
         </p>
 
         <form onSubmit={retryClaim} className="mt-5 space-y-3">
@@ -90,6 +90,13 @@ export default function PendingPage() {
         </form>
 
         <p className="mt-4 text-sm text-[var(--ink-soft)]">
+          <a
+            className="font-medium text-[var(--olive-deep)] underline"
+            href="/pay"
+          >
+            Become a member
+          </a>
+          {" · "}
           Questions:{" "}
           <a
             className="font-medium text-[var(--olive-deep)] underline"

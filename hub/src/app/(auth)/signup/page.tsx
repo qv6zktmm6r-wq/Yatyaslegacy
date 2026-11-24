@@ -6,6 +6,9 @@ import { FormEvent, useEffect, useState } from "react";
 import { BrandMark } from "@/components/BrandMark";
 import { createClient } from "@/lib/supabase/client";
 
+const MEMBERSHIP_REQUIRED_COPY =
+  "Hub login is for paid members only. Use the exact email and first/last name from your entrance payment. If you just paid, wait a minute and try again.";
+
 export default function SignupPage() {
   const router = useRouter();
   const [firstName, setFirstName] = useState("");
@@ -29,11 +32,11 @@ export default function SignupPage() {
       };
       if (s.registrations_open === false) {
         setWaveNote(
-          `${s.wave_label || "This wave"} is full. If you are already on the verified roster, you can still create your login below.`,
+          `${s.wave_label || "This wave"} is full for new entrances. Paid members who already have a number can still create a login below.`,
         );
       } else if (typeof s.seats_remaining === "number") {
         setWaveNote(
-          `${s.wave_label || "First Wave"}: ${s.seats_remaining} of ${s.tag_cap ?? 100} seats remaining.`,
+          `${s.wave_label || "First Wave"}: ${s.seats_remaining} of ${s.tag_cap ?? 100} entrance seats remaining.`,
         );
       }
     });
@@ -49,7 +52,7 @@ export default function SignupPage() {
     const last = lastName.trim();
     if (!first || !last) {
       setLoading(false);
-      setError("First and last name are required to match your verified membership.");
+      setError("First and last name are required to match your membership record.");
       return;
     }
 
@@ -70,6 +73,15 @@ export default function SignupPage() {
 
     if (signError) {
       setLoading(false);
+      const msg = signError.message.toLowerCase();
+      if (
+        msg.includes("membership_required") ||
+        msg.includes("database error saving new user") ||
+        msg.includes("database error checking email")
+      ) {
+        setError(MEMBERSHIP_REQUIRED_COPY);
+        return;
+      }
       setError(signError.message);
       return;
     }
@@ -77,7 +89,7 @@ export default function SignupPage() {
     if (!data.session) {
       setLoading(false);
       setNotice(
-        "Check your email to confirm. After confirming, we’ll match your verified membership (email + name) and place your FW tag on your profile.",
+        "Check your email to confirm. After confirming, your membership number will be placed on your profile.",
       );
       return;
     }
@@ -106,11 +118,16 @@ export default function SignupPage() {
       return;
     }
 
-    setError(
-      "No verified membership matched that email and name. Ask the Board / President to add you to the verified roster first (with your FW number), then create your login again.",
-    );
-    router.push("/pending");
-    router.refresh();
+    const reason =
+      claim && typeof claim === "object"
+        ? (claim as { reason?: string }).reason
+        : undefined;
+    if (reason === "email_unconfirmed") {
+      setNotice("Confirm your email, then sign in — your membership will attach automatically.");
+      return;
+    }
+
+    setError(MEMBERSHIP_REQUIRED_COPY);
   }
 
   return (
@@ -118,9 +135,9 @@ export default function SignupPage() {
       <div className="rounded-lg border border-[var(--rule)] bg-[rgba(255,252,245,0.88)] p-6 shadow-sm">
         <BrandMark subtitle="Create member login" />
         <p className="mt-3 text-sm text-[var(--ink-soft)]">
-          You must already be a verified member. Use the same email and first /
-          last name on the Board roster — your membership number will already
-          be on your profile.
+          You must already be a paid member. Use the same email and first / last
+          name from your entrance payment — your membership number will attach
+          to your profile.
         </p>
         {waveNote ? (
           <p className="mt-3 rounded border border-[var(--rule)] bg-white/60 px-3 py-2 text-sm text-[var(--olive-deep)]">
@@ -194,6 +211,12 @@ export default function SignupPage() {
           </button>
         </form>
         <p className="mt-5 text-center text-sm text-[var(--ink-soft)]">
+          Not a member yet?{" "}
+          <Link href="/pay" className="font-medium text-[var(--olive-deep)] underline">
+            Become a member
+          </Link>
+        </p>
+        <p className="mt-2 text-center text-sm text-[var(--ink-soft)]">
           Already set up?{" "}
           <Link href="/login" className="font-medium text-[var(--olive-deep)] underline">
             Sign in

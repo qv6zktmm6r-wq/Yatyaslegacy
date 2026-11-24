@@ -9,7 +9,9 @@ import { createClient } from "@/lib/supabase/client";
 function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const next = searchParams.get("next") || "/feed";
+  const rawNext = searchParams.get("next") || "/feed";
+  const next =
+    rawNext.startsWith("/") && !rawNext.startsWith("//") ? rawNext : "/feed";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -117,8 +119,8 @@ export default function LoginPage() {
       <div className="rounded-lg border border-[var(--rule)] bg-[rgba(255,252,245,0.88)] p-6 shadow-sm">
         <BrandMark subtitle="Member Hub sign in" />
         <p className="mt-3 text-sm text-[var(--ink-soft)]">
-          Verified association members only. Create a login after the Board
-          adds you to the roster.
+          Paid members only. Create a Hub login after your entrance payment —
+          use the same email and name so the Association recognizes you.
         </p>
         <div className="mt-6">
           <Suspense fallback={<p className="text-sm">Loading…</p>}>
@@ -126,9 +128,15 @@ export default function LoginPage() {
           </Suspense>
         </div>
         <p className="mt-5 text-center text-sm text-[var(--ink-soft)]">
-          Need access?{" "}
+          Paid member?{" "}
           <Link href="/signup" className="font-medium text-[var(--olive-deep)] underline">
-            Create login
+            Create your login
+          </Link>
+        </p>
+        <p className="mt-2 text-center text-sm text-[var(--ink-soft)]">
+          Not a member yet?{" "}
+          <Link href="/pay" className="font-medium text-[var(--olive-deep)] underline">
+            Become a member
           </Link>
         </p>
       </div>

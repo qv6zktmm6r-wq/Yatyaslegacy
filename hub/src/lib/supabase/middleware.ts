@@ -38,7 +38,9 @@ export async function updateSession(request: NextRequest) {
     path === "/api/first-wave-waitlist" ||
     path.startsWith("/api/first-wave-waitlist/");
   const isStripePublic =
-    path.startsWith("/api/stripe/") || path.startsWith("/pay");
+    path.startsWith("/api/stripe/") ||
+    path.startsWith("/pay") ||
+    path.startsWith("/donate");
   const isPublic =
     isAuthPage ||
     path.startsWith("/auth") ||
@@ -70,7 +72,13 @@ export async function updateSession(request: NextRequest) {
       return NextResponse.redirect(url);
     }
 
-    if (!approved && !isPendingPage && !path.startsWith("/auth")) {
+    // Unapproved accounts may still reach pay/donate to complete membership.
+    if (
+      !approved &&
+      !isPendingPage &&
+      !path.startsWith("/auth") &&
+      !isStripePublic
+    ) {
       const url = request.nextUrl.clone();
       url.pathname = "/pending";
       return NextResponse.redirect(url);
