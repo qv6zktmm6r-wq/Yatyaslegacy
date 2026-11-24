@@ -3888,10 +3888,11 @@ main,
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(176, 141, 62, 0.16), transparent 55%),
-    linear-gradient(180deg, #1a1c16 0%, #12140f 48%, #1c1a14 100%);
+    radial-gradient(ellipse 90% 55% at 50% -10%, rgba(201, 168, 90, 0.22), transparent 52%),
+    radial-gradient(ellipse 50% 40% at 12% 80%, rgba(90, 99, 72, 0.28), transparent 60%),
+    linear-gradient(180deg, #14160f 0%, #0d0f0a 42%, #18160f 100%);
   color: #f3e9d0;
-  padding-block: clamp(3.5rem, 8vw, 5.5rem);
+  padding-block: clamp(3.75rem, 9vw, 6rem);
 }
 
 .sponsors-wall .exhibit-head .eyebrow,
@@ -3900,12 +3901,19 @@ main,
   color: #f3e9d0;
 }
 
+.sponsors-wall .exhibit-head h2 {
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  letter-spacing: 0.02em;
+}
+
 .sponsors-wall .lede {
   color: rgba(243, 233, 208, 0.82);
+  max-width: 36rem;
+  margin-inline: auto;
 }
 
 .sponsors-wall .ornament {
-  background: linear-gradient(90deg, transparent, rgba(201, 168, 90, 0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 90, 0.75), transparent);
 }
 
 .sponsors-atmosphere {
@@ -3913,44 +3921,140 @@ main,
   inset: 0;
   background-image: url("assets/heroes/aav-ocean.jpg");
   background-size: cover;
-  background-position: center 40%;
-  opacity: 0.14;
-  filter: saturate(0.7) contrast(1.05);
+  background-position: center 38%;
+  opacity: 0.18;
+  filter: saturate(0.55) contrast(1.12) brightness(0.85);
   pointer-events: none;
+  transform: scale(1.04);
+  animation: sponsors-drift 28s ease-in-out infinite alternate;
 }
 
 .sponsors-atmosphere::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(18, 20, 15, 0.55) 0%,
-    rgba(18, 20, 15, 0.72) 45%,
-    rgba(18, 20, 15, 0.92) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 15, 10, 0.5) 0%,
+      rgba(13, 15, 10, 0.68) 40%,
+      rgba(13, 15, 10, 0.94) 100%
+    ),
+    radial-gradient(circle at 50% 30%, transparent 0%, rgba(8, 9, 6, 0.45) 70%);
+}
+
+.sponsors-sparks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 22%, rgba(232, 205, 130, 0.55), transparent),
+    radial-gradient(1px 1px at 78% 18%, rgba(232, 205, 130, 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 64% 62%, rgba(232, 205, 130, 0.35), transparent),
+    radial-gradient(1px 1px at 28% 74%, rgba(232, 205, 130, 0.45), transparent),
+    radial-gradient(1px 1px at 88% 48%, rgba(232, 205, 130, 0.3), transparent);
+  opacity: 0.55;
+  animation: sponsors-spark 6s ease-in-out infinite alternate;
+}
+
+@keyframes sponsors-drift {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to { transform: scale(1.08) translate3d(-1.2%, 1%, 0); }
+}
+
+@keyframes sponsors-spark {
+  from { opacity: 0.35; }
+  to { opacity: 0.7; }
 }
 
 .sponsors-stage {
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  max-width: 56rem;
-  min-height: 11rem;
-  padding: 1.5rem 1rem 1.75rem;
-  border: 1px solid rgba(201, 168, 90, 0.35);
-  background: rgba(8, 9, 7, 0.35);
+  max-width: 58rem;
+  min-height: 16rem;
+  padding: 2.1rem 1.15rem 1.9rem;
+  border: 1px solid rgba(201, 168, 90, 0.42);
+  background:
+    linear-gradient(160deg, rgba(28, 26, 20, 0.72), rgba(8, 9, 7, 0.78)),
+    repeating-linear-gradient(
+      -12deg,
+      transparent,
+      transparent 11px,
+      rgba(201, 168, 90, 0.025) 11px,
+      rgba(201, 168, 90, 0.025) 12px
+    );
   box-shadow:
-    inset 0 0 0 1px rgba(243, 233, 208, 0.04),
-    0 24px 60px rgba(0, 0, 0, 0.35);
+    inset 0 0 0 1px rgba(243, 233, 208, 0.05),
+    inset 0 0 80px rgba(0, 0, 0, 0.35),
+    0 28px 70px rgba(0, 0, 0, 0.45);
+}
+
+.sponsors-bracket {
+  position: absolute;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-color: rgba(232, 205, 130, 0.85);
+  border-style: solid;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.sponsors-bracket-tl { top: 0.55rem; left: 0.55rem; border-width: 2px 0 0 2px; }
+.sponsors-bracket-tr { top: 0.55rem; right: 0.55rem; border-width: 2px 2px 0 0; }
+.sponsors-bracket-bl { bottom: 0.55rem; left: 0.55rem; border-width: 0 0 2px 2px; }
+.sponsors-bracket-br { bottom: 0.55rem; right: 0.55rem; border-width: 0 2px 2px 0; }
+
+.sponsors-scan {
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(232, 205, 130, 0.75), transparent);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 2;
+  animation: sponsors-scan 7.5s ease-in-out infinite;
+}
+
+@keyframes sponsors-scan {
+  0%, 100% { transform: translateY(0.8rem); opacity: 0.2; }
+  50% { transform: translateY(14.5rem); opacity: 0.65; }
+}
+
+.sponsors-rail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem 1.35rem;
+  margin: 0 0 1.15rem;
+  font-family: var(--font-hull, "Saira Stencil One", Impact, sans-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(232, 205, 130, 0.72);
 }
 
 .sponsors-status {
-  margin: 0;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto 1.15rem;
+  max-width: 28rem;
   text-align: center;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   line-height: 1.55;
-  color: rgba(243, 233, 208, 0.78);
+  color: rgba(243, 233, 208, 0.84);
+}
+
+.sponsors-status-kicker {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-hull, "Saira Stencil One", Impact, sans-serif);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(232, 205, 130, 0.9);
 }
 
 .sponsors-status a {
@@ -3958,7 +4062,8 @@ main,
   text-underline-offset: 0.18em;
 }
 
-.sponsors-constellation {
+.sponsors-constellation,
+.sponsors-ghosts {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -3967,38 +4072,88 @@ main,
   gap: 1rem 0.85rem;
   align-items: center;
   justify-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 720px) {
-  .sponsors-constellation {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.35rem 1.1rem;
+  .sponsors-constellation,
+  .sponsors-ghosts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.35rem 1rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .sponsors-constellation {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
+.sponsors-stage.is-live .sponsors-ghosts,
+.sponsors-stage.is-empty .sponsors-constellation:empty + .sponsors-ghosts {
+  display: grid;
+}
+
+.sponsors-stage.is-live .sponsors-ghosts {
+  display: none;
+}
+
+.sponsor-ghost {
+  width: 100%;
+  max-width: 11rem;
+  display: grid;
+  gap: 0.4rem;
+  justify-items: center;
+  opacity: 0.55;
+  animation: sponsor-ghost-pulse 3.6s ease-in-out infinite;
+  animation-delay: calc(var(--ghost-i, 0) * 0.18s);
+}
+
+.sponsor-ghost-plate {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px dashed rgba(201, 168, 90, 0.35);
+  background:
+    linear-gradient(145deg, rgba(243, 233, 208, 0.04), transparent 55%),
+    rgba(20, 18, 14, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(201, 168, 90, 0.08);
+}
+
+.sponsor-ghost-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(243, 233, 208, 0.38);
+}
+
+@keyframes sponsor-ghost-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.7; }
 }
 
 .sponsor-mark {
   width: 100%;
-  max-width: 11.5rem;
+  max-width: 12rem;
   opacity: 0;
-  transform: translateY(0.85rem) scale(0.96);
+  transform: translateY(1rem) rotate(var(--sponsor-tilt, 0deg)) scale(0.94);
   transition:
-    opacity 0.7s ease,
-    transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
-  transition-delay: calc(var(--sponsor-i, 0) * 70ms);
+    opacity 0.75s ease,
+    transform 0.75s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition-delay: calc(var(--sponsor-i, 0) * 85ms);
 }
 
 .sponsor-mark.is-in {
   opacity: 1;
-  transform: none;
+  transform: rotate(var(--sponsor-tilt, 0deg));
+}
+
+.sponsor-mark:nth-child(even).is-in {
+  transform: translateY(0.45rem) rotate(var(--sponsor-tilt, 0deg));
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .sponsors-atmosphere,
+  .sponsors-sparks,
+  .sponsors-scan,
+  .sponsor-ghost {
+    animation: none;
+  }
+
   .sponsor-mark {
     opacity: 1;
     transform: none;
@@ -4012,44 +4167,62 @@ main,
   justify-items: center;
   text-decoration: none;
   color: inherit;
-  padding: 0.85rem 0.75rem;
-  border: 1px solid rgba(201, 168, 90, 0.22);
-  background: rgba(243, 233, 208, 0.04);
+  padding: 1rem 0.85rem 0.9rem;
+  border: 1px solid rgba(201, 168, 90, 0.28);
+  background: rgba(243, 233, 208, 0.045);
   position: relative;
   overflow: hidden;
-  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  transition:
+    border-color 0.28s ease,
+    background 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
 }
 
 .sponsor-mark-link:hover,
 .sponsor-mark-link:focus-visible {
-  border-color: rgba(201, 168, 90, 0.65);
-  background: rgba(243, 233, 208, 0.08);
+  border-color: rgba(232, 205, 130, 0.8);
+  background: rgba(243, 233, 208, 0.09);
   outline: none;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35), 0 0 24px rgba(201, 168, 90, 0.18);
 }
 
 .sponsor-mark-glow {
   position: absolute;
-  inset: -40% -20% auto;
-  height: 70%;
-  background: radial-gradient(circle, rgba(201, 168, 90, 0.22), transparent 65%);
+  inset: -45% -25% auto;
+  height: 75%;
+  background: radial-gradient(circle, rgba(232, 205, 130, 0.28), transparent 65%);
+  pointer-events: none;
+}
+
+.sponsor-mark-frame {
+  position: absolute;
+  inset: 0.35rem;
+  border: 1px solid rgba(201, 168, 90, 0.18);
   pointer-events: none;
 }
 
 .sponsor-mark img {
   position: relative;
   z-index: 1;
-  width: min(100%, 8.5rem);
-  height: 3.4rem;
+  width: min(100%, 8.75rem);
+  height: 3.55rem;
   object-fit: contain;
-  filter: grayscale(0.15) contrast(1.05) brightness(1.08);
+  filter: grayscale(1) contrast(1.15) brightness(1.35) sepia(0.35) hue-rotate(5deg);
+  transition: filter 0.3s ease;
+}
+
+.sponsor-mark-link:hover img,
+.sponsor-mark-link:focus-visible img {
+  filter: grayscale(0.2) contrast(1.08) brightness(1.1) sepia(0.12);
 }
 
 .sponsor-mark-name {
   position: relative;
   z-index: 1;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   text-align: center;
   color: rgba(243, 233, 208, 0.72);
@@ -4058,21 +4231,40 @@ main,
 .sponsors-footnote {
   position: relative;
   z-index: 1;
-  margin: 1.35rem 0 0;
+  margin: 1.6rem 0 0;
   text-align: center;
-  font-size: 0.9rem;
-  color: rgba(243, 233, 208, 0.7);
+  font-size: 0.92rem;
+  color: rgba(243, 233, 208, 0.72);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.85rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.sponsors-footnote a {
+.sponsors-footnote a:not(.btn) {
   color: var(--gold-soft);
   text-underline-offset: 0.18em;
 }
 
-.sponsors-wall.is-empty .sponsors-stage,
+.sponsors-cta {
+  border-color: rgba(232, 205, 130, 0.55);
+  color: #f3e9d0;
+}
+
+.sponsors-cta:hover,
+.sponsors-cta:focus-visible {
+  border-color: rgba(232, 205, 130, 0.95);
+  background: rgba(232, 205, 130, 0.1);
+}
+
+.sponsors-footnote-sep {
+  opacity: 0.45;
+}
+
 .sponsors-stage.is-empty {
   display: grid;
-  place-items: center;
+  align-content: start;
 }
 
 /* —— Wow layer: hull marks, lineage journey, FW roll, unit chips, ships log, voices —— */
