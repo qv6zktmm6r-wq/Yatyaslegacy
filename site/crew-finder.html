@@ -78,7 +78,7 @@
         <div class="ai-stage">
           <h2>Who are you looking for?</h2>
           <p class="panel-lede">Example: <em>“Looking for 3d Tracks guys from 2010–2014 on AAVs at Pendleton — especially motor-T shop.”</em></p>
-          <form class="program-form contact-form crew-form" id="crew-ai-form" novalidate>
+          <form class="program-form contact-form crew-form crew-form-primary" id="crew-ai-form" novalidate>
             <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <input type="hidden" name="preferred_unit" id="crew-preferred-unit" value="" />
             <div class="form-row">
@@ -95,10 +95,12 @@
               <label for="crew-story">Your story</label>
               <textarea id="crew-story" name="story" required rows="5" maxlength="2500" placeholder="Unit, years, platform, station, deployment, who you hope to find…"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary contact-submit">Find my crew</button>
-            <p class="form-status" id="crew-ai-status" role="status" aria-live="polite" hidden></p>
+            <div class="ai-result" id="crew-ai-result" hidden></div>
+            <div class="crew-form-footer">
+              <button type="submit" class="btn btn-primary contact-submit">Find my crew</button>
+              <p class="form-status" id="crew-ai-status" role="status" aria-live="polite" hidden></p>
+            </div>
           </form>
-          <div class="ai-result" id="crew-ai-result" hidden></div>
 
           <form class="program-form contact-form crew-form" id="crew-board-form" data-yat-form data-subject="YAT-YAS Crew Finder match" hidden novalidate>
             <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
