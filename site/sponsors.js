@@ -49,7 +49,7 @@
       statusEl.hidden = false;
       statusEl.innerHTML =
         '<span class="sponsors-status-kicker">Formation open</span>' +
-        "Founding sponsors will take these plates. " +
+        "Founding sponsors will take these plates — and every sponsor is invited to the annual muster. " +
         '<a href="sponsor.html">Organizations — inquire</a>.';
     }
     grid.innerHTML = "";
